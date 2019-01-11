@@ -1,0 +1,85 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/prodect.php?action=list">商品管理</a>&nbsp;&gt;&gt;&nbsp;<!-- {if $func == 'list'} -->在售商品<!-- {else if $func == 'offlist'} -->下架商品<!-- {else if $func == 'draftlist'} -->草稿商品<!-- {else if $func == 'recyclelist'} -->商品回收站<!-- {/if} --></div>
+        <div class="wrap">
+            <form action="/manage/product.php?action={$func}" method="post">
+            <table class="table" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+                <tbody>
+                    <tr class="odd">
+                        <td>
+                            <div class="itm">
+                            	<div class="dt">商品名称：</div>
+                                <div class="dd"><input type="text" name="productname" <!-- {if !empty($productname) } --> value="{$productname}"<!-- {/if} --> class="ipt ipt1" /></div>
+                            </div>
+                            <div class="itm">
+                            	<div class="dt">价格：</div>
+                                <div class="dd"><input type="text" name="smallprice" <!-- {if !empty($smallprice) } --> value="{$smallprice}"<!-- {/if} --> class="ipt ipt2" /><span>—</span><input type="text" name="bigprice" class="ipt ipt2" /></div>
+                            </div>
+                            
+                        </td>
+                        <td rowspan="2">
+                        	<div class="btns"><input type="submit" value="查找" class="btn btn1" /></div>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td>
+                            <div class="itm">
+                                <div class="dt">起始时间：</div>
+                                <div class="dd"><input type="text" name="begintime" onclick="WdatePicker();" <!-- {if !empty($begintime) } --> value="{$begintime}"<!-- {/if} --> class="ipt ipt3" /></div>
+                            </div>
+                            <div class="itm">
+                                <div class="dt">终止时间：</div>
+                                <div class="dd"><input type="text" name="endtime" onclick="WdatePicker();" <!-- {if !empty($endtime) } --> value="{$endtime}"<!-- {/if} --> class="ipt ipt3" /></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="odd">
+                        <td style="padding-left:8px;">
+                        	<!-- {if $func == 'list'} --><input type="button" value="禁售" id="product_del_button" class="btn btn2" /><input type="button" id="product_shelves_button" value="下架" class="btn btn2" style="margin-left:8px;" /><!-- {/if} -->
+                        	<!-- {if $func == 'offlist'} --><input type="button" value="禁售" id="product_del_button" class="btn btn2" /><!-- {/if} -->
+                        	<!-- {if $func == 'draftlist'} --><input type="button" value="删除" id="product_ban_button" class="btn btn2" /><!-- {/if} -->
+                        	<!-- {if $func == 'recyclelist'} --><!--input type="button" value="删除" id="product_recyclelist_del_button" class="btn btn2" /><input type="button" value="还原" id="product_recycle_shelves_button" style="margin-left:8px;" class="btn btn2" /> --><!-- {/if} -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </form>
+            <table class="table2" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<thead>
+                	<tr>
+                    	<th width="26"><input type="checkbox" id="prochkAll" /></th>
+                        <th width="26">ID</th>
+                        <th width="80">商品图片</th>
+                        <th width="80">商品名称</th>
+                        <th width="100">商品描述</th>
+                        <th width="80">价格</th>
+                        <th width="80">顺序</th>
+                        <th width="80">操作</th>
+                    </tr>
+                </thead>
+            	<tbody>
+            	<!--{loop $product $index $one}-->
+                	<tr <!--{if $index%2 != 0}--> class="odd" <!-- {else} --> class="even" <!-- {/if} --> >
+                    	<td><input type="checkbox" name="chk" value="{$one['id']}" /></td>
+                        <td>{$one['id']}</td>
+                        <td><img width="80px" height="60px" src="/{$one['pic']}" ></td>	
+                        <td>{$one['pname']}</td>
+                        <td>{$one['description']}</td>
+                        <td>￥ {$one['price']}</td>
+                        <td id="changebannersort"  style="cursor:pointer;" >{$one['orderid']}</td>
+                        <td><a href="/manage/product.php?action=detail&id={$one['id']}&func={$func}">详情</a></td>
+                    </tr>
+                <!--{/loop}-->
+                </tbody>
+            </table>
+            <div class="page clearfix">
+	           <!--{if $count > 20}-->
+			       {$pagestring}
+		       <!--{/if}-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

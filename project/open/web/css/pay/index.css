@@ -1,0 +1,23 @@
+﻿html,body{width:100%;height:100%; background: #e7edf0; font-family: "Microsoft YaHei";}
+
+
+.button{ margin:0 6.3%;}
+.button button{ width: 100%; margin: 5% 0 3%; background: #e74747; border-radius: 5px;color: #fff; font-size: 1.25rem; padding: 10px 0;}
+/*个人信息*/
+.selftxt{ margin: 1rem 6.3%; font-size: 1.2rem; color: #aaa;}
+.selftximg{ background: #fff; position: relative; margin-top: 10px;}
+.selftximg .selfjt{ position: absolute; width: 5%; bottom: 10px; right: 10px;}
+.selftximg .selfjtt{ position: absolute; width: 5%; bottom: 15%; right: 10px;}
+.select{ position:fixed; background: #f3f3f3; width: 100%; font-size: 1.2rem;  }
+.select p{padding: 0.6rem; margin-left:28%;}
+.selftximg .dbk_inpL {border-bottom: 1px solid #e7edf0;border-radius: 5px;background: #fff; padding: 4% 6.3%;overflow: hidden;}
+.selftximg .dbk_inpL label {width: 22%;text-align: left;float: left;margin-bottom: 0;font-size: 1.2rem;color: #444;}
+.selftximg .dbk_inpL label.width32{ width: 35%;}
+.selftximg .dbk_inpL .input { width: 70%; border: none;float: left;font-size: 1.2rem;}
+.ontg{ display: block; width: 86%; text-align: right; font-size: 1.2rem; color: #3fa6fd; margin:1rem 6.3%;}
+
+/*提现资料*/
+.selfmess .tsmes{color: #c90000; text-align: center; margin-top: 5px;}
+.selfmess .tips{color: #aaa; text-align: center; margin-top: 5px;}
+.dbk_inpL .hqyzm{color: #e74747; position: absolute;width: 20%;right: 10px; padding: 5px;border: 1px solid #e74747; text-align: center; border-radius: 5px; bottom: 10px;}
+.dbk_inpL input.yzmwidth{ width: 44%;}

@@ -1,0 +1,96 @@
+<!--{include header}-->
+
+<div class="blank108"></div>
+<div class="blank60"></div>
+<div class="w2 clearfix">
+	<div class="ordersDetail clearfix">
+    	<div class="ordersTop"><strong>订单详情</strong></div>
+        <div class="pback2"><a href="/order/index.php">返回"订单"</a></div>
+        <div class="ordersArea1">
+        	<!--{if $order['state'] == 'pay'}-->
+        	<div class="clearfix">当前订单状态：<span>已付款</span></div>
+            <div class="clearfix">买家已经付款，赶紧发货完成交易吧！</div>
+            <div class="clearfix"><a href="javascript:void(0);" id="devlerry"><img src="/static/images/btn13.png" alt="" /></a></div>
+            <!--{else}--> 
+        	<div class="clearfix">当前订单状态：<span>交易成功</span></div>
+            <div class="clearfix">卖家已发货。</div>
+            <!--{/if}-->
+        </div>
+        <div class="ordersArea2" id="wuliuinformation">
+        	<div class="dt">物流信息</div>
+        	<!--{if $order['state'] == 'pay'}-->
+            <div class="dd">
+            <div class="clearfix" id="hidden_express">尚无物流信息</div>
+                <div class="clearfix">
+                <div id="show_express" style="display:none;">
+                	<div class="fl">请填写快递单号：</div>
+                    <div class="fl">
+                    	<input type="text" id="express_name" class="text1" /><label for="express_name" class="label1">快递公司名称</label>
+                        <input type="text" id="express_id" class="text2" /><label for="express_id" class="label2">请在此填写快递单号，这是您的发货凭证，请务必填写正确</label>
+                        <input type="button" class="btn" id="express_button" oid="{$order['id']}" style="cursor:pointer;" value="提交" />
+                    </div>
+              	</div>
+                </div>
+            </div>
+            <!--{else}--> 
+            <div class="dd">
+            	<div class="clearfix">快递公司：{$order['express_name']}</div>
+                <div class="clearfix">物流单号：{$order['express_id']}</div>
+            </div>
+            <!--{/if}-->
+        </div>
+        <div class="ordersArea2">
+        	<div class="dt">订单信息</div>
+            <div class="dd">
+            	<div class="clearfix">订单编号：{$order['pay_id']}</div>
+                <div class="clearfix">下单时间：{$order['createdate']}</div>
+            </div>
+        </div>
+        <div class="ordersArea2">
+        	<div class="dt">配送信息</div>
+            <div class="dd">
+            	<div class="clearfix">收货人：{$order['realname']}</div>
+                <div class="clearfix">联系电话：<!--{if !empty($order['mobile'])}-->{$order['mobile']}<!--{else}-->{$order['phone']}<!--{/if}--></div>
+                <div class="clearfix">地址： {$useraddress}，{$order['postcode']}</div>
+            </div>
+        </div>
+        <div class="ordersArea2">
+        	<div class="dt">买家留言</div>
+            <div class="dd">
+            	<div class="clearfix"><!--{if !empty($order['remark'])}-->{$order['remark']}<!--{else}-->无<!--{/if}--></div>
+            </div>
+        </div>
+        <div class="ordersArea3">
+        	<div class="dt">商品信息</div>
+            <div class="dd">
+            	<div class="omt">
+                	<ul>
+                    	<li class="pname">商品</li>
+                        <li class="pprice">单价</li>
+                        <li class="pamount">数量</li>
+                        <li class="pseller">买家</li>
+                        <li class="zprice">金额</li>
+                    </ul>
+                </div>
+                <div class="omc">
+                	<ul>
+                    	<li class="pname">
+                        	<p>{$product['pname']}</p>
+                            <p><span>{$order['property']}</span></p>
+                        </li>
+                        <li class="pprice">￥{$order['price']}</li>
+                        <li class="pamount">{$order['quantity']}</li>
+                        <li class="pseller">{$user['buyer']}</li>
+                        <li class="zprice">
+                        	<p>￥{$order['origin']}</p>
+                            <p><!--{if $order['express'] == 'y'}-->（含运费{$order['express_price']}）<!--{else}-->免运费<!--{/if}--></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="blank40"></div>
+
+<!--{include footer}-->

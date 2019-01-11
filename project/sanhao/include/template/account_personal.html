@@ -1,0 +1,92 @@
+<!--{include header}-->
+
+<div class="blank108"></div>
+<div class="blank60"></div>
+<div class="w2 clearfix">
+	<div class="sideArea fl">
+        <ul class="sdsMenu">
+            <li class="li1"><a href="/account/personal.php" class="cur">个人资料</a></li>
+            <li class="li3"><a href="/account/place.php">收货地址</a></li>
+            <li class="li2"><a href="/account/reset.php">更改密码</a></li>
+            <li class="li5"><a href="/account/bindingsns.php">绑定SNS账号</a></li>
+        </ul>
+    </div>
+    <div class="mainArea fr">
+    	<div class="content">
+        	<div class="mt clearfix"><strong>个人资料</strong></div>
+            <div class="mc clearfix">
+            	<div class="avatar">
+                	<dl class="item">
+                    	<dt>头像图片</dt>
+                    	<dd id="scImg"><!--{if $aField['headerurl'] == ''}--><img src="/static/images/i-pic.png" alt="" /><!--{else}--><img src="{$aField['headerurl']}" alt="" /><!--{/if}--></dd>
+                    </dl>
+                    <dl class="item2">
+                    	<dt><span></span><input type="file" id="imgFile" doing="0" name="filename" class="file" onchange="upfile();" /></dt>
+                    	<!--{if $aField['headerurl'] == ''}--><input type="hidden" name="artname" value="" id="artname" /><!--{else}--><input type="hidden" name="artname" value="{$aField['headerurl']}" id="artname" /><!--{/if}-->
+                        <dd><em id="upload_pic_error"></em></dd>
+                        <input type="hidden" id="personal_head_error">
+                    </dl>
+                    <dl class="item3">
+                    	<dt>建议:</dt>
+                        <dd>使用不小于100*100像素的图片，</dd>
+						<dd>支持jpg、jpeg、png格式。</dd>
+                        <dd>不超过5M。</dd>
+                    </dl>
+                </div>
+                <div class="account">
+                	<dl class="item">
+                    	<dt>账号 :</dt>
+                        <dd><!--{if $aField['type'] == 1}-->{$aField['email']}<!--{else}-->{$aField['mobile']}<!--{/if}--></dd>
+                    </dl>
+                </div>
+                <div class="material">
+                	<dl class="item">
+                        <dt>昵称</dt>
+                        <dd><!--{if $aField['nickname'] == ''}--><input type="text" name="nickname" id="personal_nickname" class="text" /><!--{else}--><input type="text" name="nickname" id="personal_nickname" value="{$aField['nickname']}" class="text" /><!--{/if}--><label for="personal_nickname">请输入您的昵称</label><em id="personal_nickname_check"></em></dd>
+                        <input type="hidden" id="nickname_hidden" value="{$aField['nickname']}">
+                        <input type="hidden" id="personal_nickname_error">
+                    </dl>
+                    <!--{if $aField['type'] == 2}-->
+                    <dl class="item">
+                        <dt>邮箱</dt>
+                        <dd><!--{if $aField['email'] == ''}--><input type="text" name="email" id="personal_email" class="text" /><!--{else}--><input type="text" name="email" id="personal_email" value="{$aField['email']}" class="text" /><!--{/if}--><label for="personal_email">请输入您常用的电子邮箱</label><em id="personal_email_check"></em></dd>
+                        <input type="hidden" id="personal_email_error">
+                    </dl>
+                    <!--{/if}-->
+                    <!--{if $aField['type'] == 1}-->
+                    <dl class="item">
+                        <dt>手机号</dt>
+                        <dd><!--{if $aField['mobile'] == ''}--><input type="text" name="mobile" id="personal_mobile" class="text" /><!--{else}--><input type="text" name="mobile" id="personal_mobile" value="{$aField['mobile']}" class="text" /><!--{/if}--><label for="personal_mobile">请输入您常用的手机号码</label><em id="personal_mobile_check"></em></dd>
+                        <input type="hidden" id="personal_mobile_error">
+                    </dl>
+                    <!--{/if}-->
+                    <dl class="item">
+                        <dt>QQ号</dt>
+                        <dd><!--{if $aField['qq'] == ''}--><input type="text" name="qq" id="personal_qq" class="text" /><!--{else}--><input type="text" name="qq" id="personal_qq" value="{$aField['qq']}" class="text" /><!--{/if}--><label for="personal_qq">请输入您常用的qq号码</label><em id="personal_qq_check"></em></dd>
+                        <input type="hidden" id="personal_qq_error">
+                        <span>记得对您输入的QQ号进行<a href="http://wp.qq.com/consult.html" target="_blank">授权</a>喔！确保买家随时可以联系您！！！</span>
+                    </dl>
+                    <dl class="item">
+                        <dt>个人网站</dt>
+                        <dd><!--{if $aField['website'] == ''}--><input type="text" name="website" id="personal_website" class="text" /><!--{else}--><input type="text" name="website" id="personal_website" value="{$aField['website']}" class="text" /><!--{/if}--><label for="personal_website">请输入您的个人网站</label><em id="personal_website_check"></em></dd>
+                        <input type="hidden" id="personal_website_error">
+                    </dl>
+                    <dl class="item profile">
+                        <dt>个人简介</dt>
+                        <dd><!--{if $aField['website'] == ''}--><textarea id="personal_description" maxlength="140"></textarea><!--{else}--><textarea id="personal_description" maxlength="140">{$aField['description']}</textarea><!--{/if}--><em class="prompt"></em></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="mb">
+            	<div class="renew clearfix">
+            		<input type="hidden" id="uid" value="{$login_user_id}">
+            		<input type="hidden" id="user_type" value="{$aField['type']}">
+                	<input type="button" id="personal_submit" class="btn" /><div id="submit_action"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="blank40"></div>
+
+<!--{include footer}-->

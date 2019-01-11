@@ -1,0 +1,1442 @@
+
+body{
+  background: #f3f3f3;
+  height: 100%;
+  position: relative;
+}
+html{
+  height: 100%;
+}
+/*  存管02*/
+.depository_waiting{
+  width: 10.00rem;
+  height: 5.23rem;
+  background: #fff;
+  position: relative;
+}
+
+.depository_waiting_img{
+  height: 0.83rem;
+  width: 0.83rem;
+  position:absolute;
+  left: 4.48rem;
+  top: 1.79rem;
+}
+
+
+.depository_waiting_text{
+  width: 100%;
+  height: 0.48rem;
+  font-family: "微软雅黑";
+  font-size: 0.48rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 0.48rem;
+  text-align: center;
+  position: absolute;
+  top: 3.01rem;
+}
+/* 存管08 07 */
+.depository_set,.depository_open{
+  width: 10.00rem;
+  height: 5.84rem;
+  background: #fff;
+  position: relative;
+}
+.depository_set_img,.depository_open_img{
+  height: 0.80rem;
+  width: 0.80rem;
+  position: absolute;
+  left: 4.61rem;
+  top: 1.12rem;
+}
+.depository_set_text,.depository_open_text{
+  font-family: "微软雅黑";
+  font-size: 0.48rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 0.48rem;
+  height: 0.48rem;
+  width: 100%;
+  position: absolute;
+  top: 2.35rem;
+  left: 0;
+  text-align: center;
+}
+.depository_set_tip,.depository_open_tip{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 0.37rem;
+  height: 0.37rem;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 4.11rem;
+  left: 0;
+}
+.depository_reset,.depository_reset_open,.paycount_btn{
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+  border-radius: 0.13rem;
+  width: 9.20rem;
+  height: 1.28rem;
+  font-family: "微软雅黑";
+  font-size: 0.48rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 1.28rem;
+  margin-left: 0.40rem;
+  margin-top: 0.40rem;
+  text-align: center;
+}
+.contact_service{
+position: absolute;
+bottom: 0.53rem;
+width: 100%;
+left: 0;
+height: 0.43rem;
+}
+.contact_service_tip{
+  width: 0.40rem;
+  height: 0.43rem;
+  position: absolute;
+  left: 3.97rem;
+  top: 0;
+}
+.contact_service_text{
+  height: 0.37rem;
+  position: absolute;
+  left:4.59rem;
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #3D81FF;
+  letter-spacing: 0;
+  line-height: 0.43rem;
+}
+.checkout_card{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #3D81FF;
+  letter-spacing: 0;
+  line-height: 0.37rem;
+}
+/* 存管01 */
+.depository_operation{
+  width: 100%;
+  background: #fff;
+}
+.operation_bg{
+  width: 100%;
+  height: 3.85rem;
+}
+.system_operation{
+  margin-top: 0.80rem;
+  padding: 0 0.80rem;
+  height: 8.45rem;
+}
+.progressBar{
+  width: 0.43rem;
+  height: 6.19rem;
+  float: left;
+}
+.operation_step{
+  width: 7.31rem;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+}
+.operation_step_card,.operation_step_password,.operation_step_payback,.operation_step_payout{
+  height: 1.01rem;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.88rem;
+  margin-top: 0.1rem;
+}
+.operation_title{
+  font-family: "微软雅黑";
+  font-size: 0.43rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 0.43rem;
+  height: 0.43rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.check_support_card{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #3D81FF;
+  letter-spacing: 0;
+  line-height: 0.32rem;
+  height: 0.32rem;
+  position: absolute;
+  left: 2.40rem;
+  top: 0.11rem;
+}
+.operation_step_describe{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #999999;
+  line-height: 0.32rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.operation_step_set{
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+  border-radius: 0.13rem;
+  height: 0.83rem;
+  width: 1.47rem;
+  position: absolute;
+  right: 0;
+  top: 0.11rem;
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 0.83rem;
+  text-align: center;
+}
+.operation_mask{
+  border-radius: 0.13rem;
+  height: 0.83rem;
+  width: 1.47rem;
+  position: absolute;
+  right: 0;
+  top: 0.11rem;
+  z-index: 10;
+  background: #fff;
+  opacity: 0.7;
+  display: block;
+}
+/* 支持银行遮罩 */
+.support_card_mask{
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
+.support_card_content{
+  display: none;
+  width: 7.89rem;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 0.13rem;
+  transform: translate(-50%,-50%);
+  z-index: 20;
+}
+.support_card_title{
+  height: 1.07rem;
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 1.07rem;
+  margin:0 0.32rem;
+  border-bottom: 0.03rem solid #D8D8D8;
+}
+.card_content_box{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+  width: 100%;
+  padding-top:0.53rem;
+}
+.card_content{
+  width: 1.96rem;
+  height: 1.60rem;
+  text-align: center;
+  margin-bottom: 0.80rem;
+}
+.card_logo{
+  height: 0.88rem;
+  width: 0.88rem;
+  margin-bottom: 0.21rem;
+}
+.card_name{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #444444;
+  letter-spacing: 0;
+  width: 100%;
+  height: 0.53rem;
+  line-height: 0.53rem;
+  text-align:center;
+}
+/* 借款记录 */
+.payout_record{
+  background: #fff;
+  width: 100%;
+}
+.payout_record_text{
+  height: 1.57rem;
+  border-bottom: 0.01rem solid #e1e1e1;
+  margin-left: 0.53rem;
+  position: relative;
+}
+.payout_num{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #444444;
+  line-height: 0.37rem;
+  height: 0.37rem;
+  position: absolute;
+  left: 0;
+  top: 0.37rem;
+}
+.payout_time{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #999999;
+  line-height: 0.32rem;
+  position: absolute;
+  left: 0;
+  top: 0.96rem;
+  height: 0.32rem;
+}
+.pay_state{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #444444;
+  line-height: 1.57rem;
+  position: absolute;
+  right: 0.83rem;
+}
+.arrow{
+  width: 0.25rem;
+  height: 0.38rem;
+  position: absolute;
+  right: 0.27rem;
+  top: 0.60rem;
+}
+/* 已续期 */
+.pay_state_going{
+  color: #3D81FF;
+}
+.pay_state_back{
+  color: #CCCCCC;
+}
+.pay_state_overdue{
+color: #F00D0D;
+}
+/* 重新发起借款 记录02 */
+.reset_payout{
+  margin: 0.40rem 0.40rem;
+  width: 8.03rem;
+  background: #fff;
+  padding: 0 0.59rem;
+}
+.payout_content{
+  margin: 0.40rem 0.40rem;
+  width: 8.03rem;
+  height: 2.64rem;
+  background: #fff;
+  padding: 0 0.59rem;
+}
+.payout_count,.apply_date{
+  height: 1.31rem;
+  border-bottom: 0.01rem solid #e1e1e1;
+  width: 100%;
+  line-height: 1.31rem;
+}
+.back_reason{
+  height: 1.31rem;
+  width: 100%;
+  line-height: 1.31rem;
+}
+.list_title{
+  font-family: "微软雅黑";
+font-size: 0.43rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 1.31rem;
+float: left;
+}
+.list_num{
+  font-family: "微软雅黑";
+  font-size: 0.43rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 1.31rem;
+  float: right;
+}
+.reset_payout_btn,.again_payout_btn{
+  margin: 0 auto;
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+  border-radius: 0.13rem;
+  width: 9.20rem;
+  height: 1.28rem;
+  font-family: "微软雅黑";
+  font-size: 0.48rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 1.28rem;
+  text-align: center;
+}
+/* 借款处理中 借款-22 */
+.payout_waiting,.create_fail,.pay_createimg{
+  width: 10.00rem;
+  height: 6.03rem;
+  background: #fff;
+  position: relative;
+}
+.payout_waiting_text,.create_fail_text{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 0.37rem;
+  text-align:center;
+  left: 0;
+  height: 0.37rem;
+  width: 100%;
+  position: absolute;
+  top: 3.55rem;
+}
+.payout_waiting_img,.create_fail_img{
+  height: 0.83rem;
+  width: 0.83rem;
+  position:absolute;
+  left: 4.48rem;
+  top: 1.47rem;
+}
+.payout_waiting_title,.create_fail_title{
+  width: 100%;
+  height: 0.48rem;
+  font-family: "微软雅黑";
+  font-size: 0.48rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 0.48rem;
+  text-align: center;
+  position: absolute;
+  top: 2.69rem;
+}
+/* 借款16 */
+.create_fail_again{
+  width: 10.00rem;
+  height: 6.51rem;
+  background: #fff;
+  position: relative;
+}
+.fail_again_btn{
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+  border-radius: 0.13rem;
+  position: absolute;
+  top: 4.72rem;
+  left: 0.40rem;
+  font-family: "微软雅黑";
+  font-size: 0.48rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 1.28rem;
+  height:1.28rem;
+  width: 9.20rem;
+  text-align: center;
+}
+.test_creating{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #F00D0D;
+  letter-spacing: 0;
+  line-height: 0.37rem;
+  width: 100%;
+  height: 0.37rem;
+  margin-top: 1.92rem;
+  text-align: center;
+}
+/*  借款15*/
+.pay_createimg_time{
+  font-family: "微软雅黑";
+  font-size: 0.80rem;
+  color: #FFD061;
+  letter-spacing: 0;
+  line-height: 0.80rem;
+  width:100%;
+  height: 0.80rem;
+  position: absolute;
+  left: 0;
+  top: 1.41rem;
+  text-align: center;
+}
+/* 借款1 */
+.payout_main_top{
+  width: 10.00rem;
+  height: 3.85rem;
+  background-image:url("../../../borrow/310/images/red-bg.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+}
+.main_text{
+  position: absolute;
+  top: 0.64rem;
+  left: 0;
+  width: 100%;
+  height: 0.53rem;
+}
+.getPayIcon{
+  height: 0.53rem;
+  width: 0.53rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 0;
+}
+.getPayTitle{
+  font-family: "微软雅黑";
+  font-size: 0.53rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 0.53rem;
+  height: 0.53rem;
+  position: absolute;
+  left: 1.12rem;
+  top: -0.03rem;
+}
+.getPayText{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 0.32rem;
+  position: absolute;
+  right:0.40rem;
+  top: 0.16rem;
+}
+.payout_identification{
+  height: 5.87rem;
+  width: 9.20rem;
+  position: absolute;
+  top: 2.35rem;
+  left: 0.40rem;
+  background: #fff;
+  border-radius: 0.13rem;
+}
+.payout_list_item{
+  height: 5.28rem;
+  width: 9.20rem;
+  position: absolute;
+  top: 2.35rem;
+  left: 0.40rem;
+  background: #fff;
+  border-radius: 0.13rem;
+}
+.identificationBar{
+  position: absolute;
+  left: 0.80rem;
+  top: 0.80rem;
+  width: 0.43rem;
+  height: 4.27rem;
+}
+.stepNumOne{
+font-family: "微软雅黑";
+font-size: 0.43rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.43rem;
+position: absolute;
+left: 1.49rem;
+top: 0.80rem;
+height: 0.43rem;
+}
+.stepNumOneDate{
+font-family: "微软雅黑";
+font-size: 0.32rem;
+color: #999999;
+line-height: 0.32rem;
+height: 0.32rem;
+position: absolute;
+left: 1.49rem;
+top: 1.49rem;
+}
+.stepNumTwo{
+font-family: "微软雅黑";
+font-size: 0.43rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.43rem;
+height: 0.43rem;
+position: absolute;
+top: 2.72rem;
+left: 1.49rem;
+}
+.stepNumTwoText{
+font-family: "微软雅黑";
+font-size: 0.32rem;
+color: #999999;
+letter-spacing: 0;
+line-height: 0.37rem;
+position: absolute;
+left: 1.49rem;
+width: 6.08rem;
+top: 3.41rem;
+}
+.stepNumThree{
+font-family: "微软雅黑";
+font-size: 0.43rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.43rem;
+position: absolute;
+left: 1.49rem;
+top: 4.64rem;
+}
+.checkBtn,.payout_Btn{
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+  border-radius: 0.13rem;
+  height: 1.28rem;
+  width: 9.20rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 8rem;
+font-family: "微软雅黑";
+  font-size: 0.48rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 1.28rem;
+  height: 1.28rem;
+  text-align: center;
+}
+.aboutBtn{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #444444;
+  letter-spacing: 0;
+  height: 0.32rem;
+  position: absolute;
+  left:0;
+  width: 100%;
+  top:10.19rem;
+  text-align: center;
+}
+.linkBtn{
+text-decoration: none;
+color:  #F00D0D;
+}
+.bill-nav{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	height: 1.28rem;
+}
+.nav-one{
+	width: 25%;
+	display: block;
+  text-decoration: none;
+}
+.nav-one img{
+	display: block;
+	width: 0.59rem;
+	height: 0.59rem;
+	margin:0.11rem auto;
+	text-align: center;
+}
+.nav-one p{
+	font-size: 0.32rem;
+	color: #ccc;
+	text-align: center;
+}
+.nav-one .active{
+	color: #f00d0d;
+}
+.bill-confirm{
+	float: right;
+	margin-top: 0.75rem;
+	text-align: right;
+	margin-right: 0.43rem;
+}
+.help_service{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  /*bottom: 1.81rem;*/
+  top: 23.2rem;
+  height: 0.37rem;
+  text-align: center;
+}
+.identification_title{
+  font-family: "微软雅黑";
+  font-size: 0.53rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 0.53rem;
+  height: 0.53rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 0.64rem;
+}
+.pass_count{
+  font-family: "微软雅黑";
+  font-size: 0.53rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 0.53rem;
+  height: 0.53rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 0.64rem;
+}
+.pass_count_text{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 0.32rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 1.33rem;
+}
+.identificationText{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 0.32rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 1.33rem;
+}
+.count_identification{
+  width: 9.20rem;
+  height: 5.33rem;
+  position: absolute;
+  top: 2.35rem;
+  left: 0.40rem;
+  background: #fff;
+  border-radius: 0.13rem;
+}
+.cash_identification{
+  width: 8.27rem;
+  height: 2.56rem;
+  background: url(../images/countBg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0.69rem;
+  left: 0.48rem;
+}
+.cash_home{
+  width: 9.20rem;
+  height: 2.56rem;
+  background: url(../images/countBg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 2.85rem;
+  left: 0.43rem;
+}
+.cash_end{
+  width: 9.20rem;
+  height: 2.45rem;
+  background: url(../images/countBg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 2.32rem;
+  left: 0.43rem;
+  background-size: 100%;
+}
+.cash_title{
+  opacity: 0.8;
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 0.37rem;
+  position: absolute;
+  left: 0.27rem;
+  top: 0.27rem;
+}
+.cash_count{
+  font-family: "微软雅黑";
+  font-size: 1.33rem;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 1.33rem;
+  position: absolute;
+  left: 0.27rem;
+  top: 0.91rem;
+}
+.count_time{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 0.37rem;
+  position: absolute;
+  left:0.75rem;
+  top: 3.63rem;
+}
+.red{
+  color: #F00D0D;
+}
+.count_time_txt{
+  font-family: "微软雅黑";
+font-size: 0.32rem;
+color: #999999;
+letter-spacing: 0;
+line-height: 0.32rem;
+position: absolute;
+left:0.75rem;
+top: 4.21rem;
+}
+/* 弹窗 */
+/*弹窗样式*/
+.poppay_mask{
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+.mask_box{
+  height: 4.75rem;
+  width: 7.89rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+transform: translate(-50%,-50%);
+border-radius: 0.13rem;
+}
+.close_mask{
+  width: 0.43rem;
+  height: 0.43rem;
+  position: absolute;
+  right: 0.27rem;
+  top: 0.27rem;
+}
+.mask_title{
+  font-family: "微软雅黑";
+  font-size: 0.48rem;
+  color: #444444;
+  line-height: 0.48rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  top: 0.85rem;
+  font-weight: bold;
+}
+.mask_text{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #444444;
+  line-height: 0.48rem;
+  position: absolute;
+  left: 0.53rem;
+  top: 1.71rem;
+}
+.add_btn{
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+border-radius: 0.13rem;
+height: 1.07rem;
+width: 3.15rem;
+position: absolute;
+left: 2.37rem;
+top: 3.15rem;
+text-align: center;
+font-family: "微软雅黑";
+font-size: 0.43rem;
+color: #FFFFFF;
+line-height: 1.07rem;
+}
+.maskDis{
+  display: none;
+}
+.again_apply{
+font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 0.32rem;
+  position: absolute;
+  right: 0.40rem;
+  top: 0.80rem;
+}
+.font_color{
+  color: #ccc !important;
+}
+.payout_list{
+  background: #fff;
+  width: 100%;
+position: relative;
+height: 11.60rem;
+}
+.list_top{
+  position: relative;
+  height: 3.55rem;
+  width: 100%;
+}
+.list_title{
+position: absolute;
+top: 0.32rem;
+left: 0.40rem;
+font-family: "微软雅黑";
+font-size: 0.37rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.37rem;
+}
+.deatil_title{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #444444;
+  letter-spacing: 0;
+  margin-top: 0.6rem;
+  line-height: 0.37rem;
+}
+.write_count{
+  width: 8.13rem;
+  position: absolute;
+  left: 0.10rem;
+  top: 1.24rem;
+  font-weight: 700;
+  height: 1.30rem;
+  font-family: "微软雅黑";
+  font-size: 0.80rem;
+  color: #444;
+  letter-spacing: 0;
+  line-height: 1.33rem;
+  border: none;
+  outline: none;
+  padding-left: 0.80rem;
+}
+ input.write_count::-webkit-input-placeholder{font-weight: 500 !important;}
+.clearIcon{
+  width: 0.53rem;
+  height: 0.53rem;
+  position: absolute;
+  top: 1.52rem;
+  right: 0.40rem;
+}
+.cashIcon{
+  position: absolute;
+  top: 1.66rem;
+  left: 0.35rem;
+  font-family: "微软雅黑";
+  font-size: 0.60rem;
+  color: #444444;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+.hengxian{
+  height: 0.01rem;
+  width: 9.20rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 2.61rem;
+  background: #999;
+  background: rgb(153, 153, 153);
+}
+
+.count_date{
+font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 0.32rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 2.96rem;
+}
+.item_box{
+  width: 9.20rem;
+  height: 1.60rem;
+  border-bottom: 0.01rem solid #e4e4e4;
+  margin:0 0.40rem;
+
+  position: relative;
+}
+.item_payoutDate{
+  width: 0.43rem;
+  height: 0.43rem;
+  position: absolute;
+  left: 0;
+  top: 0.59rem;
+}
+.item_left{
+font-family: "微软雅黑";
+font-size: 0.37rem;
+color: #444444;
+letter-spacing: 0;
+ font-weight: 700;
+line-height: 0.37rem;
+position: absolute;
+left: 0.67rem;
+top: 0.61rem;
+}
+.item_right{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 1.60rem;
+  float: right;
+}
+.arrow_right{
+  width: 0.53rem;
+  height: 0.53rem;
+  float: right;
+  margin-top: 0.53rem;
+  margin-right: -0.43rem;
+  margin-left: 0.13rem;
+}
+.item_right_item{
+  font-family: "微软雅黑";
+font-size: 0.32rem;
+color: #3F3F3F !important;
+letter-spacing: 0;
+line-height: 0.43rem;
+}
+.agree_item{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 0.40rem;
+  height: 0.40rem;
+  margin-left: 0.61rem;
+  margin-top: 0.32rem;
+  position: relative;
+}
+.item_clause{
+color: #3d81ff;
+text-decoration: none;
+}
+.check_target{
+  height: 0.40rem;
+  width: 0.40rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.target_txt{
+  position: absolute;
+  left: 0.53rem;
+  top: 0;
+}
+.poppayout_mask{
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: .5;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.poppayout_text{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #444444;
+  line-height: 0.48rem;
+  position: absolute;
+  left: 0;
+  top: 1.71rem;
+  width: 100%;
+  text-align: center;
+}
+.resureOut_btn{
+  width: 3.15rem;
+  height: 1.07rem;
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+  border-radius: 0.13rem;
+  font-family: "微软雅黑";
+  font-size: 0.43rem;
+  color: #FFFFFF;
+  line-height: 1.07rem;
+  position: absolute;
+  right: 0.53rem;
+  top: 3.15rem;
+  text-align: center;
+}
+.resure_btn{
+  width: 3.15rem;
+  height: 1.07rem;
+  border: 0.03rem solid #999999;
+  border-radius: 0.13rem;
+  font-family: "微软雅黑";
+  font-size: 0.43rem;
+color: #999999;
+  line-height: 1.07rem;
+  position: absolute;
+  left: 0.53rem;
+  top: 3.15rem;
+  text-align: center;
+}
+.reg_text{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #F00D0D;
+  letter-spacing: 0;
+  line-height: 0.32rem;
+  top: 2.13rem;
+  right: 0.40rem;
+  position: absolute;
+}
+.reg_display{
+  display: none;
+}
+.red_color{
+  color: #f00d0d;
+}
+.test_active{
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+border-radius: 0.13rem;
+width: 4.32rem;
+height: 1.28rem;
+left: 0.40rem;
+top: 8.61rem;
+position: absolute;
+font-family: "微软雅黑";
+font-size: 0.48rem;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 1.28rem;
+text-align: center;
+}
+.immediate_active{
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+border-radius: 0.13rem;
+width: 4.32rem;
+height: 1.28rem;
+right: 0.40rem;
+top: 8.61rem;
+position: absolute;
+font-family: "微软雅黑";
+font-size: 0.48rem;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 1.28rem;
+text-align: center;
+}
+.item_left_one{
+font-family: "微软雅黑";
+  font-size: 0.43rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 0.43rem;
+  position: absolute;
+  left: 0.80rem;
+  top: 0.80rem;
+}
+.item_right_one{
+  font-family: "微软雅黑";
+    font-size: 0.43rem;
+    color: #444444;
+    letter-spacing: 0;
+    line-height: 0.43rem;
+    position: absolute;
+    right: 0.80rem;
+    top: 0.80rem;
+}
+.item_left_two{
+  font-family: "微软雅黑";
+font-size: 0.32rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.32rem;
+position: absolute;
+left: 0.80rem;
+top: 1.97rem;
+}
+.item_right_two{
+  font-family: "微软雅黑";
+font-size: 0.32rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.32rem;
+position: absolute;
+right: 0.80rem;
+top: 1.97rem;
+}
+.heng_one{
+  width: 7.60rem;
+  height: 0.01rem;
+background: #E1E1E1;
+  position: absolute;
+  left: 0.80rem;
+  top: 2.67rem;
+}
+.item_left_three{
+  font-family: "微软雅黑";
+font-size: 0.32rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.32rem;
+position: absolute;
+left: 0.80rem;
+top: 3.07rem;
+}
+.item_right_three{
+  font-family: "微软雅黑";
+font-size: 0.32rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.32rem;
+position: absolute;
+right: 0.80rem;
+top: 3.07rem;
+}
+.heng_two{
+  width: 7.60rem;
+  height: 0.01rem;
+background: #E1E1E1;
+  position: absolute;
+  left: 0.80rem;
+  top: 3.76rem;
+}
+.item_left_four{
+  font-family: "微软雅黑";
+font-size: 0.32rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.32rem;
+position: absolute;
+left: 0.80rem;
+top: 4.16rem;
+}
+.item_right_four{
+  font-family: "微软雅黑";
+font-size: 0.32rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.32rem;
+position: absolute;
+right: 0.80rem;
+top: 4.16rem;
+}
+.service_question{
+  color: #3D81FF;
+}
+.mask_Btn{
+  background:#fff;
+  border-radius: 0.13rem;
+  height: 1.28rem;
+  width: 9.20rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 8.64rem;
+  opacity: 0.8;
+}
+.copy_btn{
+  width: 6.72rem;
+  height: 1.28rem;
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+  border-radius: 0.13rem;
+  position: absolute;
+  left: 0.59rem;
+  top: 3.15rem;
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 0.43rem;
+  color: #FFFFFF;
+  line-height: 1.07rem;
+}
+.home_wrap{
+  height: 9.36rem;
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+.itemIcon{
+  width: 2.48rem;
+  height: 0.59rem;
+  position: absolute;
+  left: 0.53rem;
+  top: 0.45rem;
+}
+.item_title{
+  opacity: 0.9;
+    font-family: "微软雅黑";
+  font-size: 0.53rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 0.53rem;
+  position: absolute;
+  left: 0.53rem;
+  top: 1.25rem;
+  /*width: 100%;*/
+}
+.cash_home_title{
+  width: 9.20rem;
+  height: 0.59rem;
+  position: absolute;
+  left: 0.48rem;
+  top: 5.92rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cash_end_title{
+  width: 9.20rem;
+  height: 0.59rem;
+  position: absolute;
+  left: 0.48rem;
+  bottom: 0.64rem;
+  display: flex;
+  justify-content: space-between;
+}
+.rocket{
+  width: 0.59rem;
+  height: 0.59rem;
+  float: left;
+}
+.title_txt{
+    font-family: "微软雅黑";
+font-size: 0.37rem;
+color: #444444;
+letter-spacing: 0;
+line-height: 0.59rem;
+}
+.getpay_Btn{
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+  box-shadow: 0 0.05rem 0.27rem 0 rgba(240,13,13,0.26);
+  border-radius: 0.13rem;
+  width:8.93rem;
+  height: 1.28rem;
+  position: absolute;
+  left: 0.53rem;
+  top: 7.20rem;
+    font-family: "微软雅黑";
+  font-size: 0.48rem;
+  color: #FFFFFF;
+  letter-spacing: -0.01rem;
+  line-height: 1.28rem;
+  text-align: center;
+}
+.comp_text{
+  font-family: "微软雅黑";
+  font-size: 0.80rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 2.29rem;
+  font-weight: 700;
+}
+.end_home_wrap{
+  height: 6.45rem;
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+.account{
+  height: 1.07rem;
+  width: 10.00rem;
+  background: #fff;
+  margin-top: 0.27rem;
+  position: relative;
+  border-bottom: 0.01rem solid #f3f3f3;
+}
+.cash_account{
+  height: 0.43rem;
+  width: 0.43rem;
+  margin:0.32rem 0 0 0.40rem;
+}
+.account_list{
+  font-family: "微软雅黑";
+  font-size: 0.37rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height:0.37rem;
+  position: absolute;
+  left: 1.09rem;
+  top: 0.35rem;
+}
+.box_end_wrap{
+  height: 2.13rem;
+  width: 10.00rem;
+  background: #fff;
+  position: relative;
+}
+.account_txt{
+  font-family: "微软雅黑";
+  font-size: 0.48rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 0.48rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 0.53rem;
+}
+.account_supply{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 0.32rem;
+  position: absolute;
+  left: 0.40rem;
+  top: 1.25rem;
+}
+.btn_check{
+  border: 0.03rem solid #F00D0D;
+  border-radius: 0.13rem;
+  width: 1.95rem;
+  height: 0.77rem;
+  position: absolute;
+  top: 0.72rem;
+  right:0.40rem;
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #F00D0D;
+  line-height: 0.77rem;
+  text-align: center;
+  outline: none;
+  background: #fff;
+}
+.wrap_txt{
+  font-family: "微软雅黑";
+  font-size: 0.32rem;
+  color: #444444;
+  letter-spacing: 0;
+  height: 0.45rem;
+  line-height: 0.45rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.27rem;
+  }
+.btn_focus{
+  text-decoration: none;
+  color: #F00D0D;
+}
+.Agreement{
+height: 100%;
+width: 9.47rem;
+background: #fff;
+padding:0 0.27rem;
+box-sizing: content-box;
+}
+.Agreement div{
+font:0.37rem/0.64rem "微软雅黑";
+color: #000;
+}
+.AgreementTitle{
+height: 0.64rem;
+font:0.37rem/0.64rem "微软雅黑";
+color: #000;
+font-weight: 600;
+text-align: center;
+width: 100%;
+}
+.agreeDis{
+height: 0.64rem;
+font:0.37rem/0.64rem "微软雅黑";
+color: #000;
+text-align: center;
+width: 100%;
+}
+.jiafang{
+height: 0.64rem;
+font:0.37rem/0.64rem "微软雅黑";
+color: #000;
+width: 100%;
+}

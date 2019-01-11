@@ -1,0 +1,35 @@
+.g1{ background:#f8e98a;}
+.g2{ background:#612b00;}
+.g3{ background:#e7edf0;}
+.mBanner{ overflow:hidden;}
+.mBanner img{ width:100%; display:block; margin:0 auto;}
+.mZhidao{ border-bottom:1px solid #d2d2d2; background:#fff; overflow:hidden; position:relative;}
+.mZhidao .xin{ width:112px; height:28px; font-size:14px; color:#fff; line-height:24px; text-align:center; background:url(../img/bg_by.png) top center no-repeat; background-size:cover; position:absolute; left:50%; top:0; margin-left:-56px;}
+.mZhidao li{ width:50%; border-left:1px solid #d2d2d2; box-sizing:border-box; position:relative; float:left; padding:32px 8px 16px;}
+.mZhidao li:first-child{ border:none;}
+.mZhidao .icon{ width:44px; height:44px; display:block; float:left;}
+.mZhidao .text{ margin-left:52px;}
+.mZhidao .text strong{ font-size:18px; font-weight:normal; line-height:24px; display:block;}
+.mZhidao .text strong .icon_wh{ width:16px; height:16px; vertical-align:-1px; margin-left:2px;}
+.mZhidao .text em{ font-size:14px; color:#e74747; font-style:normal; line-height:20px; display:block;}
+.mZhidao .arrow{ width:12px; height:12px; background:url(../img/icon_jt.png) left top no-repeat; background-size:cover; position:absolute; right:8px; bottom:8px;}
+.mZhidao .link{ position:absolute; left:0; top:0; right:0; bottom:0;}
+.mZhuce{ border-top:1px solid #d2d2d2; background:#fff; margin-top:8px; padding:16px 8px;}
+.mZhuce .uText{ width:100%; height:42px; font-size:16px; border:1px solid #c2c2c2; border-radius:4px; background:#f7f7f7; box-sizing:border-box; padding:4px 8px;}
+.mZhuce .tips{ font-size:16px; line-height:20px; margin-top:4px;}
+.mZhuce .zhi{ font-size:14px; text-align:right;}
+.mZhuce .zhi .icon_wh{ width:16px; height:16px; vertical-align:-2px; margin-right:2px;}
+.mZhuce .zhi a{ color:#e74747;}
+.mZhuce .aButton{ height:42px; font-size:16px; color:#fff; line-height:42px; text-align:center; border:1px solid #e74747; background:#e74747; border-radius:4px; display:block; margin-top:4px;}
+.mZhuce .aButton:hover{ text-decoration:none;}
+.mZhuDeng{ font-size:16px; line-height:24px; text-align:right; margin:12px 8px 8px;}
+.mZhuDeng a{ color:#fff; background:#e74747; border-radius:12px; display:inline-block; margin-left:8px; padding:0 12px;}
+.mLayerMask{ width:100%; min-height:100%; background:url(../img/mask.png) left top repeat; position:fixed; left:0; top:0; z-index:10;}
+.mLayer{ width:272px; border-radius:4px; background:#fff; position:absolute; left:50%; top:30%; margin:0 0 0 -152px; padding:16px;}
+.mLayer .icon_wt{ width:80px; height:88px; background:url(../img/icon_wt.png) bottom center no-repeat; background-size:cover; position:absolute; left:-8px; top:-68px;}
+.mLayer .info{ margin-top:8px;}
+.mLayer .info h3{ font-size:16px; font-weight:normal; line-height:24px;}
+.mLayer .info p{ font-size:14px; line-height:20px;}
+.mLayer .button{ text-align:right; margin-top:8px;}
+.mLayer .button .aButton{ width:48%; height:34px; font-size:16px; color:#fff; line-height:34px; text-align:center; border:1px solid #e74747; background:#e74747; border-radius:4px; display:inline-block;}
+.mLayer .button .aButton:hover{ text-decoration:none;}

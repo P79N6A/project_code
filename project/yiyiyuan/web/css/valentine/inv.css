@@ -1,0 +1,105 @@
+html,body{width:100%;height:100%; background: #e7edf0; font-family: "Microsoft YaHei"; position: relative;}
+a{color:#000}
+.clickwebg img{ width: 100%; height: 100%; position: absolute;z-index: 1;}
+.clickbutton img { width: 40%; position: absolute; top:56%; left: 50%;z-index:5;
+	-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
+    -webkit-animation: pointRadius 2s ease 0s infinite;
+    animation: pointRadius 2s ease 0s infinite;
+}
+@-webkit-keyframes pointRadius {
+    0% {width: 42%;border: 0;}
+    40% {width: 40%;border: 0;}
+    60% {width: 42%;border: 0;}
+    100% {width: 40%;}
+}
+.xinfengpage{ width:86%;position: absolute; z-index:3; top:9%; left: 7%;}
+.xinfengpage img{ width:100%;}
+.xinfengpage .xinjconte{ color: #000;position: absolute; z-index: 3; top:20%; left: 26%; font-size: 1.25rem;}
+.xinfengpage .xinjconte p input{ background: rgba(0,0,0,0); font-size: 1.25rem; color: #000;}
+.xinfengpage .xinjconte textarea{resize:none;background: rgba(0,0,0,0); margin-top: 10px; width: 88%; height: 12rem;  border:0;font-size: 1.25rem;}
+.xinfengpage .xinjconte .wxnic{position: absolute;right: 10%; margin-top: 8px;}
+@media (max-width:320px){
+	.xinfengpage .xinjconte{top:19.5%;}
+	.xinfengpage .xinjconte textarea{ height: 10rem;}
+}
+.okok img{top:80%;}
+.twookok img{top:85%;}
+.shezhianhao{ background:rgba(0,0,0,0); position: absolute; top:12%; left: 32%; z-index: 2; text-align: center; width: 36%; }
+.shezhianhao p input{background:rgba(0,0,0,0); width: 100%; font-size: 1.3rem;text-align: center; padding: 3px 0; color: #fff;border:1px solid #fff; border-radius: 5px; }
+.shezhianhao ::-webkit-input-placeholder {color: #fff; }  
+.xinfefirst img{position:absolute;top:45%;left:17%;z-index:5; width:67%;}
+.aiyabuzhi{width: 50%; left:27%; top:27%;
+    -webkit-animation: pointheight 2s ease 0s infinite;
+    animation: pointheight 2s ease 0s infinite;
+}
+@-webkit-keyframes pointheight {
+    0% {top:27%;}
+    20%{top:30%;}
+    40% {top:32%;}
+    50%{top:34%;}
+    60% {top:36%;}
+    80%{top:38%;}
+    100% {top:40%;}
+}
+.anhaomm{ background:rgba(0,0,0,0); position: absolute; top:14%;width:100%; z-index: 2; text-align: center;}
+.anhaomm p{ font-size: 1.7rem;text-align: center; color: #c13335; font-weight: bold;}
+.renjiah button{position: absolute;z-index: 2;}
+.renjiah button.renjiaone{bottom:5%;left: 7%;}
+.renjiah button.renjiatwo{bottom:5%;left: 51%;}
+.renjiah button.renjiathree{top:58%;left: 7%;}
+.renjiah button.renjiafour{top:58%;left: 51%;}
+
+.renjiah button{background: rgba(0,0,0,0); display: inline-block;
+    -webkit-animation: pointwidth 2s ease 0s infinite;
+    animation: pointwidth 2s ease 0s infinite;
+}
+.xinfefirst.trueing{ position: absolute; z-index: 2;}
+@-webkit-keyframes pointwidth {
+    0% {width: 42%;border: 0;}
+    40% {width: 41%;border: 0;}
+    60% {width: 42%;border: 0;}
+    100% {width: 41%;}
+}
+.shurahs{top:70%;}
+.kukuerr{ width: 50%; position: absolute; z-index: 4; top:18%; left: 25%;
+    -webkit-animation: pointyaobai 2s ease 0s infinite;
+    animation: pointyaobai 2s ease 0s infinite;
+}
+@-webkit-keyframes pointyaobai{
+    0% {transform:rotate(10deg);}
+    40% {transform:rotate(0deg);}
+    60% {transform:rotate(-10deg);}
+    100% {transform:rotate(0deg)}
+}
+.topdszhi{ position: absolute; z-index: 2; text-align: center; top:51%; width:100%; background:rgba(0,0,0,0); color: #fff; font-size: 1.3rem;}
+.topdszhi p{ text-align: center; color: #c13335;font-size: 1.4rem; font-weight: bold;}
+.ckwah img{top:63%;}
+.xioxao{top:10%;}
+.trueing img{ top:46%; left: 16%;}
+.dldtdd{ color: #fff; position: absolute; z-index: 2; top:80%; width: 100%;}
+.dldtdd dl{ float: left; width: 22%; margin-left: 3%;}
+.dldtdd dl dt img{ width:85%;}
+.dldtdd dl dd{width:85%; text-align: center;}
+#overDiv{background-color: #000;width: 100%;height: 100%;left:0;top:0;/*FF IE7*/
+    filter:alpha(opacity=70);/*IE*/opacity:0.7;/*FF*/z-index:11;position:fixed!important;/*FF IE7*/position:absolute;/*IE6*/
+    _top:      expression(eval(document.compatMode &&
+    document.compatMode=='CSS1Compat') ?
+    documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+    document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+}
+.guide_img{ position: absolute; top:0; right:0; z-index: 100;}
+.anhaotrue {
+    width: 65%;
+    position: absolute;
+    z-index: 3;
+    top: 20%;
+    left: 17%;
+}
+.anhaotrue .xinjconte{ width: 65%; font-size: 1.2rem; top:19%;}
+.anhaotrue .xinjconte marquee{ width: 100%; height: 11rem; }
+@media (max-width: 320px){
+.anhaotrue .xinjconte {
+    top: 18%;
+}
+.anhaotrue .xinjconte marquee{height: 9rem;}
+}

@@ -1,0 +1,9 @@
+html{ width: 100%; position: absolute;}
+body{width:100%; height: 100%;  font-family: "Microsoft YaHei"; background: #fff;}
+button{ background: linear-gradient(to right, #3a0597,#5605a2);}
+.allmewjk{ color: #444; background: url(../images/allnew.jpg) no-repeat; width: 100%; height: 100%; background-size: 100%;}
+.allmewjk p.threespe{ padding-top: 49%;  padding-left: 5%; font-size: 1.25rem;}
+.allmewjk .contese{  padding:0  5%; }
+.allmewjk .contese h3{  font-size: 15px;font-weight: bold;padding-top: 5px;}
+.allmewjk .contese h3 span{ color: #e74747; font-weight: bolder;}
+.allmewjk .contese p{ text-indent: 24px; font-size:13px;}

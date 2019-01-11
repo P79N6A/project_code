@@ -1,0 +1,18 @@
+<script type="text/javascript">
+function refreshValidateCode()
+{
+	document.getElementById("previewPic").src="/captcha.php?"+Math.random();
+}
+refreshValidateCode();
+</script>
+<div class="zhaohuitanchuang">
+	<div class="close"><a href="javascript:void(0);" onclick="return X.boxClose();">X</a></div>
+	<div class="mt"><strong>获取短信验证码</strong></div>
+    <div class="mc">
+    	<div class="yzmdiv"><input type="text" class="text" id="vcaptcha" maxlength="4" /><a href="javascript:void(0);" onclick="refreshValidateCode();"><img id="previewPic" src="/captcha.php" alt="看不清楚，点击更换" /></a><a href="javascript:void(0);" onclick="refreshValidateCode();">看不清楚，换一张</a></div>
+    	<span id="vcaptcha_error"></span>
+    </div>
+    <input type="hidden" id="mobile" value="{$mobile}" />
+    <input type="hidden" id="type" value="{$type}" />
+    <div class="mb"><input type="button" id="dialog_sms_button" class="btn" value="" /></div>
+</div>

@@ -1,0 +1,41 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/operation.php?action=list">系统管理</a>&nbsp;&gt;&gt;&nbsp;意见反馈列表</div>
+        <div class="wrap">
+            <table class="table2" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<thead>
+                	<tr>
+                    	<th width="26">ID</th>
+                        <th width="148">邮箱</th>
+                        <th width="80">电话</th>
+                        <th width="80">姓名</th>
+                        <th width="126">意见内容</th>
+                        <th width="126">反馈内容</th>
+                        <th width="26">操作</th>
+                    </tr>
+                </thead>
+            	<tbody>
+            	<!--{loop $manager $index $one}-->
+                	<tr <!--{if $index%2 != 0}--> class="odd" <!-- {else} --> class="even" <!-- {/if} --> >
+                    	<td>{$one['id']}</td>
+                        <td>{$one['email']}</td>
+                        <td>{$one['mobile']}</td>
+                        <td>{$one['name']}</td>
+                        <td>{$one['content']}</td>
+                        <td>{$one['reply']}</td>
+                        <td><a href="/manage/feedback.php?action=reply&id={$one['id']}">回复</a></td>
+                    </tr>
+                <!--{/loop}-->
+                </tbody>
+            </table>
+            <div class="page clearfix">
+            <!--{if $count > 20}-->
+		       {$pagestring}
+	       <!--{/if}-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

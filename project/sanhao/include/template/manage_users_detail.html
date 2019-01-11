@@ -1,0 +1,46 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/product.php?action=list">用户管理</a>&nbsp;&gt;&gt;&nbsp;<!-- {if $ufunc == 'list'} -->用户列表<!-- {else if $ufunc == 'recycle'} -->用户回收站<!-- {/if} -->&nbsp;&gt;&gt;&nbsp;用户详情 </div>
+        <div class="wrap">
+            <table class="table3" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+            		<tr class="odd">
+                        <th width="140">个人头像：</th>
+                        <td width="602"><img  width="80" height="60"  src="{$userinfo['headerurl']}" /></td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">用户昵称：</th>
+                        <td width="602">{$userinfo['nickname']}</td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140">电话：</th>
+                        <td width="602">{$userinfo['mobile']}</td>
+                    </tr>
+                     <tr class="even">
+                        <th width="140">邮箱：</th>
+                        <td width="602">{$userinfo['email']}</td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140">三好网帐号：</th>
+                        <td width="602">{$userinfo['payno']}</td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">个人网站：</th>
+                        <td width="602">{$userinfo['website']}</td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140">个人简介：</th>
+                        <td width="602">{$userinfo['description']}</td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">创建时间：</th>
+                        <td width="602">{$userinfo['createtime']}次</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

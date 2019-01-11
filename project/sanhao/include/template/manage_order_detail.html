@@ -1,0 +1,121 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/order.php?action=list">订单管理</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/order.php?action=list">全部订单</a>&nbsp;&gt;&gt;&nbsp;订单详情 </div>
+        <div class="wrap">
+            <table class="table3" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+                    <tr class="odd">
+                        <th width="140">订单编号：</th>
+                        <td width="602">{$order['pay_id']}</td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">订单状态：</th>
+                        <td width="602"><!-- {if $order['state'] == 'unpay'} -->未付款<!-- {else if $order['state'] == 'pay' } -->已付款<!-- {else if $order['state'] == 'del'} -->已删除<!-- {else if $order['state'] == 'complete' } -->已完成<!-- {/if} --></td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140">订单记录：</th>
+                        <td width="602" style="padding:0;">
+                        	<table class="table4" width="100%" border="0" bordercolor="#b61a3f" cellpadding="0" cellspacing="0">
+                            	<tbody>
+                            		<!-- {if !empty($order['createtime'])} -->
+                                	<tr class="odd">
+                                    	<td>买家 {$userbuyer['mobile']}  于   {$order['createtime']}   下单</td>
+                                    </tr>
+                               		<!-- {/if} -->
+                               		<!-- {if isset($orderfukuan['createtime']) && !empty($orderfukuan['createtime'])} -->
+                                    <tr class="even">
+                                    	<td>买家{$userbuyer['mobile']}  于    {$orderfukuan['createtime']} 付款</td>
+                                    </tr>
+                                    <!-- {/if} -->
+                                    <!-- {if !empty($order['shiptime'])} -->
+                                    <tr class="odd">
+                                    	<td>卖家 {$usersaler['mobile']}  于    {$order['shiptime']}  发货</td>
+                                    </tr>
+                                    <!-- {/if} -->
+                                    <!-- {if isset($orderjiesuan['createtime']) && !empty($orderjiesuan['createtime'])} -->
+                                    <tr class="even">
+                                    	<td>三好网  于    {$orderjiesuan['createtime']}   结算成功</td>
+                                    </tr>
+                                    <!-- {/if} -->
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table5" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<thead>
+                	<tr>
+                    	<th width="338">商品</th>
+                        <th width="80">单价（元）</th>
+                        <th width="80">数量</th>
+                        <th width="92">物流费用（元）</th>
+                        <th width="80">总价（元）</th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr class="odd">
+                    	<td>
+                        	<img src="/{$productimage['image']}" alt="" />
+                            <p><a href="#">{$product['pname']}</a></p>
+                            <p>{$order['property']}</p>
+                        </td>
+                        <td>{$order['price']}</td>
+                        <td>{$order['quantity']}</td>
+                        <td>{$order['express_price']}</td>
+                        <td>{$order['origin']}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table6" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+                	<tr class="odd">
+                    	<th width="140">买家留言：</th>
+                        <td width="602">{$order['remark']}</td>
+                    </tr>
+                    <tr class="even">
+                    	<th width="140">配送信息：</th>
+                        <td width="602">{$province[0]['name'].' '.$city[0]['name'].' '.$area[0]['name'].' '.$order['street'] . ','. $order['realname'].', '. $order['mobile'].','.$order['phone'].','.$order['postcode']}，</td>
+                    </tr>
+                    <tr class="odd">
+                    	<th width="140">物流信息：</th>
+                        <td width="602"><!-- {if !empty($order['express_name'])} -->快递公司：{$order['express_name']} 运单号：{$order['express_id']}<!-- {/if} --></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table6" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+                	<tr class="odd">
+                    	<th width="140">买　　家：</th>
+                        <td width="600" style="padding:0;">
+                        	<table class="table7" width="100%" border="0" bordercolor="#b61a3f" cellpadding="0" cellspacing="0">
+                            	<tr class="odd">
+                                	<td>三好网账户：{$userbuyer['mobile']}（{$userbuyer['nickname']}）</td>
+                                </tr>
+                                <tr class="even">
+                                    <td>支付通账户：{$userbuyericardpay['payno']}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                    	<th width="140">卖　　家：</th>
+                        <td width="602" style="padding:0;">
+                        	<table class="table7" width="100%" border="0" bordercolor="#b61a3f" cellpadding="0" cellspacing="0">
+                            	<tr class="odd">
+                                	<td>三好网账户：{$usersaler['mobile']}（{$usersaler['nickname']}）</td>
+                                </tr>
+                                <tr class="even">
+                                    <td>支付通账户：{$usersalericardpay['payno']}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

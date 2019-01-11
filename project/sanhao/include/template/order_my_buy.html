@@ -1,0 +1,60 @@
+<!--{include header}-->
+
+<div class="blank108"></div>
+<div class="blank60"></div>
+<div class="w2 clearfix">
+	<div class="ordersDetail clearfix">
+    	<div class="ordersTop"><strong>订单</strong></div>
+        <div class="myTrading">
+        	<div class="omt1"><a href="/order/index.php" class="">我出售的</a><a href="/order/index.php?action=buy" class="cur">我购买的</a></div>
+            <div class="omt2">
+                <ul>
+                    <li class="pname">商品</li>
+                    <li class="pprice">单价</li>
+                    <li class="pamount">数量</li>
+                    <li class="pseller">卖家</li>
+                    <li class="zprice">金额</li>
+                    <li class="pstatus">订单状态</li>
+                    <li class="poperat">操作</li>
+                </ul>
+            </div>
+            <div class="omc">
+             <!--{loop $aorderlist $index $one}-->
+                <ul id="delorderlist_{$one['id']}">
+                    <li class="pname">
+                         <p><a href="/account/productdetail.php?id={$one['pid']}"><img src="/{$one['image']}" alt="{$one['productname']}" /></a><a href="/account/productdetail.php?id={$one['pid']}">{$one['productname']}</a></p>
+                    </li>
+                    <li class="pprice">￥{$one['price']}</li>
+                    <li class="pamount">{$one['quantity']}</li>
+                    <li class="pseller">{$one['saler']}</li>
+                    <li class="zprice">
+                     <!--{if $one['paytype'] == 'jxk'}-->
+                        <p>￥{$one['tatolmoney']}</p>
+                        <p><!--{if $one['express'] == 'y'}-->（含运费{$one['express_price']},手续费￥{$one['charge']}）<!--{else}-->（免运费,手续费￥{$one['charge']}）<!--{/if}--></p>
+                    <!-- {else} -->
+                    	<p>￥{$one['tatolmoney']}</p>
+                        <p><!--{if $one['express'] == 'y'}-->（含运费{$one['express_price']}）<!--{else}-->（免运费）<!--{/if}--></p>
+                    <!-- {/if} -->
+                        
+                    </li>
+                    <li class="pstatus">
+                    	<p><!--{if $one['state'] == 'unpay'}-->未付款<!--{/if}--><!--{if $one['state'] == 'pay'}-->已付款<!--{/if}--><!--{if $one['state'] == 'complete'}-->交易成功<!--{/if}--></p>
+                        <p><a href="/order/buyersdetail.php?id={$one['id']}">订单详情</a></p>
+                    </li>
+                    <!--{if $one['diff_time'] > 0 || $one['paytype'] == 'jxk'}-->
+                    <li class="poperat"><!--{if $one['state'] == 'unpay'}-->等待交享卡支付<!-- {/if} --></li>
+                    <!--{else}-->
+                    <li class="poperat"><!--{if $one['state'] == 'unpay'}--><p>订单失效</p><p><!--<a href="javascript:void(0);" oid="{$one['id']}" class="delorderlist">删除订单</a>--></p><!--{/if}--></li>
+                    <!--{/if}-->
+                </ul>
+          <!--{/loop}-->  
+            </div>
+        <!--{if $count > 20}-->
+        {$pagestring}
+        <!--{/if}-->
+        </div>
+    </div>
+</div>
+<div class="blank40"></div>
+
+<!--{include footer}-->

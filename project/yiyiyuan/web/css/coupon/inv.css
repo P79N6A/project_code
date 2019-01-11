@@ -1,0 +1,33 @@
+html,body{width:100%;height:100%; background: #830411; font-family: "Microsoft YaHei"; position: relative;}
+a{color:#000}
+.wape img {
+    width: 100%;
+    padding: 0;
+    display: block;
+    margin-top: -1px;
+}
+.wape4,.wape5,.wape6{position: relative;}
+.wape4 p{ position: absolute;bottom: 20px;left: 46%; color: #998b50;}
+.wape4.bomt27 p{bottom: 33px;}
+@media (max-width:320px){
+    .wape4 p{bottom: 15px;left: 42%;}
+    .wape4.bomt27 p{bottom: 27px;}
+}
+
+.wape5 .wap_input{ position: absolute;  top:10%; left: 11%; width: 72%;}
+.wape5 .wap_input input{width: 100%; font-size: 1.28rem;padding:10px; border-radius: 5px; margin-top: 10px;  background: #ede084; }
+.wape5 .wap_input button{ width: 43%;
+    position: absolute;
+    top: 62%;
+    right: -21px;background: #ede084;border-radius: 5px;}
+    .wape5 .wap_input button img{ display: block; width: 100%;}
+@media (max-width:320px){
+    .wape5 .wap_input{ top:2%; }
+    .wape5 .wap_input input{padding: 8px 10px;}
+    .wape5 .wap_input button{top: 62px;right: -21px;}
+}
+.wape6 button{position: absolute;top:10px; left: 10%; width: 80%; height: 3.5rem; background: #fff;opacity: 0;}
+.wape6.top5 button{top:5px;}
+.wap3{ position: relative;}
+.wap3 p{ position:absolute; text-align: center; top:5px; width: 100%; font-size: 1.35rem;color: #fff;}
+.wap3 p em{ color: #ede084;}

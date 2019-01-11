@@ -1,0 +1,42 @@
+#畅捷认证支付--补单
+#cjquick runQuery
+畅捷协议支付--补单
+cjxy runQuery
+
+京东快捷支付--补单
+#jd-query runNotify
+#融宝协议查询--补单
+rbxy-query runNotify
+
+#宝付协议补单
+bf-query xypayQuery	
+
+
+#支付宝定时-补单
+repayquery runQuerys
+
+#运营商通知
+operator runNotify
+#数聚魔盒报告查询--补单
+sjt runQuerys
+
+
+#融宝出款
+rbremit runRemits 
+#融宝查询--补单
+rbremit runQuerys
+#融宝通知
+rbremit runNotify
+
+
+
+
+#活体定时--拉取数据
+soupstateless runData
+#活体定时--通知
+soupstateless repayNotify
+
+
+
+
+

@@ -1,0 +1,81 @@
+a,
+b,
+body,
+button,
+dd,
+div,
+dl,
+dt,
+em,
+form,
+h1,
+h2,
+h3,
+h4,
+header,
+input,
+li,
+p,
+span,
+textarea,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: 0
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+html,
+body {
+    height: 100%;
+    position: relative;
+    background: #fff;
+    font-family: "微软雅黑";
+}
+
+.cus_wraper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+}
+/********xiyi  css start********/
+.cus_wraper header p{
+    text-align: center;
+    font-size: 16px;
+color: #444444;
+font-weight: bold;
+margin-top: 12px;
+}
+.cus_wraper header p.cus_t{
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.cus_wraper .cus_content{
+    width: 342px;
+    margin:0 auto;
+    font-size: 14px;
+color: #000000;
+line-height: 22px;
+}
+.cus_content .cus_contitle{
+    font-weight: bold;
+    color: #000000;
+    margin:10px 0;
+}
+.cus_content .cus_txtindent{
+ text-indent: 28px;
+ margin: 8px 0;
+}
+

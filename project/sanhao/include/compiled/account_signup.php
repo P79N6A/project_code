@@ -1,0 +1,47 @@
+<?php include template("header");?>
+
+<div class="blank108"></div>
+<div class="blank60"></div>
+<div class="cRegLogin">
+    <div class="mt"></div>
+    <div class="mc">
+        <h3><strong>注册</strong></h3>
+        <div class="entry clearfix">
+            <div class="fl">
+                <dl class="item">
+                    <dt>手机号码</dt>
+                    <dd><input type="text" name="username" id="username" maxlength="11" class="text" /><em id="username_check"></em></dd>
+                </dl>
+                <dl class="item">
+                    <dt>密码</dt>
+                    <dd><input type="password" class="text" name="password" id="password" /><em id="password_check"></em></dd>
+                </dl>
+                <dl class="item" id="repeatpassword" style="display:none;">
+                    <dt>确认密码</dt>
+                    <dd><input type="password" class="text" name="repassword" id="repassword" /><em id="repassword_check"></em></dd>
+                </dl>
+                <div class="link2"><input type="checkbox" name="agree" id="agree" checked />我看过并同意<a href="/help/agreement.php" target="_blank">三好网用户协议</a></div>
+                <div style="padding-left: 100px">会员充值</div>
+                <div>*注册会员每月5元，充值会员即可享受最新资讯信息</div>
+                <div style="padding-left: 50px">如：苹果冰点换屏价198元起</div>
+                <input type="hidden" name="type" id="username_type" value="2" />
+                <div class="item"><input type="button" id="register_submit" class="btn2" /></div>
+            </div>
+            <div class="fr">
+                <dl class="guide">
+                    <dt>已有三好网账号？</dt>
+                    <dd><a href="/account/login.php">马上登录</a></dd>
+                </dl>
+                <dl class="extra">
+                    <dt>使用合作网站登录</dt>
+                    <!--<dd><a href="#" class="zft">支付通登录</a></dd>-->
+                    <dd><a href="/account/login.php?action=sinalogin" class="sina">微博登录</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="mb"></div>
+</div>
+<div class="blank120"></div>
+
+<?php include template("footer");?>

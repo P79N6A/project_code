@@ -1,0 +1,28 @@
+<?php
+$value = array (
+  'wwwprefix' => 'https://www.yaosanhao.com/',
+  'imgprefix' => 'https://www.yaosanhao.com/',
+  'cssprefix' => 'https://www.yaosanhao.com/',
+  'key' => '9964DYByKL967c3308imytCB',
+  'sitename' => '',
+  'sitetitle' => '',
+  'abbreviation' => '',
+  'couponname' => '',
+  'currency' => '¥',
+  'currencyname' => 'CNY',
+  'timezone' => 'Etc/GMT-8',
+  'invitecredit' => '10',
+  'sideteam' => '3',
+  'conduser' => 0,
+  'partnerdown' => 0,
+  'gzip' => 0,
+  'kefuqq' => '279340198',
+  'kefumsn' => 'hyguo@hotmail.com',
+  'mobileurl' => '',
+  'icp' => '',
+  'statcode' => '',
+  'sinajiwai' => 'http://open.weibo.com/connect',
+  'tencentjiwai' => '',
+  'googlemap' => '',
+);
+?>

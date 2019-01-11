@@ -1,0 +1,292 @@
+html,body{width:100%;height:100%;  font-family: "Microsoft YaHei"; position: relative;}
+.pic_index{}
+.pic_index img{ display: block; margin-top: -1px;}
+.pic_index .active2{ position: relative;}
+.pic_index .active2 span{ position: absolute;top: 53%;left: 59%; color: #fff;font-size: 24px;font-weight: bold;font-style: initial;width: 13%; height: 30px;display: block;text-align: center;}
+.pic_index .active2 a{ position: absolute;width: 57%;height: 4rem;}
+.pic_index .active2 a.ljicj{ top:0; left: 22%;}
+.pic_index .active2 a.yqighl{top:53%; left: 22%;}
+.pic_index .active2 a.hdonggz{top:3px; right: 5%;width: 22%; height: 2rem;}
+
+.pic_index .active2 .jtyqh{ position: absolute; top:32%; left: 24%; color: #ffea37; font-size: 1.35rem;}
+.pic_index .active2 .jtyqh p{ padding-bottom: 5px;}
+.pic_index .active2 .jtyqh p em{ color: #fff; font-size: 1.6rem;}
+.pic_index .active2 a.hdonggz.tfenx{top:73%;}
+
+.widthd{ background: #fffbd8; margin: 5%; border-radius: 5px; padding: 15px; color: #2e2e2e; position:absolute;top: 6px;}
+.widthd h3{ padding: 10px 0; font-size: 1.25rem; font-weight: bold;}
+.widthd p{ font-size: 1.15rem; padding: 5px 0;}
+.lastend{overflow: hidden; color: #c2c2c2; text-align: center;font-size: 1.15rem; line-height: 40px;}
+
+.Hmask {width: 100%;height: 100%;background: rgba(0,0,0,.7); position: fixed;top: 0;left: 0; z-index: 100;}
+.tanchuceng{ position: fixed;top: 0%;left: 0%;border-radius: 5px;z-index: 100;}
+.tanchuceng .close{width: 10%;height: 3rem;position: absolute;top: 18%;right: 7%;}
+.tanchuceng  .contnr{width: 57%; height: 4rem;position: absolute;bottom: 14%;right: 21%;}
+.tanchuceng.fenxang img{ width:72%; margin-left: 20%;}
+
+
+.huodallbh{background:-webkit-gradient(linear,from(#3b0f6f), to(#4d2387));}
+.actve818 .bannerimg img{ width: 100%;}
+.actve818 .certifn {border-top: 1px solid #fdc96c;margin: 30px 5% 10px; padding-bottom: 20px;   }
+.actve818 .certifn h3 { color: #fdc96c; font-size: 1.25rem;text-align: center;width: 30%;background: #3b0d6d;margin: -12px auto 5px;}
+.actve818 .certifn p{ color: #fdc96c; font-size: 1.05rem; padding-top: 10px; line-height: 22px;}
+.actve818 .certifn p.zhgxhh{ text-align: center; color: #6f4078; padding-top: 10px;}
+.actve818 .butmg{ background: #f6345f; margin: 0 3%; }
+.actve818 .tiexiname h4{ text-align: center; font-size: 1.35rem; color: #ff0; font-weight: bold;}
+.actve818 .tiexiname p{ font-size: 1rem; color: #ff0; padding: 15px 9%;}
+
+#overDiv {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    z-index: 11;
+    position: fixed!important;
+    position: absolute;
+    _top: expression(eval(document.compatMode &&
+ document.compatMode=='CSS1Compat') ?
+ documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+ document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+}
+.tancgg{ position: fixed; top:10%; z-index: 100;}
+.tancgg .error{position: absolute;top: 0;right: 2%;width: 30px;height: 28px;}
+.tancgg .buttonbu{position: absolute;bottom: 12%;left: 33%;width: 34%;height: 47px;background: rgba(0,0,0,0);}
+
+/*圣诞活动页面*/
+a{color:#000}
+.egg{
+    -webkit-animation: pointyaobai 2s ease 0s infinite;
+    animation: pointyaobai 2s ease 0s infinite;
+}
+@-webkit-keyframes pointyaobai{
+  0%,20%,40%,60%,80%,100%{transform-origin:bottom center;}
+0%{transform: rotate(0deg);}
+20%{transform:rotate(20deg);}
+40%{transform:rotate(-15deg);}
+60%{transform:rotate(10deg);}
+80%{transform:rotate(-5deg);}
+100%{transform:rotate(0deg);}
+}
+
+.shengdan12 img{ width: 100%;}
+.chenmo{ position: relative;}
+.chenmo .chenm1{ width: 16%;position: absolute; top:-40px; left: 0; z-index: 1;}
+.chenmo .chenm2{ width: 16%;position: absolute;top:-40px; right: 0;z-index: 1;}
+.chenmo .eggegg .egg{ position: absolute; width:25%; overflow: hidden; float:left;z-index: 5;}
+.chenmo .eggegg .egg1{ top:20px; left:8%;}
+.chenmo .eggegg .egg2{top: 8px;left: 36%;width: 28%;}
+.chenmo .eggegg .egg3{top:20px; left:67%;}
+.chenmo .txtxmes{position: absolute; width: 33%;left: 45%;top: -65px;}
+.chenmo .zadjhu{clear: both; text-align: center; color: #fff;padding-top:45%;font-size: 1.3rem;}
+.chenmo .zadjhu em{ font-size: 2.8rem; color: #ffff83;}
+.chenmo .hdguze{display: block; width: 40%; position: absolute; right: 5%;  padding-top: 25px;}
+.bottomdbu{padding-top: 120px;}
+
+.hdgz{ background: url(/images/activity/guizebg.png) no-repeat; width: 100%; height: 100%; background-size: 100% 100%; color: #1b1a20;}
+.hdgz .hegthh{width: 77%;margin: 0 13%;height: 72%;overflow: hidden; position: relative;top: 11%;}
+.hdgz .hegthh .youhuhb {height: 100%;overflow: hidden;overflow-y: scroll; width: 100%;}
+.hdgz .hegthh h3{ font-size: 1.35rem;}
+.hdgz .hegthh p{ font-size: 1.1rem; line-height: 25px;}
+.hdgz .zuzjsqh{position: relative; bottom: -14%;padding-left: 20%;}
+.chenmo .mashyq{ width: 70%; background: rgba(0,0,0,0); margin: 0 15%; margin-top:-15%;}
+.shengdan12.masyaoqc{ width: 100%; height: 100%; background: url(/images/activity/masyaoqc.jpg) no-repeat; background-size: 100% 100%;}
+.chenmo .mashyqc{background: rgba(0,0,0,0); margin: 0 15%; margin-top:125%;}
+.chenmo .yaoqbo{ position:relative; background:rgba(0,0,0,0.7); height: 2.8rem;}
+.chenmo .yaoqbo .bobao{width: 28%;position: absolute; top: 4px; left: 5px;}
+.tanchuceng.shareone{ margin-top: 6%;}
+.tanchuceng.shareone img{ width: 90%; margin: 0 5%;}
+.tanchuceng  .christmas_contnr{width: 47%; height: 3.35rem;position: absolute;bottom: 26%; right: 28%;border: 0px solid #000;}
+.tanchuceng .christmas_close{width: 15%;height: 4rem;position: absolute;top: 0;right: 19%;border: 0px solid #fff;}
+.tanchuceng.christmas_fenxang img{ width: 95%;margin-left: 5%;}
+#christmas_content{height:25px;width:68%;position: absolute;overflow: hidden; top:5px; color: #fff; margin-left: 32%; font-size: 1.2rem;}
+/* 圣诞end */
+
+/*新年活动页面*/
+.yiyyn img{ width: 100%; display: block; margin-top: -1px;}
+
+.bghsezi{background: #df5043; margin: 0 4.2%; margin-top: -1px;}
+
+.bghsezi .button {margin: 0 8%; margin-top: -12px; }
+.bghsezi .button.inouth{ margin-top: -20%; padding-bottom: 6px;}
+.bghsezi .button.inouth button{ background: #fff; color: #444;}
+.bghsezi .button.inouth button input{ width: 90%;margin: 0 5%; text-align: center;font-size: 1.2rem;}
+.bghsezi .button button {width: 100%;background: #fcdb6a;border-radius: 25px;color: #df5043;font-size: 1.25rem; padding: 12px 0; margin-bottom: 25px; font-weight: bold;}
+.bghsezi .button button a{color: #df5043;}
+.bghsezi .button.chaxzjg button{ margin-top: 5px; background: #df5043; color: #fcdb6a; border:2px solid #fcdb6a;}
+.bghsezi .button.chaxzjg button a{color: #fcdb6a;}
+.bghsezi .hzgze{color: #fcdb6a; text-align: center; padding-bottom: 20px; font-size: 1.25rem; overflow: hidden;margin-left: 39%;}
+.bghsezi .hzgze span{float: left;}
+.bghsezi .hzgze a{color: #fcdb6a;}
+.bghsezi .hzgze img{float: left; width: 5%;margin: 5px; }
+
+.bghsezi.guizehd{ padding: 10px 6% 30px;  margin-top: -5rem;}
+.bghsezi.guizehd p.hdgza{padding-bottom: 20px; }
+.bghsezi.guizehd p{color: #fcdb6a;font-size: 1.2rem; line-height: 2.2rem;}
+.bghsezi.guizehd div{ text-align: center; padding: 20px 0; color: #89261e; font-size: 1.2rem; }
+
+.bghsezi.wanxmes .fqjkh{ text-align: center; padding-bottom: 15px; margin-top: -4rem; color: #fcdb6a;}
+.bghsezi.wanxmes .fqjkh .fqik1{ font-size: 1.3rem; padding-bottom: 3px;}
+.bghsezi.wanxmes .fqjkh .fqik2{font-size: 1.8rem; font-weight: bold;}
+.bghsezi.wanxmes .dqayq{ text-align: center; background: #f06659; color:#fcdb6a ; margin: 0 26%; border-radius: 25px; font-size: 1.15rem; padding: 3px 0 5px; margin-bottom: 5px;}
+.bghsezi.wanxmes .wcrwu1{ padding:0 5% 25px;}
+
+
+
+.Hmask_newyear { width: 100%;height: 100%;background: rgba(0,0,0,.7);position: fixed;top: 0;left: 0; }
+.shareone{ position: fixed;top: 0%;left: 0%;z-index: 100;}
+.shareone img{ width: 70%; float: right; }
+
+.tancymia{ position: fixed;top: 0%;left: 0%;border-radius: 5px;z-index: 100;}
+.tancymia img{ width: 90%; margin: 10% 5%;}
+.tancymia .tcerror{width: 10%; height: 3rem;position: absolute;top: 29px;right: 8%;}
+.tancymia .tancone{width: 74%;height: 3.6rem;position: absolute;bottom: 9.5%;left: 13%; }
+
+.tancymia.heihadd .tcerror{right: 12%; height: 2rem;}
+/*新年活动END*/
+
+/*情人节活动*/
+.l-container {width: 100%;margin: 0 auto;position: relative;}
+.l-container div img{ width: 100%; display: block; margin-top: -2px; }
+.l-container div.woyaojlk{ position: relative; }
+.l-container div.woyaojlk a{display: block;position: absolute; color: #fff;top: 0; width: 80%; margin: 0 10%;text-align: center;height: 5rem; line-height: 10rem;  }
+.l-container div.yemxg{ position: relative;}
+.l-container div.yemxg .yemneirong{ position: absolute; background: #fff;width: 80%; margin: 0 5%;top:5%;border-radius: 10px; padding: 20px 5%;}
+.l-container div.yemxg .yemneirong p{ font-size:1rem; color: #4c0029; padding-top: 0px;}
+.l-container div.yemxg .yemneirong p span{font-size:1.6rem; font-weight: bold; }
+
+.valentine_Hmask { width: 100%;height: 100%;background: rgba(0,0,0,.7);position: fixed;top: 0;left: 0; }
+.valentine_tancymia.dangeym{top: 20%;}
+.valentine_tancymia.dangeym img{ width: 95%;margin: 0; margin-right: 5%;}
+.valentine_tancymia.dangeym .tancone{width: 58%; height: 9rem; bottom: 9%; left: 29%;}
+.valentine_tancymia{ position: fixed;top: 0%;left: 0%;border-radius: 5px;z-index: 100; width: 100%;}
+.valentine_tancymia img{ width: 90%; margin: 10% 5%;}
+.valentine_tancymia .tancone{ width: 90%;height: 6rem;position: absolute; bottom: 14%;left: 5%;color: #db0075; text-align: center; font-size: 2rem; line-height: 5rem; }
+.valentine_tancymia .tcerror{position: absolute;right: 10.5%; top: 11%;height: 3rem; width: 10%;}
+.valentine_tancymia .textxmes{color: #db0075;position: absolute; top: 37%; left: 16%; font-size: 1.7rem;    width: 55%; text-align: center;}
+.valentine_tancymia.zuihyge .textxmes{ top:32%;}
+.valentine_tancymia.zuihyge .tbtsi{position: absolute; top: 50%; left: 13%;color: #db0075; font-size: 1rem;width: 66%; text-align: center; }
+.valentine_tanchuceng{ position: fixed;top: 0%;left: 0%;border-radius: 5px;z-index: 100; width: 100%;}
+.valentine_tanchuceng.fenxang img{ width: 85%;margin:20px 5% 0 10%;}
+/*情人节活动END*/
+
+/*提额盛典START*/
+.actvete .bannerimg img{ width: 100%; display: block;}
+.actvete .tebannerbg{display: block; margin-top: -2px; position: relative;}
+.actvete .tebannerbg .tiexqg{position: absolute;top:0; width: 100%;}
+.actvete .tebannerbg .tiexqg .rwu1{ display: block; width: 16%; margin:5px auto;}
+.actvete .tebannerbg .tiexqg .rwuoned{ text-align: center; font-size: 1rem; color:#ffd374 ;}
+.actvete .tebannerbg .tiexqg .yhquan ul { margin: 33% 0 0 10%;}
+.actvete .tebannerbg .tiexqg .yhquan ul li{ float: left; background: #6a5b3e; width: 5%;margin-right: 0.3%; height: 0.6rem;}
+.actvete .tebannerbg .tiexqg .yhquan ul li.light{background: #ffd374;}
+.actvete .tebannerbg .tiexqg .yhquan ol{width: 100%; position: relative;}
+.actvete .tebannerbg .tiexqg .yhquan ol li{width: 15%; position: absolute;}
+.actvete .tebannerbg .tiexqg .yhquan ol li.yh18{top: 15px;left: 17%;}
+.actvete .tebannerbg .tiexqg .yhquan ol li.yh28{top: -90px;left: 32%;}
+.actvete .tebannerbg .tiexqg .yhquan ol li.yh38{top: 15px;left: 46%;}
+.actvete .tebannerbg .tiexqg .yhquan ol li.yh58{top: -90px;left: 60%;}
+.actvete .tebannerbg .tiexqg .yhquan ol li.yh68{top: 15px;left: 75%;}
+@media screen and (max-width:375px){
+	.actvete .tebannerbg .tiexqg .yhquan ol li.yh28{top: -85px;left: 32%;}
+	.actvete .tebannerbg .tiexqg .yhquan ol li.yh58{top: -85px;left: 60%;}
+}
+@media screen and (max-width:320px){
+	.actvete .tebannerbg .tiexqg .yhquan ol li.yh28{top: -75px;left: 32%;}
+	.actvete .tebannerbg .tiexqg .yhquan ol li.yh58{top: -75px;left: 60%;}
+}
+.actvete .buttxt{background: url(../images/activity/tebottombg.jpg) no-repeat bottom center; background-size: 100%;}
+.actvete .buttxt .falimy{ font-size: 1.1rem; color: #594d37; padding: 10px 0 20px; text-align: center; }
+.actvete .buttxt .yyqshy{ text-align: center; padding-bottom: 5px; font-size: 1.1rem;color:#ffd374 ;}
+.actvete  .dwlhbao{ background: #ffd374; width: 90%; margin: 0 5% 40px; border-radius: 5px; color: #040b1a; font-size: 1.35rem; padding: 10px 0; font-weight: bold; }
+.actvete .certifn .bortop{ border-top:1px #ffd374 solid;}
+.actvete .certifn h3 { color: #ffd374; font-size: 1.4rem; font-weight:bold;text-align: left;width: 30%;background: #040b19;margin: -16px 0 5px;}
+.actvete .certifn.hdguize p{ color: #ffd374; font-size: 1rem; line-height: 30px; padding-top: 0;}
+.actvete .certifn.hdguize{ width: 90%; margin: 0 auto;}
+
+.actvete .tebannerbg .tiexqg .dqyqrs{ text-align: center; font-size: 1.4rem;font-weight: bold;color:#ffd374; padding-top: 5%;}
+.actvete .tebannerbg .tiexqg .sanjiao{width: 5%; margin:5px auto 10%;}
+.actvete .tebannerbg .tiexqg .yhquan.newstyle ul{margin: 10% 0 0 10%;}
+.actvete .tebannerbg .tiexqg .yhquan.newstyle ul li{width: 11%;}
+.actvete .tebannerbg .tiexqg .yhquan.newstyle ol li.yh68{ width: 22%; left: 68%;}
+
+#overDivs{background: #000;width: 100%;height: 100%;left: 0;top: 0;filter: alpha(opacity=7);opacity: 0.7;z-index: 11;position: fixed!important; position: absolute;_top: expression(eval(document.compatMode &&document.compatMode=='CSS1Compat') ?documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);}
+.tanchuceng{ position: fixed;top: 0%;left: 0%;border-radius: 5px;z-index: 100;}
+.tanchuceng  img{ width: 85%;margin:20px 5% 0 10%;}
+
+.tancymia{ position: fixed;top: 0%;left: 0%;border-radius: 5px;z-index: 100;}
+.tancymia img{ width: 90%; margin: 20% 5% 0;}
+.tancymia .tcerror{width: 10%; height: 3rem;position: absolute;top:15%;right: 8%;}
+.tancymia .tancone{ width: 80%;height:4rem;position: absolute; bottom: 6%;left: 10%; }
+/*提额盛典END*/
+
+/*一亿元三周年活动 START*/
+.anniversary img{ width: 100%; display: block;}
+.anniversary .anny3{position: relative;}
+.anniversary .anny3 p{ position: absolute; top:34%; width: 100%; text-align: center; color: #ffd200;  font-size: 4rem; font-weight: bold; font-family: "宋体"}
+.anniversary .anny4{position: relative;}
+.anniversary .anny4 a.alink4{position: absolute; top: 0;height: 2rem; width: 28%; left: 12%;}
+.anniversary .anny5{ position: relative; }
+.anniversary .anny5 .contcont{ position: absolute; top:0; margin: 0 10%; width: 80%; color: #42ffd0; }
+.anniversary .anny5 .contcont .shuzi{color: #ffd824; width: 16%; text-align: center; margin-top: 7%; float: left;  }
+.anniversary .anny5 .contcont .dqrenwu{float: left;  margin-top: 7%;}
+.anniversary .anny5 .contcont .dqrenwu span{ color: #ffd824; }
+.anniversary .anny5 .contcont .haoyoumxi{ clear: both; padding-top: 10%; }
+.anniversary .anny5 .contcont .haoyoumxi p{ font-size: 1.3rem; font-weight: bold; text-align: center;padding-bottom: 5px; }
+.anniversary .anny5 .contcont .haoyoumxi p span{ color:#ffd824;  }
+.anniversary .anny7{position: relative; margin-top: 10%; margin-bottom: 10%;   }
+.anniversary .anny7 .buttonlink{position: absolute; top:0; margin:0 10%; width: 80%; }
+.anniversary .anny7 .buttonlink .leftlink{width: 41%; float: left; height: 3rem; background: rgba(0,0,0,0);  }
+.anniversary .anny7 .buttonlink .rightlink{width: 41%; float: right;height: 3rem;background: rgba(0,0,0,0); }
+.anniversary .anny8 { position: relative; }
+.anniversary .anny8 .testmes{ position: absolute; top:0; width: 80%; margin: 0 10%;  color: #42ffd0;}
+.anniversary .anny8 .testmes h3{ font-size: 1.45rem; text-align: center; padding-top: 4%; font-weight: bold;  }
+.anniversary .anny8 .testmes p{ width: 100%; text-align: center; }
+.anniversary .anny8 .testmes p span{color:#ffd824;   }
+.anniversary .anny1{ position: relative; }
+.qimo8{ overflow:hidden; width:100%; position: absolute; top:0; left: 0;}
+.qimo8 .qimo {width:99999999px;; height:30px;}
+.qimo8 .qimo div{ float:left;}
+.qimo8 .qimo ul{float:left; height:30px; overflow:hidden; zoom:1; }
+.qimo8 .qimo ul li{float:left; line-height:30px; list-style:none; }
+.qimo8 li a{margin-right:40px;color:#ffd824;}
+
+/*.tanchuceng{ position: fixed;top: 0%;left: 0%;border-radius: 5px;z-index: 100;}
+.tanchuceng  img{ width: 80%;margin:20px 10% 0 ;}*/
+/*.tancymia{ position: fixed;top: 0%;left: 0%;border-radius: 5px;z-index: 100;}
+.tancymia img{ width: 90%; margin: 20% 5% 0;}
+.tancymia .tcerror{width: 27%; height: 3rem;position: absolute; bottom: 5%; right: 14%;}
+.tancymia.indexelayer{ top:3rem}*/
+.indexelayer img{ width: 90%; margin: 10% 5%; position: relative;}
+.indexelayer .toperror{ width: 10%;height: 3rem;position: absolute;top: 2rem; right: 12%;}
+.indexelayer .bottomlink{width: 74%; height: 4.5rem;position: absolute; bottom: 5rem; left: 13%; }
+.share4{ position: relative;}
+.share4 a{ position: absolute;top: 0; width: 73%;left: 13%;height: 4.5rem;}
+.actrel{ position: relative;}
+.actrel .contcont{ position: absolute; top:0; color: #42ffd0;  width: 90%;margin:10px 5% 0;}
+.actrel .contcont p{line-height: 1.8rem;}
+.actrel .timejpin{ position: absolute; top:0; color: #42ffd0;  width: 90%;margin:6% 5% 0;}
+.actrel .timejpin .timelist{ overflow-y: scroll;}
+.actrel .timejpin .timelist p{ font-size: 1.3rem; border-bottom: 1px solid #42ffd0; height: 4rem; line-height: 4rem; font-weight: bold;}
+.actrel .timejpin .timelist p span{ float: left;}
+.actrel .timejpin .timelist p em{ float: right; color: #ffd200;}
+.actrel .timejpin .bzhu{padding-top: 1rem; font-size: 1rem; line-height: 1.8rem;}
+
+/*一亿元三周年活动 END*/
+
+#content{height:25px;width:70%;position: absolute;overflow: hidden; top:0;}
+#scroll{width:100%;line-height: 25px;position: absolute;top: 0;left: 0;}
+#scroll div{ width:100%;}
+.bgner{background: linear-gradient(to right, #551489,#5e2397,#55158b);}
+.bgyangs{position: relative;}
+.contnry .phooneym{ position: absolute; color: #fff; font-size: 1.2rem; left: 28%;top:1%; }
+.contnry .successbi{width: 100%; position: absolute; top:55%; text-align: center; font-size: 1.45rem; color: #fff;}
+.contnry .successbi span{color: #ffe60f;}
+.contnry .shengyucde{position: absolute; top:63%; left:33%; font-size: 1.45rem; color: #fff;}
+.contnry .shengyucde em{color: #ffe60f;}
+.contnry .shengyucde a{display:inline-block;color: #ffe60f; font-size: 1.3rem; padding-left: 10px;}
+.contnry .shengyucde img{width: 7%;margin-left: 5px;position: absolute;top: 20%;}
+.contnry button{display: block; width: 80%; margin-left: 10%;position: absolute;top: 72%;background: rgba(0,0,0,0);}
+.contnry .hdguize{ position: absolute; bottom:0; right:10%; color: #fff; font-size: 1.25rem;text-decoration: underline;}
+

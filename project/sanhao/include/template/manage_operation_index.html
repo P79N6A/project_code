@@ -1,0 +1,37 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/operation.php?action=list">系统管理</a>&nbsp;&gt;&gt;&nbsp;<!-- {if $func == 'list'} -->操作记录<!-- {else if $func == 'record'} -->登录记录<!-- {/if} --></div>
+        <div class="wrap">
+            <table class="table2" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<thead>
+                	<tr>
+                    	<th width="26">ID</th>
+                        <th width="80">管理员名称</th>
+                        <th width="26">模块</th>
+                        <th width="128">操作日志</th>
+                        <th width="86">IP</th>
+                    </tr>
+                </thead>
+            	<tbody>
+            	<!--{loop $opera $index $one}-->
+                	<tr <!--{if $index%2 != 0}--> class="odd" <!-- {else} --> class="even" <!-- {/if} --> >
+                    	<td>{$one['id']}</td>
+                        <td>{$one['admin']}</td>
+                        <td><!-- {if $one['module'] == 1} -->登录<!-- {/if} --><!-- {if $one['module'] == 2} -->商品<!-- {/if} --><!-- {if $one['module'] == 3} -->管理员<!-- {/if} --></td>
+                        <td>{$one['content']}</td>
+                        <td>{$one['ip']}</td>
+                    </tr>
+                <!--{/loop}-->
+                </tbody>
+            </table>
+            <div class="page clearfix">
+            <!--{if $count > 20}-->
+		       {$pagestring}
+	       <!--{/if}-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

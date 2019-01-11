@@ -1,0 +1,19 @@
+<div class="tPayment vis">
+	<div class="rel">
+        <div class="mt"></div>
+        <div class="mc">
+        	<h3 class="clearfix"><a href="javascript:void(0);" onclick="return X.boxClose();" class="close">X</a><img src="/static/images/sgt.png" alt="" class="sgt" /><strong class="sss">请您在新打开的页面上完成付款。</strong>
+</h3>
+            <div class="entry">
+                <P>付款完成前请不要关闭此窗口。</p>
+                <p>完成付款后请根据您的情况点击下面的</p>
+                <p>按钮。</p>
+            </div>
+            <div class="btns clearfix">
+            	<a href="javascript:void(0);" onclick="location.href='/order/index.php?action=buy';" class="fl">已完成付款</a>
+                <a href="javascript:void(0);" onclick="location.href='/order/question.php?id={$order_id}';" class="fr">付款遇到问题</a>
+            </div>
+            <div class="tback"><a href="/order/check.php?id={$order_id}">返回选择其他支付方式</a></div>
+        </div>
+    </div>
+</div>

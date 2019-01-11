@@ -1,0 +1,266 @@
+html,body{width:100%;height:100%; background: #dfe7ec; font-family: "Microsoft YaHei"; color: #474d74;}
+a{color:#000}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, figure, form, fieldset, legend, input, textarea, p, blockquote, th, td,em{
+margin: 0;padding: 0;list-style: none;-webkit-tap-highlight-color: transparent;font-style: normal;}
+/*我的资料*/
+.newmyzo1{ margin: 5px 5% 0;}
+.newmyzo1 img{ width: 35%;}
+.newself{ background: #fff; position: relative;}
+.newself .dbk_inpL {border-bottom: 1px solid #dfe7ec;border-radius: 5px;background: #fff; padding: 4% 5%;overflow: hidden;}
+.newself .dbk_inpL label {float: left;text-align: left;margin-bottom: 0;font-size: 1.2rem;color: #474d74;}
+.newself .dbk_inpL .allws{float: right;font-size: 1rem;text-align: center; background: #c7c9d5;color: #fff;padding: 1px 0 2px;border-radius: 10px;width: 18%;}
+.newself .dbk_inpL .allws.blue{ background: #0aba90;}
+.newself .dbk_inpL .allws.yellow{ background: #f5b945;}
+.newself .dbk_inpL .allws.reds{ background: #e74747;}
+/*京东 一亿元*/
+.jdall{ font-size: 1.2rem; color: #aaa;}
+.jdall .tsmes {color: #e74747;text-align: center;margin-top:10px;}
+.jdyyy{ background: #fff; position: relative;}
+.jdyyy .jdimg img{ width: 30%; margin: 40px 35% 50px; }
+.jdyyy .dbk_inpL {border-top: 1px solid #e7edf0;border-radius: 5px;background: #fff; padding: 4% 6.3%;overflow: hidden; position: relative;}
+.jdyyy .dbk_inpL .icon_Rem{ position: absolute; right: 3%;width: 7%;}
+.jdyyy .dbk_inpL label {text-align: left;float: left;margin-bottom: 0;font-size: 1.2rem;color: #444;}
+.jdyyy .dbk_inpL input{border: none;float: left;padding-left:5px;font-size: 1.2rem;}
+.jdyyy .dbk_inpL select { width: 72%; background: transparent; -webkit-appearance: none; /*for chrome*/    font-size: 1.2rem; padding-left: 10px;}
+.jdyyy .dbk_inpL .hqyzm{color: #e74747; position: absolute;width: 25%;right: 10px; padding: 5px;border: 1px solid #e74747; text-align: center; border-radius: 50px; bottom: 10px;}
+.button {margin: 0 5%; margin-top: 15px;}
+.button button {width: 100%;background: #c90000;border-radius: 50px;color: #fff;font-size: 1.25rem; padding: 10px 0;}
+.jdyyy.studtyimg  .dbk_inpL label{ text-align: right; width: 26%;}
+.jdyyy .dbk_inpL span.mingzi{ color: #444; padding-left: 10px;}
+.yuedty{ font-size: 1.1rem; margin:20px 5% 10px; color: #444;}
+.regular-checkbox {display: none;}
+.regular-checkbox + label {border: 1px solid #cacece;padding: 7px;position: relative;float: left;margin-right: 10px;  }
+.regular-checkbox:checked + label:after {content: ' ';width: 20px;height: 16px;background: url(../../images/done.png);background-size: 100% 100%;position: absolute;top: -2px;left: -2px;}
+.jdall .clicktzhan{ padding-top: 15px; text-align: right; margin-right: 5%;}
+.jdall .clicktzhan a{color: #3b709e; font-size: 1.2rem;}
+.Hmask {width: 100%; height: 100%;background: rgba(0,0,0,.7); position: fixed;top: 0;left: 0; z-index: 100;}
+.layer_border{width:90%;position: fixed;top:30%;left:5%;border-radius: 5px; z-index: 110;background: #fff;padding: 20px 0 0;}
+.layer_border p{ padding-left: 5%; font-size: 1.25rem; color: #000;}
+.layer_border p span{color: #e74747;}
+.layer_border .border_top{ width: 100%; height: 40px;line-height: 40px; background: #e74747; font-size: 1.3rem; margin-top: 15px; border-radius: 0 0 5px 5px; text-align:center; }
+.layer_border .border_top a{ color: #fff;}
+/*弹窗跳转*/
+.duihsucc,.duihsucc2,.duihsucc3{  width: 90%;position: fixed; top: 20%;left: 5%;border-radius: 5px; z-index: 100;background: #fff;}
+.duihsucc h3{ text-align: center; padding-top: 20px; color: #e74747; font-size: 1.4rem;}
+.duihsucc p{ text-align: center; font-size: 1.1rem; color: #444;}
+.duihsucc p.erweima{ width: 50%; margin-left: 25%;}
+.duihsucc p.smshib{ color: #c2c2c2; margin-top: -10px; font-size: 1rem;}
+.duihsucc button,.duihsucc2 button,.duihsucc3 button{ width: 50%; height: 40px; background: #e74747; color: #fff; font-size: 1.35rem; margin-left: 25%; border-radius: 5px;}
+.duihsucc button.sureyemian,.duihsucc2 button.sureyemian,.duihsucc3 button.sureyemian{ margin-top: 10px; margin-bottom: 20px;}
+.errore{position: absolute;right: 10px;top: 10px;width: 5%;}
+.duihsucc2 p{ text-align: center; font-size: 1.05rem;}
+.duihsucc2 p span,.duihsucc3 p span{ color: #e74747;}
+.duihsucc2 p.xuhua{ padding-top: 30px; font-size: 1.4rem;}
+.duihsucc3 p{ font-size: 1.2rem; text-align: center;}
+.duihsucc3 p.yiyyuan{padding-top: 30px;}
+/*加载样式*/
+.loading{width:26%;position: fixed;top:25%;left:37%;border-radius: 5px; z-index: 110;padding: 20px 0 0;}
+.loading p.pleasesh{text-align:center; color:#fff; padding-top:10px; font-size: 1.25rem;}
+
+/*圈子好友*/
+.frere_content{background: #fff; clear: both;}
+.frecot_left{float: left; width: 94%;background: #fafafa;padding:0 3%;}
+.frecot_left dl{border-bottom: 1px solid #dfe7ec; padding: 10px 0; clear: both; }
+.frecot_left dl:last-child{border-bottom:0;}
+.frecot_left dl dt{float: left; width: 40px; height: 40px; margin-right: 8px; background: #a3a6b9; border-radius: 50%; text-align: center; line-height: 40px; color: #fff; font-size: 1.6rem; }
+.frecot_left dl dd p.left_ddp{position:relative;}
+.frecot_left dl dd p.left_ddp span.txt_name{ line-height: 44px; display: inline-block;width:16%; color: #444;float: left; font-size: 1.25rem;padding-right: 5px;}
+.frecot_left dl dd p.left_ddp span.frered{font-size: 1.1rem;color: #aaa; line-height: 44px;}
+.frecot_left dl dd p.left_ddp span.frered em{ display: inline-block;}
+.frecot_left dl dd p.left_ddp span.frered i{display: inline-block;}
+.frecot_left dl dd p.left_ddp span.frered.esjierh{line-height: 22px;}
+.frecot_left dl dd p.left_ddp span.frered.renzhou{ color: #444; font-size: 12px;text-align: right;display: block;}
+.frecot_left dl dd .mayname{ font-size: 1.25rem;}
+.frecot_left dl dd .mayphone{ font-size: 1rem; color: #afb1be;}	
+	/*没有好友*/
+.nonefriend{background:#fff;}
+.nonefriend .tuone{ width: 60%; padding:20px 20%;}
+.nonefriend .tutwo{width: 50%;  padding:0 25% 20px;}
+.nonefriend p{ text-align: center; font-size: 1rem;}
+.nonefriend p em{ color: #c90000;}
+.nonefriend button{ background: #c90000; margin-top: 10px; font-size: 1.25rem;  width:40%;  margin-left: 30%; color: #fff; border-radius: 50px; padding:6px 0;    margin-bottom: 15px;}
+
+.qzhgoodfri{background:#fff; }
+.qzhgoodfri li{  width:33.3%; text-align:center; float:left; border-bottom: 1px solid #dfe7ec;}
+.qzhgoodfri li a{ color:#888; display:block; padding:10px;background: #fff}
+.qzhgoodfri li a:hover{ text-decoration:none;}
+.qzhgoodfri li .icon{ width:35px; height:35px; background-position:center center; background-repeat:no-repeat; background-size:cover; display:inline-block; margin:0 auto;}
+.qzhgoodfri li em{ font-size:1.1rem; padding-top: 2px; color:#4eb0ef; display:block;}
+.qzhgoodfri li em.phonecolor{ color: #0aba90;}
+.qzhgoodfri li.item-1 .icon{ background-image:url(../images/quzi1.png); background-size:35px 35px;}
+.qzhgoodfri li.item-2 .icon{ background-image:url(../images/quzi2.png); background-size:35px 35px;}
+.qzhgoodfri li.item-3 .icon{ background-image:url(../images/quzi3.png); background-size:35px 35px;}
+.qzhgoodfri li a{ border-bottom: 2px #fff solid;}
+.qzhgoodfri li a.actve { border-bottom: 2px #4eb0ef solid;}
+.qzhgoodfri li a.actvess{border-bottom: 2px #0aba90 solid;}
+
+/*借款页面好友借款的状态*/
+.allnewjkuan .nav_jk{ margin-top: -5px;}
+.allnewjkuan .nav_jk .item {width: 50%;padding: 10px 0;text-align: center;color: #fb4051;background: #f0f7f8;border-bottom: 2px solid #d5d5d5;font-size: 1.25rem;float: left;}
+.allnewjkuan .nav_jk .item.on {color: #fff;background: #ff939d;border-bottom: 2px solid #fb4051;}
+	/*待还款*/
+.shezhiminay{ background: #fff; overflow: hidden; padding: 15px 0;}
+.shezhiminay .imgimgnew{ margin: 10px 12% 5px;}
+.shezhiminay .txtsty div{ width: 33%; text-align: center; float: left;font-size: 1.2rem; color: #474d74;}
+.shezhiminay .txtsty div.bse{color: #c90000; font-size: 1.25rem;}
+.shezhiminay .wenzicont{ padding: 0 3%; text-indent: 24px; font-size: 1.1rem; padding-top: 10px; color: #c90000;}
+.zuoyminew{ clear: both;}
+.zuoyminew .amountyem{padding: 10px 6.25% 0;margin-bottom:5px; height:30px; font-size: 1.1rem;}
+.zuoyminew .amountyem span{float:left;line-height:30px;}
+.zuoyminew .amountyem  button{float:right; width:20%; background:#e74747;color:#e74747;  border-radius:5px;padding:5px 0;border:0; color:#fff;}
+.zuoyminew .daihakun{ clear: both; background: #fff; margin-top: 10px; padding: 10px 0; width: 100%;}
+.zuoyminew .daihakun img.daihk{ width: 25%;}
+.zuoyminew .daihakun img.daihk2{ margin: 10px 5%; width: 90%;}
+.zuoyminew .daihukan_cont{ margin-top: 5px; background: #fff; padding: 10px 5%;}
+.zuoyminew .daihukan_cont .daoqihk{border-radius: 5px; padding: 20px 10px; border:1px solid #c2c2c2; color: #474d74; font-size: 1.25rem;}
+.zuoyminew .daihukan_cont .daoqihk span{ color: #c90000; font-size: 3rem; font-weight: bold; vertical-align: middle; }
+.zuoyminew .daihukan_cont .rowym{ background: #fff;line-height: 48px;; clear: both; border-bottom: 1px solid #c2c2c2; overflow: hidden;}
+.zuoyminew .daihukan_cont .rowym:last-child{ border-bottom: 0;}
+.zuoyminew .daihukan_cont .rowym .corname{ float: left; color: #b2b4c1; font-size: 1.25rem;}
+.zuoyminew .daihukan_cont .rowym .corliyou{float: right; color: #474d74;font-size: 1.25rem;}
+.zuoyminew .bgrey{ width: 90%; background: #c90000; margin:20px 5% 0; padding: 12px 0; border:1px #c90000 solid; font-size: 1.4rem; color: #fff; border-radius: 50px; }
+.zuoyminew .hanhaoyou{ background: #fff; color:#c90000; }
+.zuoyminew .marbot100{height: 100px; }
+
+/*担保借款*/
+.edbuz{ width: 100%; background: #fff;position: relative; padding-bottom: 10px; overflow: hidden;}
+.edbuz .eduyman .yjyedone{ padding: 20px 5% 5px; font-size: 1.2rem;}
+.edbuz .eduyman .yjyedone span{ color: #c90000;}
+.edbuz .eduyman .yjyedtwo{ text-align: right; padding-right: 5%; font-size: 1rem; color: #c2c2c2;}
+.mainyubys {padding: 0px 5%;position: relative;clear: both;margin-top: 10px;}
+.mainyubys input{ font-size: 1.2rem;}
+.mainyubys .nameyemtu{font-weight: normal;border: 1px solid #cdcdcd;border-radius: 5px;font-size: 1.2rem;background: #fff;padding: 3% 5%;overflow: hidden;margin-top: 20px;clear: both;}
+.mainyubys .nameyemtu input{ width: 72%; padding-left: 10px;}
+.mainyubys .nameyemtu.yemianm0{ margin: 0;}
+.mainyubys .nameyemtu.yemianm0 input{ width: 68%; padding-left: 10px;}
+.mainyubys .zuoyouy{ margin: 10px 0; overflow: hidden;}
+.mainyubys .zuoyouy .timetian {width: 40%;border: 1px solid #cdcdcd;border-radius: 5px;font-size: 1.2rem;background: #fff;overflow: hidden;float: left;padding: 3% 3% 3% 5%;}
+.mainyubys .zuoyouy .timetian .tianshu721{width: 45%; text-align: center;}
+.mainyubys .zuoyouy .timetian label img{ width: 5%; width: 14%;margin-left: 2px;}
+.mainyubys .zuoyouy .dis_mask {    width: 100%;height: 100%;background: #fff;background: #efefef;opacity: 0.7;position: absolute;top: 0; left: 0;}
+.mainyubys .daoqihk{ font-size: 1.15rem; clear: both; text-align: right; margin-top: 10px; color: #c90000;}
+#geh,#qx{ position: relative;}
+.onoffswitch {position: absolute;top:25%;right:10%; width: 40px;float: right;padding: 0;-webkit-user-select:none;  -moz-user-select:none; -ms-user-select: none;}
+.onoffswitch-checkbox {display: none;}
+#geh .onoffswitch-label {width:40px;display: block;  overflow: hidden; cursor: pointer;border-radius: 15px;margin-bottom: 0;}
+.onoffswitch-inner {width: 200%; margin-left: -100%;-moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;-o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;}
+.onoffswitch-inner > div {float: left; width: 50%; height: 20px; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.onoffswitch-inner .onoffswitch-active {background-color: #c90000; }
+.onoffswitch-inner .onoffswitch-inactive {background-color: #c2c2c2;}
+.onoffswitch-switch {width: 18px; height:18px;background: #FFFFFF;border-radius: 50%;position: absolute; top: 1px; bottom: 0;right: 21px; -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {margin-left: 0;}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {right: 1px;}
+.btntn {width: 100%;background-color: #c90000;color: #fff;font-size: 1.3rem;padding: 10px 0;border-radius: 5px;border: none;margin-top: 10px;}
+.ckdqjk{ background: #fff; color: #c90000; border:1px solid #c90000;}
+.tchucye,.shezhizfma {color: #474d74;position:fixed;z-index: 100;top:30%; left:5%;border-radius: 5px;background: #fff;width: 90%;text-align: center;padding-top: 20px;font-size: 1.3rem;line-height: 2rem;}
+.tchucye .lingqv,.shezhizfma .lingqv {background: #c90000;width: 88%; margin: 5px 6% 10px;height: 35px;line-height: 35px;border-radius: 5px;color: #fff;font-size: 1.25rem;}
+.tchucye .tixshbs{ font-size: 1.2rem; font-weight: bold;color: #444;}
+.tchucye .gmaied{ font-size: 1.05rem; color: #444;}
+.tchucye .yshong{ color: #c90000; font-size: 1rem; padding-top: 10px;}
+.tchucye .yhqv{ text-align: right; color: #c2c2c2; font-size: 1.2rem; padding:0 5% 10px 0;}
+/*新浪支付图片*/
+.zuoyminew .qinlingqv{margin: 12px 5% 5px;background: #c90000;padding: 10px 0;text-align: center;font-size: 1.25rem; color: #fff;width: 90%; border-radius: 50px;}
+.shezhizfma{ padding-bottom: 10px;}
+.shezhizfma p{ font-size: 1.2rem; color: #444;}
+.shezhizfma p em{color: #c90000;}
+.shezhizfma .lingqv { margin-top: 20px;width: 70%;border-radius: 50px;}
+.successmima{ margin: 30px 5%;}
+.successmima .wancgend {margin: 15px 0;background: #c90000; padding: 10px 0;text-align: center;font-size: 1.25rem;color: #fff;width: 100%;border-radius: 50px;}
+.jdyyy.danweimes{ margin-top: 10px;}
+.jdyyy.studtyimg.hengyames  .dbk_inpL label{ width: 22%;}
+.jdyyy.danweimes .dbk_inpL label{ width: 22%;}
+.jdyyy.danweimes .dbk_inpL input{ width: 70%;}
+.jdyyy .dbk_inpL .dibujtou{ width: 5%;position: absolute; right: 3%; top:40%;}
+.jdyyy.ximgxtel{ margin-top: 10px;}
+.jdyyy.ximgxtel .dbk_inpL label{ width: 13%;}
+.jdyyy.ximgxtel .dbk_inpL input{ line-height: 22px;}
+.jdall .qingbingd{padding-top: 10px; margin-left: 5%;}
+.jdyyy .dbk_inpL .selectList select{ width: 24%;}
+
+/*还款成功页*/
+.hkcguy{ background: #fff; padding: 0 5%;}
+.hkcguy .click{width:20%; margin-left:40%; padding-top: 20px;}
+.hkcguy p{font-size: 1rem; border-bottom: 1px solid #c2c2c2; padding: 10px 0;}
+.hkcguy p span{ color: #E74747;}
+button.btntn.queding{width: 90%; margin: 30px 5%; border-radius:50px;}
+
+
+/*逾期次数*/
+.shezhiminay .newyuqi{overflow: hidden; padding-bottom: 10px;}
+.shezhiminay .newyuqi img{ float: left;}
+.shezhiminay .newyuqi p{color: #c90000; float: right; padding:5px 5%;}
+/*还款页面*/
+.haimoney{ background: #fff; padding: 10px 5%;}
+.haimoney p.haitxt{ text-align: left; color: #c90000; font-size: 2.5rem; padding-bottom:5px;font-weight: normal;}
+.haimoney p.haitxt em{ font-size: 1.2rem;font-weight: normal;}
+.haimoney p.hailast{text-align: right;}
+.jinemes{ clear: both; font-size: 1.2rem; margin: 10px 0; width: 90%; background: #fff;padding: 10px 5%;}
+.jinemes input{ display: inline-block; padding-left: 10px; width: 80%;}
+.haikfshi{ font-size: 1.25rem;padding: 10px 5%; position: relative;}
+.haikfshi a{color: #C90000; text-decoration: underline;position: absolute; right: 5%; display: block; float: right;}
+.fukfsi {border-radius: 5px;z-index: 100;background: #fff; width: 100%;  margin-top: 10px;}
+.fukfsi .errore{display:block;position: relative; top:0; left:0; border-bottom:1px #f0f4f6 solid; width: 100%; color: #aeb1c2;  }
+.fukfsi .errore span{display: block;text-align: left; font-size: 1rem; padding: 10px 5%;}
+.fukfsi .gzmess{overflow: hidden; border-bottom: 1px solid #f0f4f6;}
+.fukfsi .gzmess .ymxinxi{ position: relative;}
+.fukfsi .gzmess .ymxinxi p{ width:7% ; float: left;margin: 10px 10px 8px 5%;}
+.fukfsi .gzmess .ymxinxi span{ float: left; font-size: 1.1rem; margin-top: 10px; color: #02ba0e;}
+.fukfsi .gzmess .ymxinxi span.bankzf{ color: #5b8bf7;}
+.fukfsi .gzmess .ymxinxi span.xinxiazf{ color: #ff914e;}
+.fukfsi .gzmess .ymxinxi em{ display: block; width: 4%; position: absolute; top:10px; right: 5%;}
+.fukfsi .gzmess.yumendyu p img{ width: 85%;}
+.txtxtexs .chakan{font-size: 1rem;text-align: center;padding: 10px 32%; height: 2rem;}
+.txtxtexs .chakan span{float: left;display: inline-block;float: left;}
+#demo12 {display: inline-block;border: 6px solid #fff;border-top-color: #444;width: 0;height: 0;float: left; margin: 6px  0 0 5px;}
+#demo16{position: relative;}
+#demo16:after, #demo16:before {margin-top: 4px;border: 8px solid transparent;border-left: 10px solid #dfe7ec;width: 0;height: 0;position: absolute;top: 0;right: -19px; content: ' '}
+#demo16:before {border-left-color: #C90000;right: -21px;}
+
+/*付款方式弹窗*/
+.ttfukfsi {width: 90%;position: fixed;top: 10%;left: 5%;border-radius: 5px;z-index: 100;background: #fff;}
+.ttfukfsi .errore{ position: relative; top:0; left:0; border-bottom:1px #f0f4f6 solid; width: 100%; color: #444;}
+.ttfukfsi .errore img{position: absolute; left:6%; top: 15px; width: 4%;}
+.ttfukfsi .errore span{display: block; width: 100%; text-align: center; font-size: 1.25rem; padding: 8px 0;}
+.haimoneys{ border-bottom: 1px solid #f0f4f6; padding: 10px 0;}
+.haimoneys p.haitxts{ text-align: center; color: #c90000; font-size: 2.5rem; padding-bottom:5px;font-weight: normal;}
+.haimoneys p.haitxts em{ font-size: 1.2rem;font-weight: normal;}
+.tuika{margin-bottom:20px;}
+.tuika a{ display: block; overflow: hidden;border-bottom:1px #f0f4f6 solid ; position: relative; padding: 5px 0;}
+.bank_nn .bank2 img{ float: left; width:10%;padding: 0 5px 0 5%;}
+.bank_nn .sendtwo{ float: left; margin-top:0.5rem;}
+.bank_nn p{ display: inline-block; font-size: 1.1rem;color: #474d74;}
+.bank_nn p span{background: #e74747; color: #fff; font-size: 1rem; display: inline-block; padding: 0 7px; border-radius: 50px; margin: 0 5px;}
+.bank_nn p em{ font-size: 1rem;}
+.bank_nn p.weihaom{color: #939ab0; font-size: 1rem; display: block;}
+.bank_nn img.rightjt{ position: absolute;width: 3%;right: 5%;top: 1.2rem;}
+.ttfukfsi button.queding{ background: #c90000;  color: #fff; border-radius: 20px; font-size: 1.3rem; width: 80%; margin: 0px 10% 15px; height: 3rem;}
+.ttfukfsi .addbank{ overflow: hidden; padding-bottom: 2rem; display: block;}
+.ttfukfsi .addbank img{float: left;margin: 2px 2% 0 33%; width: 5%;}
+.ttfukfsi .addbank span{ float: left; color: #474d74; font-size: 1.1rem;}
+
+
+.haimoney{ position: relative;}
+.haimoney .addawh{ position: absolute; right: 0; font-size: 0.9rem; color: #c90000;}
+.haimoney .addawh img{ width: 10%; margin-right: 5px;}
+.xuqhk{ position:fixed; top:20%;left: 5%; background: #fff; width: 90%; z-index: 101; padding: 15px 0; border-radius: 5px;}
+.xuqhk h3{ padding: 5px 4%; font-size: 1.25rem; font-weight: bold;}
+.xuqhk p{padding: 0 4%; font-size: 0.9rem;}
+.xuqhk button{background: #c90000;  color: #fff; border-radius: 20px; font-size: 1.3rem; width: 60%; margin: 20px 20% 5px; height: 3rem;}
+.haimoney .yiyq{ position: absolute; right: 5%; top:2rem;border: 1px solid #0aba90; color: #0aba90; padding: 8px 18px; border-radius:30px; font-size: 1.1rem;}
+.zuoyminew .daihukan_cont .rowym.addha{ line-height: 35px; font-size: 1rem;}
+.zuoyminew .daihukan_cont .rowym.addha .corname{font-size: 1rem; color: #484e75;}
+.zuoyminew .daihukan_cont .rowym.addha .corliyou{font-size: 1rem; color: #484e75;}
+.tuika .jianzl{background: #e7e7e7;}
+.bank_nn img.zbzchi{ position: absolute;top: 0;width: 30%;right: 2%;}
+
+
+.duihsucc{width: 90%;position: fixed; top: 20%;left: 5%;border-radius: 5px; z-index: 100;background: #fff; color: #444;}
+.duihsucc button{ width: 80%; height: 40px; background: #c90000; color: #fff; font-size: 1.2rem;border-radius: 30px;}
+.duihsucc button.sureyemian{ margin: 15px 10% 20px;}
+.duihsucc p{ text-align: center; font-size: 1rem;}
+.duihsucc p.xuhua{ padding:30px 0 5px; font-size: 1.25rem;}
+.duihsucc p span{ color: #c90000;}
+.duihsucc.hkaapp button{ width: 40%; margin: 15px 0 15px 7%;  height: 35px; line-height: 33px; font-size: 1.1rem; border:1px solid #c90000;}
+.duihsucc.hkaapp button.xzai{ border:1px solid #c90000; color: #c90000; background: #fff;}
+.duihsucc .margbor{ margin-top: 10px; }
+.duihsucc .margbor .dbk_inpL{ border-bottom: 1px solid #e7edf0;}

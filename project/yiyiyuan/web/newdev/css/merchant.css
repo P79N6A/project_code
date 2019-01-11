@@ -1,0 +1,40 @@
+html,body{position: absolute; background: #e7edf0; font-family: "Microsoft YaHei"; width: 100%;}
+
+/*借款记录*/
+.jiekmeg{ background: #fff;border-bottom:1px #dfe7ec solid; height: 3.5rem; line-height: 3.5rem;}
+.jiekmeg h3{ float: left; width: 30%; margin: 0 10%; height: 3.4rem; text-align: center; font-size: 1.3rem;}
+.jiekmeg h3.changehover{color: #c90000;border-bottom: 2px solid #c90000;  }
+.message{width: 100%; margin: 0; background: #fff; }
+.message .mesone{ width: 90%; clear: both; height: 4rem; margin:0 5%; padding: 5px 0; border-bottom:1px #dfe7ec solid; }
+.message .mesone .mesone2{float:left;color: #aaa;}
+.message .mesone .mesone2 p{ font-size: 1.25rem; color: #474d74;}
+.message .mesone .mesone3{ width: 22%;float:right;}
+.message .mesone .mesone3 p{text-align: center; padding: 2px 0; border-radius: 20px; margin-top: 18%;}
+.message .mesone .mesone3 p.green{border:1px solid #37c175; color: #37c175;}
+.message .mesone .mesone3 p.blue{border:1px solid #31b3f6; color: #31b3f6;}
+.message .mesone .mesone3 p.redred{border:1px solid #f4645f; color: #f4645f;}
+.message .mesone .mesone3 p.redyuq{border:1px solid #f4645f; color: #f4645f;}
+.message .mesone .mesone3 p.grey{border:1px solid #c1c1c1; color: #c1c1c1;}
+
+
+.Hmask {width: 100%; height: 100%;background: rgba(0,0,0,.7); position: fixed;top: 0;left: 0; z-index: 100;}
+.duihsucc{width: 90%;position: fixed; top: 20%;left: 5%;border-radius: 5px; z-index: 100;background: #fff; color: #444;}
+.duihsucc button{ width: 80%; height: 40px; background: #c90000; color: #fff; font-size: 1.2rem;border-radius: 30px;}
+.duihsucc button.sureyemian{ margin: 15px 10% 20px;}
+.duihsucc p{ text-align: center; font-size: 1rem;}
+.duihsucc p.xuhua{ padding:30px 0 5px; font-size: 1.25rem;}
+.duihsucc p span{ color: #c90000;}
+.duihsucc .margbor{ margin-top: 10px; }
+.duihsucc .margbor .dbk_inpL{border-bottom: 1px solid #e7edf0; height: 3rem;border-top: 1px solid #e7edf0; line-height: 3rem;}
+.duihsucc .tsmes {color: #c90000;text-align: center; margin-top: 0.7rem;font-size: 0.916rem;}
+.duihsucc .nzsdsm {padding-left: 5%; height: 3rem;;}
+.duihsucc .nzsdsm .dbk_inpL label {text-align: left;float: left;margin-bottom: 0;font-size: 1.2rem;color: #444;}
+.duihsucc .nzsdsm .dbk_inpL input{border: none;float: left;padding-left:5px;font-size: 1.2rem;line-height:2.9rem;}
+
+.bohomeg{ padding-bottom: 6%; }
+.bohomeg .iconjth{position: absolute;width: 7%;right: 5%;top: 6%;}
+.bohomeg h3{ font-size: 1.3rem; color: #c90000; margin: 0 5%; padding: 4% 0; border-bottom: 1px solid #c2c2c2;}
+.bohomeg p{ text-align: left; margin: 0 5%;}
+.bohomeg .bhtime{ font-size: 1rem; color: #c2c2c2; padding-top: 5px;}
+.bohomeg .sfmiao{ font-size: 1.1rem; color: #444; padding-bottom: 5%;}
+.bohomeg button.yesknow{ width: 40%; height: 40px; background: #c90000; color: #fff; font-size: 1.2rem;border-radius: 30px; margin-left: 55%;}

@@ -1,0 +1,50 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/modelsmanage.php?action=list">系统管理</a>&nbsp;&gt;&gt;&nbsp;模块管理</div>
+        <div class="wrap">
+        <form action="/manage/order.php?action=list" method="post" id="excel_form_button">
+            <table class="table" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+                <tbody>
+                  <tr class="odd">
+                        <td style="padding-left:8px;">
+                        	<input type="button" value="添加" onclick="window.location.href='/manage/modelsmanage.php?action=add'" class="btn btn2" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </form>
+            <table class="table2" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<thead>
+                	<tr>
+                    	<th width="26">ID</th>
+                        <th width="80">模块名称</th>
+                        <th width="120">模块描述</th>
+                        <th width="40">模块排序</th>
+                        <th width="148">创建时间</th>
+                        <th width="80">操作</th>
+                    </tr>
+                </thead>
+            	<tbody>
+            	<!--{loop $models $index $one}-->
+                	<tr <!--{if $index%2 != 0}--> class="odd" <!-- {else} --> class="even" <!-- {/if} --> >
+                    	<td>{$one['id']}</td>
+                        <td>{$one['name']}</td>
+                        <td>{$one['desc']}</td>
+                        <td>{$one['sort']}</td>
+                        <td>{$one['created']}</td>
+                        <td><a href="/manage/modelsmanage.php?action=detail&id={$one['id']}">详情</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manage/modelsmanage.php?action=update&id={$one['id']}">修改</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="models_del_button"  href="javascript:void(0);">删除</a></td>
+                    </tr>
+                <!--{/loop}-->
+                </tbody>
+            </table>
+            <div class="page clearfix">
+            <!--{if $count > 20}-->
+		       {$pagestring}
+	       <!--{/if}-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

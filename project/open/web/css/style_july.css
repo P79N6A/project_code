@@ -1,0 +1,330 @@
+*{
+	margin:0;
+	padding:0;
+}
+.clearfix{
+	clear: both;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.container{
+	position: relative;
+	height: 100%;
+}
+.pic_bg{
+	position: absolute;
+	top:0;
+	left:0;
+}
+#chooseImage{
+	max-width: 90%;
+	max-height:90%;
+	z-index: 10;
+	border: 2px solid #fff;
+	margin-top: 5px;
+	transform:rotate(2deg);
+	-ms-transform:rotate(2deg); 	/* IE 9 */
+	-moz-transform:rotate(2deg); 	/* Firefox */
+	-webkit-transform:rotate(2deg); /* Safari 和 Chrome */
+	-o-transform:rotate(2deg); 
+}
+.file-div {
+	width: 59%;
+	height: 128px;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	top:26%;
+}
+.btn-div {
+	width: 69%;
+	position: absolute;
+	top:48%;
+	left:50%;
+	margin-left: -35%;
+}
+.file {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 12;
+	top:0;
+	left: 0;
+}
+.btn1{
+	width: 100%;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top:0;
+	left:0;
+	z-index: 50;	
+}
+.form{
+	width:240px;
+	top:30%;
+	left:50%;
+	margin-left: -140px;
+	position: fixed;
+	z-index: 51;
+	background: url(../images/sea_bg.png);
+	background-size: 100% 100%;
+	padding: 20px;
+}
+.form .phoneNum{
+	width:235px;
+	padding: 10px 0 10px 5px;
+	border: none;
+	background: #fff;
+	border-radius: 5px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.form .code{
+	width:46%;
+	padding: 10px 0 10px 5px;
+	border: none;
+	background: #fff;
+	font-size: 14px;
+	float: left;
+	border-radius: 5px;
+}
+.form .codeBtn{
+	width:46%;
+	padding: 10px 0 10px 5px;
+	border: none;
+	background: #f5456f;
+	color: #fff;
+	font-size: 14px;
+	float: right;
+	text-align: center;
+	border-radius: 5px;
+}
+.form .link_1{
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	background: #f5456f;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-top: 10px;
+	display: block;
+}
+.form img{
+	position: absolute;
+	top:-75px;
+	left:5px;
+	width:100px;
+}
+.trees{
+	width:80%;
+	position: absolute;
+	top:15%;
+	left:50%;
+	margin-left: -40%;
+	z-index: 10;
+}
+.trees img{
+	width:44%;
+	margin-top: 8%;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.title{
+	position: absolute;
+	top:3%;
+	left:0;
+	z-index: 10;
+}
+.txt1{
+	width:80%;
+	font-size: 16px;
+	color: #ed567a;
+	position: absolute;
+	top:54%;
+	left: 50%;
+	margin-left: -40%;
+}
+.show{
+	width:240px;
+	height:36px;
+	position: absolute;
+	top: 68%;
+	left:50%;
+	margin-left: -130px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 36px;
+	color:#f5456f;
+	padding: 0px 5px;
+	overflow: hidden;
+	border-radius: 5px;
+	border:1px solid #f5456f; 
+}
+.btn2{
+	width: 69%;
+	position: absolute;
+	bottom:12%;
+	left:50%;
+	margin-left: -35%;
+}
+.btn3{
+	width: 69%;
+	position: absolute;
+	bottom:3%;
+	left:50%;
+	margin-left: -35%;
+}
+.txt2{
+	width:100%;
+	font-size: 16px;
+	color: #ed567a;
+	position: absolute;
+	top:26%;
+	left: 0;
+	text-align: center;
+}
+.heart{
+	color: #ed567a;
+	font-size: 16px;
+	position: absolute;
+	width:100%;
+	text-align: center;
+	top:65%;
+	font-weight: bold;
+}
+.n24{
+	font-size: 24px;
+}
+.heart .left_h,.heart .right_h{
+	display: inline-block;
+	vertical-align: middle;
+	width: 14px;
+}
+.heart .left_h{
+	margin-right: 3px;
+}
+.heart .right_h{
+	margin-left: 5px;
+}
+.img1{
+	position: absolute;
+	top:2%;
+	left:0;
+}
+.pTxt1{
+	position: absolute;
+	top:12%;
+	left:0;
+}
+.light{
+	width:100%;
+	position: absolute;
+	top:-5%;
+	left:0;
+}
+.prizeImg{
+	width:38%;
+	position: absolute;
+	top:24%;
+	left:50%;
+	margin-left: -19%;
+}
+.wb2{
+	width:77%;
+	height:40px;
+	background: url(../images/inpBg.png);
+	background-size: 100% 100%;
+	position: absolute;
+	top:45%;
+	left:50%;
+	margin-left: -40%;
+	padding-left: 3%;
+	font-size: 14px;
+	border:none;
+}
+.btn4{
+	width: 69%;
+	position: absolute;
+	top:56%;
+	left:50%;
+	margin-left: -35%;
+}
+.ma{
+	position: absolute;
+	width:28%;
+	bottom: 10%;
+	left:50%;
+	margin-left: -14%;
+}
+.guide{
+	width:100%;
+	position: fixed;
+	top:5%;
+	z-index: 51;
+}
+.btn5{
+	width: 69%;
+	position: absolute;
+	bottom:7%;
+	left:50%;
+	margin-left: -35%;
+}
+.cj{
+	position: absolute;
+	top:2%;
+}
+.hidePrize{
+	display: none;
+	width:0;
+	height:0;
+	position: absolute;
+	top:50%;
+	left:50%;
+	z-index: 50;
+	opacity: 0;
+}
+.upLoadImg{
+	max-width: 56%;
+	max-height:138px;
+	z-index: 10;
+	border: 2px solid #fff;
+	position: absolute;
+	top:26%;
+	left:50%;
+	margin-left: -28%;
+	transform:rotate(2deg);
+	-ms-transform:rotate(2deg); 	/* IE 9 */
+	-moz-transform:rotate(2deg); 	/* Firefox */
+	-webkit-transform:rotate(2deg); /* Safari 和 Chrome */
+	-o-transform:rotate(2deg); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

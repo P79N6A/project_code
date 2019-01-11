@@ -1,0 +1,1 @@
+path(调用路径),version(接口版本号),tokenid(访客tokenid),app_version(app版本号),user_id(访客UserId),uuid(访客uuid),phone_model(手机型号),source(来源),gps(GPS),net(网络类型),mac(访客mac),system_version(手机操作系统版本),imei(访客),ip(访客ip),time(访问时间)

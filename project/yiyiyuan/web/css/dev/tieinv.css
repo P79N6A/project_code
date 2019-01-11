@@ -1,0 +1,8 @@
+body{width:100%;height:100%; background: #ffdf50; font-family: "Microsoft YaHei";}
+a{color:#000}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, figure, form, fieldset, legend, input, textarea, p, blockquote, th, td,em{
+margin: 0;padding: 0;list-style: none;-webkit-tap-highlight-color: transparent;font-style: normal;}
+img{-webkit-user-select:none;-webkit-touch-callout:none;}
+
+
+.haveCard{}

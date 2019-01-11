@@ -1,0 +1,10 @@
+<?php include template("header");?>
+
+<div class="blank108"></div>
+<div class="error404">
+	<div class="w2 clearfix">
+    	<a href="/" class="backhome">返回首页</a>
+    </div>
+</div>
+
+<?php include template("footer");?>

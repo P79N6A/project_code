@@ -1,0 +1,121 @@
+html,body{width:100%;height:100%; background: #e7edf0;}
+#overDiv{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;/*FF IE7*/
+    filter:alpha(opacity=60);/*IE*/
+    opacity:0.6;/*FF*/
+    z-index:11;
+    position:fixed!important;/*FF IE7*/
+    position:absolute;/*IE6*/
+    _top:      expression(eval(document.compatMode &&
+    document.compatMode=='CSS1Compat') ?
+    documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+    document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+}
+
+.diolo_warp{ 
+  width:88%; 
+ 
+  background: #fff; 
+  height: 200px;
+  position: absolute;
+  top:20%;
+  z-index: 12;
+  border-radius: 10px;
+}
+.diolo_warp p{
+  text-align: center;
+}
+.diolo_warp .title_cz{
+  font-size: 14px; 
+  color:#444;
+  padding-top: 25px;
+}
+.diolo_warp .title_cz span{color: #e74747;} 
+.diolo_warp .pay_bank{
+  font-size: 12px; 
+  color:#999;
+  padding-top: 10px;
+}
+.diolo_warp .go_on{
+    margin-top: 5px;
+    color:#999;
+    font-size: 12px;
+    border-top:1px solid #e74747;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 5%;
+}
+.diolo_warp .radious_img{ 
+  position: relative;
+  top: 12px;
+  left: 48%;
+  width: 10px;
+  height: 10px;
+  background: url(../images/radious_img.png);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.diolo_warp .go_on span{ color:#e74747; }
+.true_flase{ margin: 5px 6% 0; }
+.true_flase button{ 
+  display: inline-block; 
+  width: 47%; 
+  height: 40px; 
+  line-height: 40px;
+  border: 1px solid #e74747; 
+  text-align: center;  
+  font-size: 14px;
+  border-radius: 5px;
+}
+.true_flase button.flase_qx{float: left; color: #e74747; background:#fff;}
+.true_flase button.true_qr{
+  float: right; 
+  background: #e74747;
+  color: #fff;
+}
+
+
+.record_title{ height: 100px; background: #fff; margin:10px 3%;}
+.record_title .record_titimg{
+  position: absolute;;
+  right: 3%;
+  top:10px;
+  width: 70px;
+  height: 31px;
+  background: url(../images/record_titimg.png);
+}
+.record_title .yuan_sy{ color: #000; font-size: 12px; margin-left: 10px; padding-top: 10px;}
+.record_title .shouyi_yu{font-size: 50px;margin-left: 10px; color:#e74747;}
+
+.record_content{ height: 80px; background: #fff; margin-bottom: 10px;}
+.content_left{ float: left; margin-left: 3%;}
+.content_left dl dt{float: left; width: 42px; height: 42px; border-radius: 5px; border: 1px solid #afafaf; margin-top: 18px; }
+.content_left dl dd{ float: left; margin-top: 17px; margin-left: 10px;}
+.content_left dl dd p.left_ddp{font-size: 14px; color: #6b95b6; margin-bottom: 10px;}
+a.click_link{ display:block;}
+.content_left dl dd p.left_ddp span{display: inline-block;  float: left; width:58px; }
+.content_left dl dd p.left_ddp span.red{ margin-left: 10px; color:#fff; text-align:center;font-size: 12px; border-radius: 10px; background: red; width:70px; height: 22px; line-height: 22px;}
+.content_left dl dd p.left_ddp span.goon{background: #98b3ca;}
+.content_left dl dd p.left_ddp span.nobegin{ background: #d7d7d7;}
+.content_left dl dd p.left_ddate{font-size: 12px;color: #aaa; padding-top: 16px;}
+
+.content_right{ float: right; margin-right: 5%; font-size: 16px; margin-top: 28px;}
+.content_right span{float:left; color: #e74747;}
+.content_right em{float:left; margin-right:5px; color:#444;}
+.content_right img{float:left;color: #e74747; width: 10px; display: inline-block; margin-top: 3px;}
+
+.diolo_warp.hdtz{ height: 208px; margin:0 6%;}
+.diolo_warp .title_cz.touzi{ padding-top: 17px; font-size: 18px;}
+.diolo_warp .pay_bank.friend{font-size: 24px;
+    color: #444;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e74747;}
+    .diolo_warp .radious_img.tupiantz{top:-5px; margin-top: 0;}
+.diolo_warp .go_on.emsx{ line-height: 20px; border-top:0; margin-top: 0; padding-left: 3%; height: 42px; }
+.diolo_warp .go_on.emsx span{ float: left; display: inline-block;}
+.diolo_warp .go_on.emsx .dontko{color:#999; width: 73%;}

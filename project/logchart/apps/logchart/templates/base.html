@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js">
+{% include "static/admin_html/head.html" %}
+<body>
+<div class="bg-dark dk" id="wrap">
+    <div id="top">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container-fluid">
+                <header class="navbar-header">
+                    <a href="/index" class="navbar-brand">
+                        <img src="/static/img/logo.png">
+                    </a>
+                </header>
+                <div class="topnav">
+                    <div class="btn-group">
+                        用户名：{{ request.session.username }}
+                    </div>
+                    <div class="btn-group">
+                        <a data-placement="bottom" data-original-title="Fullscreen" data-toggle="tooltip" class="btn btn-default btn-sm" id="toggleFullScreen">
+                            <i class="glyphicon glyphicon-fullscreen"></i>
+                        </a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="/logout" data-toggle="tooltip" data-original-title="logout" data-placement="bottom" class="btn btn-metis-1 btn-sm">
+                            <i class="fa fa-power-off"></i>退出登陆
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/index">首页</a></li>
+                        <li><a href="/peanut">花生米富</a></li>
+                        <li><a href="/yiyiyuan">一亿元</a></li>
+                        <li><a href="/monitor">数据监控</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="head">
+            <div class="search-bar">
+                <h4>
+                    <i class="fa fa-home"></i> 菜单 {{ active }}
+                </h4>
+            </div>
+        </header>
+    </div>
+    <div id="left">
+        <ul id="menu" class="bg-blue dker">
+            <li class="{% if active == 'index' %}active{% endif %}">
+                <a href="/index">
+                    <i class="fa fa-dashboard"></i><span class="link-title"> 首页</span>
+                </a>
+            </li>
+            <li class="{% if active == 'peanut' %}active{% endif %}">
+                <a href="">
+                    <i class="fa fa-tasks"></i>
+                    <span class="link-title">花生米富</span>
+                </a>
+                <ul class="collapse">
+                    <li>
+                        <a href="/peanut">
+                            <i class="fa fa-angle-right"></i> 概览
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/peanut/register">
+                            <i class="fa fa-angle-right"></i> 注册量
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/peanut/bid">
+                            <i class="fa fa-angle-right"></i> 投标量
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/peanut/subscribe">
+                            <i class="fa fa-angle-right"></i> 订阅量
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/peanut/browse">
+                            <i class="fa fa-angle-right"></i> 浏览量
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/peanut/pagelist">
+                            <i class="fa fa-angle-right"></i> 页面列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="{% if active == 'yiyiyuan' %}active{% endif %}">
+                <a href="">
+                    <i class="fa fa-tasks"></i>
+                    <span class="link-title">一亿元</span>
+                </a>
+                <ul class="collapse">
+                    <li>
+                        <a href="/yiyiyuan">
+                            <i class="fa fa-angle-right"></i> 概览
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/yiyiyuan/register">
+                            <i class="fa fa-angle-right"></i> 注册量
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/yiyiyuan/browse">
+                            <i class="fa fa-angle-right"></i> 浏览量
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/yiyiyuan/pagelist">
+                            <i class="fa fa-angle-right"></i> 页面列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="{% if active == 'monitor' %}active{% endif %}">
+                <a href="/monitor">
+                    <i class="fa fa-pencil"></i>
+                    <span class="link-title">数据监控</span>
+                </a>
+            </li>
+            <li>
+                <a href="/logout">
+                    <i class="fa fa-sign-in"></i>
+                    <span class="link-title">退出登陆</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+<footer class="Footer bg-dark dker">
+    <p>2018 &copy; logchart</p>
+</footer><!-- /#footer -->
+</body>
+</html>

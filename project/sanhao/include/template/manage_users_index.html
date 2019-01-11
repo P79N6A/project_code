@@ -1,0 +1,66 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/manager.php?action=list">用户管理</a>&nbsp;&gt;&gt;&nbsp;用户列表</div>
+        <div class="wrap">
+        <form action="/manage/usersmanage.php?action={$ufunc}" method="post">
+            <table class="table" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+                <tbody>
+                    <tr class="odd">
+                        <td>
+                        	<div class="itm">
+                            	<div class="dt">昵称：</div>
+                                <div class="dd"><input type="text" name="nickname" <!-- {if !empty($nickname) } --> value="{$nickname}"<!-- {/if} --> class="ipt ipt1" /></div>
+                            </div>
+                            <div class="itm">
+                            	<div class="dt">三好网帐号：</div>
+                                <div class="dd"><input type="text" name="mobile" <!-- {if !empty($mobile) } --> value="{$mobile}"<!-- {/if} --> class="ipt ipt1" /></div>
+                            </div>
+                        </td>
+                        <td rowspan="2">
+                        	<div class="btns"><input type="submit" value="查找" class="btn btn1" /></div>
+                        </td>
+                    </tr>
+                     <tr class="even">
+                        <td style="padding-left:8px;">
+                        	<!-- {if $ufunc == 'list'} --><input type="button" value="禁用" id="users_recycle_button" class="btn btn2" /><!-- {/if} -->
+                        	<!-- {if $ufunc == 'recycle'} --><input type="button" value="启用" id="users_enable_button" class="btn btn2" /><!-- {/if} -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </form>
+            <table class="table2" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<thead>
+                	<tr>
+                    	<th width="26"><input type="checkbox" id="chkAll" name="chkAll"/></th>
+                    	<th width="26">ID</th>
+                        <th width="80">昵称</th>
+                        <th width="80">支付通帐号</th>
+                        <th width="80">三好网帐号</th>
+                        <th width="80">操作</th>
+                    </tr>
+                </thead>
+            	<tbody>
+            	<!--{loop $users $index $one}-->
+                	<tr <!--{if $index%2 != 0}--> class="odd" <!-- {else} --> class="even" <!-- {/if} --> >
+                    	<td><input type="checkbox" value="{$one['id']}" name="chkpoint"/></td>
+                    	<td>{$one['id']}</td>
+                        <td>{$one['nickname']}</td>
+                        <td>{$one['payno']}</td>
+                        <td>{$one['mobile']}</td>
+                        <td><a href="/manage/usersmanage.php?action=detail&id={$one['id']}&ufunc={$ufunc}">详情</a></td>
+                    </tr>
+                <!--{/loop}-->
+                </tbody>
+            </table>
+            <div class="page clearfix">
+            <!--{if $count > 20}-->
+		       {$pagestring}
+	       <!--{/if}-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

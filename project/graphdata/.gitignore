@@ -1,0 +1,11 @@
+/.project
+/.pydevproject
+/.settings
+*.pyc
+/.vscode
+.DS_Store
+.idea/
+/lib/config.py
+/lib/ssdb_config.py
+/lib/orientdb_config.py
+/commands/data/bst.txt

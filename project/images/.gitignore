@@ -1,0 +1,13 @@
+/log/*
+/config/defines.php
+/config/db_local.php
+/runtime/*
+/.project
+/.buildpath
+/web/imgfiles
+/modules/backend/controllers/TestController.php
+/modules/dev/controllers/TestController.php
+/.settings
+/controllers/TestController.php
+.DS_Store
+config/.DS_Store

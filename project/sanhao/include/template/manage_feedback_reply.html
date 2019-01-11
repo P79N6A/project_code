@@ -1,0 +1,43 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/operation.php?action=list">系统管理</a>&nbsp;&gt;&gt;&nbsp;意见反馈回复</div>
+        <div class="wrap">
+            <table class="table8" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+            	<form action="/manage/feedback.php?action=reply" method="post" id="admin_manage_form_submit">
+                    <tr class="odd">
+                        <th width="140"><span></span>邮箱：</th>
+                        <td width="602"><input type="hidden" name="id" value="{$manage[0]['id']}" /><input type="text" value="{$manage[0]['email']}" disabled  class="ipt ipt1" /></td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140"><span></span>手机：</th>
+                        <td width="602"><input type="text" value="{$manage[0]['mobile']}" disabled class="ipt ipt1" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140"><span></span>姓名：</th>
+                        <td width="602"><input type="text" value="{$manage[0]['name']}" disabled class="ipt ipt1" /></td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140"><span></span>意见内容：</th>
+                        <td width="602"><textarea disabled>{$manage[0]['content']}</textarea></td>
+                    </tr>
+                   <tr class="odd">
+                        <th width="140"><span>*</span>反馈内容：</th>
+                        <td width="602"><textarea name="reply"></textarea></td>
+                    </tr>
+                    <tr class="even">
+                    	<td>&nbsp;</td>
+                        <td>
+                        	<input type="submit"  class="btn btn1" value="提交" />
+                            <input type="button" class="btn btn1" value="返回" />
+                        </td>
+                    </tr>
+                    </form>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

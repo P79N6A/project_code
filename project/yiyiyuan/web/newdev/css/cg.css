@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+/* HTML5 hidden-attribute fix for newer browsers */
+
+*[hidden] {
+    display: none;
+}
+
+body {
+    line-height: 1;
+}
+
+html,
+body {
+    font-family: "微软雅黑"
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body,html{
+    height: 100%;
+    overflow: auto;
+    font-family: "微软雅黑";
+}
+.y-wrap{
+    width: 375px;
+    height: 100%;
+    overflow: auto;
+    background:#f4f4f4;
+}
+.y-account,
+.y-order-pay{
+    width: 100%;
+    background: #fff;
+}
+.y-account-list,
+.y-order-list{
+    height: 56px;
+    padding:0 15px 0 0;
+    margin-left: 15px;
+    width: 345px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.y-account-list:nth-child(5){
+    border-bottom: none;
+}
+.y-account-list p,
+.y-order-list p{
+    font-size: 16px;
+    color: #444;
+    line-height: 56px;
+    float: left;
+    margin-right: 23px;
+}
+.y-account-list span{
+    font-size: 14px;
+    color: #F00D0D;
+    display: block;
+    float: right;
+    line-height: 56px;
+}
+.y-account-tips{
+    margin-top: 10px;
+    background: #fff;
+    padding-bottom: 16px;
+    padding-top: 19px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.clear{
+    clear: both;
+}
+.y-line{
+    width: 127px;
+    height: 0.5px;
+    margin-top: 6px;
+    background: #d8d8d8;
+    display: block;
+    float: left;
+}
+.y-tips-tit{
+    font-size: 14px;
+    color: #444;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tips-top{
+    width: 330px;
+    margin: 0 auto 10px;
+}
+.y-tips-list li i{
+    display: block;
+    float: left;
+    margin-top: 13px;
+    margin-right: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #444;
+}
+.y-tips-list li{
+    width: 336px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #444;
+    line-height: 30px;
+}
+.y-tips-list li:after{
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.y-tips-list p{
+    width: 310px;
+    float: left;
+}
+.y-account-list .account-label,
+.y-order-list .account-label{
+    width: 96px;
+    margin-right: 7px;
+}
+}

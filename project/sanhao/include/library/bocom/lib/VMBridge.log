@@ -1,0 +1,57 @@
+Sep 25 11:04:16 VMBridge INFO : VM                  : 1.6.0_45@http://java.sun.com/
+Sep 25 11:04:16 VMBridge INFO : VMBridge version             : 5.3.3    
+Sep 25 11:04:16 VMBridge INFO : logFile             : VMBridge.log
+Sep 25 11:04:16 VMBridge INFO : default logLevel    : 3
+Sep 25 11:04:16 VMBridge INFO : socket              : SERVLET_LOCAL:8081
+Sep 25 11:04:16 VMBridge INFO : java.ext.dirs       : /usr/local/java/jdk1.6.0_45/jre/lib/ext:/usr/java/packages/lib/ext
+Sep 25 11:04:16 VMBridge INFO : php.java.bridge.base: /root
+Sep 25 11:04:16 VMBridge INFO : thread pool size    : 20
+Sep 25 11:04:16 VMBridge INFO : JavaBridgeRunner started on port INET_LOCAL:8081
+Thu Sep 25 11:05:22 CST 2014NetSignServer initializer starting...
+rootcertdn=C=CN,O=BANKCOMM CA,CN=BOCOMCA
+pfx dir=/home/shopping/include/library/bocom/cert/301110053119869.pfx
+NetSignServer initializering: Get pfx Certificate success!
+C=CN,O=BANKCOMM CA,OU=BANKCOMM,OU=Merchants,CN=040@0030632349-4@[301110053119869]@000
+NetSignServer initializer finished successfully!
+NetSignServer version:Version:1.8.053.1 Build:200607201425
+java.lang.SecurityException: can't decode PKCS7SignedData object
+	at cn.com.infosec.jce.PKCS7SignedData.<init>(PKCS7SignedData.java:133)
+	at cn.com.infosec.jce.PKCS7SignedData.<init>(PKCS7SignedData.java:108)
+	at com.bocom.netpay.infosec.netsigninterface.NetSignImpl.VerifySingleSignedMsg(NetSignImpl.java:158)
+	at com.bocom.netpay.b2cAPI.NetSignServer.NSDetachedVerify(NetSignServer.java:688)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at php.java.bridge.JavaBridge.Invoke(JavaBridge.java:1066)
+	at php.java.bridge.Request.handleRequest(Request.java:409)
+	at php.java.bridge.Request.handleRequests(Request.java:485)
+	at php.java.bridge.http.ContextRunner.run(ContextRunner.java:142)
+	at php.java.bridge.ThreadPool$Delegate.run(ThreadPool.java:60)
+java.lang.SecurityException: can't decode PKCS7SignedData object
+	at cn.com.infosec.jce.PKCS7SignedData.<init>(PKCS7SignedData.java:133)
+	at cn.com.infosec.jce.PKCS7SignedData.<init>(PKCS7SignedData.java:108)
+	at com.bocom.netpay.infosec.netsigninterface.NetSignImpl.VerifySingleSignedMsg(NetSignImpl.java:158)
+	at com.bocom.netpay.b2cAPI.NetSignServer.NSDetachedVerify(NetSignServer.java:688)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at php.java.bridge.JavaBridge.Invoke(JavaBridge.java:1066)
+	at php.java.bridge.Request.handleRequest(Request.java:409)
+	at php.java.bridge.Request.handleRequests(Request.java:485)
+	at php.java.bridge.http.ContextRunner.run(ContextRunner.java:142)
+	at php.java.bridge.ThreadPool$Delegate.run(ThreadPool.java:60)
+java.lang.SecurityException: can't decode PKCS7SignedData object
+	at cn.com.infosec.jce.PKCS7SignedData.<init>(PKCS7SignedData.java:133)
+	at cn.com.infosec.jce.PKCS7SignedData.<init>(PKCS7SignedData.java:108)
+	at com.bocom.netpay.infosec.netsigninterface.NetSignImpl.VerifySingleSignedMsg(NetSignImpl.java:158)
+	at com.bocom.netpay.b2cAPI.NetSignServer.NSDetachedVerify(NetSignServer.java:688)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at php.java.bridge.JavaBridge.Invoke(JavaBridge.java:1066)
+	at php.java.bridge.Request.handleRequest(Request.java:409)
+	at php.java.bridge.Request.handleRequests(Request.java:485)
+	at php.java.bridge.http.ContextRunner.run(ContextRunner.java:142)
+	at php.java.bridge.ThreadPool$Delegate.run(ThreadPool.java:60)

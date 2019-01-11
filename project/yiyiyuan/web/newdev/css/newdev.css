@@ -1,0 +1,95 @@
+/*newdev借款首页*/
+.Hcontainer .p_ipt{background:#e7edf0;border:0; padding: 0;line-height:40px;}
+.Hcontainer .p_ipt .col-xs-9{background: #fff;border-radius: 5px; padding-left: 10px; border: 1px solid #cdcdcd;}
+.Hcontainer .p_ipt .col-xs-9 input{  height:40px; background: #fff; width: 96%;}
+.Hcontainer .p_ipt .col-xs-4{width:36%;height:40px; background: #fff; border: 1px solid #cdcdcd; text-align: center; border-radius: 0;}
+.Hcontainer .p_ipt .col-xs-4.padrgh{ margin-right:6px;}
+.Hcontainer .p_ipt .col-xs-2{ width: 18%; padding: 0; margin:0; text-align: center;background: #fff; border: 1px solid #cdcdcd; margin-right: 2px;border-radius: 0;}
+.Hcontainer .p_ipt .imgimg{position: relative; border:1px solid #e74747;}
+.Hcontainer .p_ipt .imgimg img{ width: 15%; display:inline-block;position: absolute; right:0; top:-2px; }
+.Hcontainer .p_ipt .col-xs-2.imgimg img{width: 30%;}
+.Hcontainer  .imgtuzi{ position: relative;}
+.Hcontainer  .imgtuzi img{ width: 40px;height:55px; position: absolute; right: 0; top:-64px; display: inline-block;}
+.Hcontainer .p_ipt .col-xs-9 .seltxt{ width: 100%;height: 40px; border: 0;padding-left: 10px;margin-left: -5%;appearance:none;-moz-appearance:none;-webkit-appearance:none; background: url("/images/yumen.png") no-repeat scroll right center transparent;background-size: 8%;}
+.Hcontainer .p_ipt .col-xs-9 .seltxt div{ height: 100px; overflow: hidden;}
+.Hcontainer .p_ipt .col-xs-9 .seltxt option{ display: block; text-align: center; padding: 10px; text-indent: 20px;}
+
+/*优惠卷*/
+.Hcontainer_coupon .boldera{height:50px;line-height:50px; font-size:18px; padding-left:40%; font-weight: bold;border-bottom: 1px solid #c4bfbe;}
+.Hcontainer_coupon .boldera span{ display: inline-block; float: right;padding-right: 10%; font-weight: normal; font-size: 14px; color: #e74747;}
+.overflow{overflow: hidden;}
+.Hcontainer_coupon{padding-bottom: 78px;}
+.Hcontainer_coupon .Hmask{width: 100%;height: 100%;background: rgba(0,0,0,.7);position: fixed;top: 0;left:0;z-index: 100;}
+.Hcontainer_coupon .layer{width:95%;position: fixed;top:15%;left:45%;margin-left: -43%;background: #fff;border-radius: 10px;z-index: 110;}
+.Hcontainer_coupon .layer .item,.layer .item{overflow: hidden;position: relative; margin: 10px auto;}
+.Hcontainer_coupon .layer .item input{display:none;}
+.Hcontainer_coupon .layer .choose{float: left;position: absolute;top:65%;margin-top: -20px;}
+.Hcontainer_coupon .layer .available2{margin:0 auto; width:94%;max-width:502px;display:block;}
+.Hcontainer_coupon .layer .price_left{text-align: center;width: 40%; position: absolute;top: 20%;left: 0%;color: #fff;padding: 0;}
+.Hcontainer_coupon .layer .price_left.left3{ left:3%;}
+.Hcontainer_coupon .layer .price_left p.black{ font-size: 20px; font-weight: bold; color: #444;}
+.Hcontainer_coupon .layer .price_left p.black span{ font-size: 14px;}
+.Hcontainer_coupon .layer .price_left p.green{background: #ffc24d;font-size:12px;height: 20px;line-height: 20px;border-radius: 10px;margin: 10px auto 0;text-align: center;width: 60px;}
+.Hcontainer_coupon .layer .price_left p.white{ color: #fff; }
+.Hcontainer_coupon .layer .price_left p.ftsz24{ font-size: 24px;}
+.Hcontainer_coupon .layer .price_left p.baishes{ color: #fff; font-size: 24px;}
+.Hcontainer_coupon .layer .price_left p.basise{ background: #fff; color: #ffc24d;}
+.Hcontainer_coupon .layer .price_left p.bgrf{ background: #fff; color: #f56a45;}
+.Hcontainer_coupon .layer .price_left p.rgbf{ background: #f56a45; color: #fff;}
+.Hcontainer_coupon .layer .price_right{width: 60%;position: absolute;top:18%;right: 2px;font-size: 12px;color: #fff;line-height: 22px; text-align: center;}
+.Hcontainer_coupon .layer .price_right .one_one{ color: #444; font-size: 16px;}
+.Hcontainer_coupon .layer .price_right .one_two{color: #ffc24d}
+.Hcontainer_coupon .layer .price_right .redred{ color: #f56a45;}
+.Hcontainer_coupon .layer .price_right .one_three{color: #c2c2c2;}
+.Hmask { width: 100%;height: 100%;background: rgba(0,0,0,.7); position: fixed;top: 0;left: 0; z-index: 100;}
+
+/*提额活动弹层*/
+.tancgg{ position: fixed; top:5%; z-index: 100; width:90%; margin:0 5%;}
+.tancgg img{width:100%;}
+.tancgg .tcerror{ position: absolute; top: 0;right: 5%; width: 10%;height: 3rem;}
+.tancgg .buttonbu{ position: absolute; bottom: 4%;left: 9%; width: 82%; height: 4rem; background: rgba(0,0,0,0);border: 0;}
+.tancgg .tanconess{ position: absolute; bottom: 9%;left: 10%; width: 80%;  height: 4rem; background: rgba(0,0,0,0);border: 0;}
+.indextc{position: fixed;top: 20%;left: 7%; border-radius: 5px; z-index: 100; width: 86%;}
+.indextc button{ position: absolute; bottom: 5%; left:25%;width: 50%; background: rgba(0,0,0,0); border: 0;}
+#overDivs{background: #000;width: 100%;height: 100%;left: 0;top: 0;filter: alpha(opacity=7);opacity: 0.7;z-index: 11;position: fixed!important; position: absolute;_top: expression(eval(document.compatMode &&document.compatMode=='CSS1Compat') ?documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);}
+
+/*2.6.0信用借款，担保借款点击切换按钮*/
+.Hcontainer .nav_jk .item {width: 100%;padding: 10px 0;text-align: center;color: #c2c2c2;font-size: 3rem;background: #fff;border-bottom: 2px solid #fff;}
+.Hcontainer ul.nav_jk.overflow{background: #fff;}
+.Hcontainer .nav_jk .item.on {width: 50%;padding: 10px 0;text-align: center;color: #fff;font-size: 3rem;color: #c90000;background: #fff;border-bottom: 2px solid #c90000;margin: 0 25%;}
+
+/*2.6.0弹框*/
+.duihsucc_new {width: 90%;position: fixed;top: 20%;left: 5%;border-radius: 5px;z-index: 100;background: #fff;color: #444;}
+.duihsucc_new p.xuhua_new {padding: 30px 0 5px;font-size: 1.25rem;}
+.duihsucc_new p {text-align: center;font-size: 1rem;}
+.duihsucc_new button.sureyemian_new {margin: 15px 10% 20px;}
+.duihsucc_new button {width: 80%;height: 40px;background: #c90000;color: #fff;font-size: 1.2rem;border-radius: 30px;}
+/*限额已满*/
+.namelist{ clear: both; background: #fff;} 
+.namelist .dbjk{ padding-top: 7%; text-align: center; font-size: 1.2rem ;}
+.namelist .xinyjk{text-align: center; font-size: 1rem ;}
+.namelist .xinyjk span{ color: #c90000;}
+.namelist .photots{ width: 38%; margin-left: 31%; padding: 5% 0;}
+button.fqxyjk{ width: 90%; margin:5%; background: #c90000; color: #fff; font-size: 1.2rem; padding: 10px 0; border-radius: 50px;}
+
+/*弹框样式*/
+.duihsucc{width: 90%;position: fixed; top: 20%;left: 5%;border-radius: 5px; z-index: 100;background: #fff; color: #444;}
+.duihsucc button{ width: 80%; height: 40px; background: #c90000; color: #fff; font-size: 1.2rem;border-radius: 30px;}
+.duihsucc button.sureyemian{ margin: 15px 10% 20px;}
+.duihsucc p{ text-align: center; font-size: 1rem;}
+.duihsucc p.xuhua{ padding:30px 0 5px; font-size: 1.25rem;}
+.duihsucc p span{ color: #c90000;}
+.duihsucc .margbor{ margin-top: 10px; }
+.duihsucc .margbor .dbk_inpL{border-bottom: 1px solid #e7edf0; height: 3rem;border-top: 1px solid #e7edf0; line-height: 3rem;}
+.duihsucc .tsmes {color: #c90000;text-align: center; margin-top: 0.7rem;font-size: 0.916rem;}
+.duihsucc .nzsdsm {padding-left: 5%; height: 3rem;;}
+.duihsucc .nzsdsm .dbk_inpL label {text-align: left;float: left;margin-bottom: 0;font-size: 1.2rem;color: #444;}
+.duihsucc .nzsdsm .dbk_inpL input{border: none;float: left;padding-left:5px;font-size: 1.2rem;line-height:2.9rem;}
+
+.bohomeg{ padding-bottom: 6%; }
+.bohomeg .iconjth{position: absolute;width: 7%;right: 5%;top: 6%;}
+.bohomeg h3{ font-size: 3.3rem; color: #c90000; margin: 0 5%; padding: 4% 0; border-bottom: 1px solid #c2c2c2;}
+.bohomeg p{ text-align: left; margin: 0 5%;}
+.bohomeg .bhtime{ font-size: 14px; color: #c2c2c2; padding-top: 5px;}
+.bohomeg .sfmiao{ font-size: 14px; color: #444; padding-bottom: 5%;}
+.bohomeg button.yesknow{ width: 40%; height: 40px; background: #c90000; color: #fff; font-size: 1.2rem;border-radius: 30px; margin-left: 55%;}

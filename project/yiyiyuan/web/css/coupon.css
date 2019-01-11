@@ -1,0 +1,28 @@
+html,body{width:100%;height:100%; background: #e7edf0; font-family: "Microsoft YaHei";}
+/*.xqyemian > img:first-child{display: block;}*/
+.xqyemian img{display: block;}
+.xqyemian .bottondw{ position: fixed; bottom: 0;}
+.xqyemian .yemian2{ margin-top: 1.5rem; margin-left: 5%; font-size: 1.45rem;}
+.xqyemian .yemian2 p{font-size: 1.45rem}
+.xqyemian .yemian2 p span{font-size: 2rem;}
+.xqyemian .bottonlicai img.wap3{ width: 40%; position: fixed; right:37%; bottom: 10rem;}
+.xqyemian .bottonlicai img.wap4{ width: 40%; position: fixed; right:20px; bottom: 2.5rem;}
+/*领取双倍收益券*/
+.selftxt{ margin: 1rem 6.3%; font-size: 1.2rem; color: #aaa;}
+.bannerer img{ display: block;}
+.selftximg{ background: #fff; position: relative; margin-top: 10px;}
+.selftximg .dbk_inpL {border-bottom: 1px solid #e7edf0;border-radius: 5px;background: #fff; padding: 4% 6.3%;overflow: hidden;}
+.selftximg .dbk_inpL label {width: 16%;text-align: left;float: left;margin-bottom: 0;font-size: 1.2rem;color: #444;}
+.selftximg .dbk_inpL input { width: 70%; border: none;float: left;padding-left: 15px;font-size: 1.2rem;}
+.selfmess .tsmes{color: #e74747; text-align: center; margin-top: 10px;}
+.dbk_inpL .hqyzm{color: #e74747; position: absolute;width: 30%;right:6.5%; padding: 5px;border: 1px solid #e74747; text-align: center; border-radius: 5px; bottom: 10px;}
+.button button {width: 86%;margin:10px 6.5% 3%;background: #e74747;border-radius: 5px;color: #fff;font-size: 1.25rem;padding: 10px 0;}
+
+.licjc{ background: #fff; margin-top: 30px; position: relative;}
+.licjc .teach{ height: 30px; width: 30%; background: #e74747; color: #fff;  line-height: 30px; text-align: center; position: absolute; left: 35%; top:-15px; font-size: 1.3rem; border-radius: 20px;}
+.licjc .bzsy{ color: #aaa; text-align: center; padding:2.3rem 0 1.5rem; font-size: 1rem;}
+.licjc .bzsy_cont{ padding: 0 5%;height: 55rem; margin-bottom: 20px;}
+.licjc .bzsy_cont .contleft,.licjc .bzsy_cont .contright{ width: 45%; font-size: 1.2rem;}
+.licjc .bzsy_cont .contleft p,.licjc .bzsy_cont .contright p{ padding-top:1.5rem; }
+.licjc .bzsy_cont .contleft{ float: left;}
+.licjc .bzsy_cont .contright{ float: right;}

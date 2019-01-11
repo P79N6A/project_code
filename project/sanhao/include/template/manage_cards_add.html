@@ -1,0 +1,30 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/cardslist.php?action=list">三好网卡管理</a>&nbsp;&gt;&gt;&nbsp;添加新卡</div>
+        <div class="wrap">
+            <table class="table8" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+            	<form action="/manage/cardslist.php?action=add" method="post">
+                    <tr class="odd">
+                        <th width="140"><span>*</span>卡号开始值：</th>
+                        <td width="602"><input type="hidden" name="stareno" value="{$lastcards['cno']}" class="ipt ipt1" /><input type="text" value="{$lastcards['cno']}" disabled="true " class="ipt ipt1" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140"><span>*</span>开卡数量：</th>
+                        <td width="602"><input type="text" name="number" class="ipt ipt1" /></td>
+                    </tr>
+                    <tr class="even">
+                    	<td>&nbsp;</td>
+                        <td>
+                        	<input type="submit" class="btn btn1" value="提交" />
+                        </td>
+                    </tr>
+                    </form>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

@@ -1,0 +1,88 @@
+html,body{width:100%;height:100%; background: #dfe7ec; font-family: "Microsoft YaHei"; color: #474d74;}
+a{color:#000}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, figure, form, fieldset, legend, input, textarea, p, blockquote, th, td,em{
+margin: 0;padding: 0;list-style: none;-webkit-tap-highlight-color: transparent;font-style: normal;}
+
+/*还款成功页*/
+.hkcguy{ background: #fff; padding: 0 5%;}
+.hkcguy .click{width:20%; margin-left:40%; padding-top: 20px;}
+.hkcguy p{font-size: 1rem; border-bottom: 1px solid #c2c2c2; padding: 10px 0;}
+.hkcguy p span{ color: #E74747;}
+button.btntn.queding{width: 90%; margin: 30px 5%; border-radius:50px;}
+
+/*付款方式弹窗*/
+.ttfukfsi {width: 90%;position: fixed;top: 10%;left: 5%;border-radius: 5px;z-index: 100;background: #fff;}
+.ttfukfsi .errore{ position: relative; top:0; left:0; border-bottom:1px #f0f4f6 solid; width: 100%; color: #444;}
+.ttfukfsi .errore img{    position: absolute;left: .3rem;top: 0.3rem;width: .4rem;}
+.ttfukfsi .errore span{    display: block;width: 100%;text-align: center;font-size: .4rem;padding: 0.3rem 0;}
+.haimoneys{ border-bottom: 1px solid #f0f4f6; padding: 10px 0;}
+.haimoneys p.haitxts{ text-align: center; color: #c90000; font-size: 0.8rem; padding:.4rem 0;font-weight: normal;}
+.haimoneys p.haitxts em{ font-size: 0.4rem;font-weight: normal;}
+.tuika{margin-bottom:20px;}
+.tuika a{ display: block; overflow: hidden;border-bottom:1px #f0f4f6 solid ; position: relative;     padding: 0.15rem 0 0;}
+.bank_nn .bank2 img{ float: left; width:.6rem;padding: 0 5px 0 5%;margin-top: .1rem;margin-right: 0.2rem;}
+.bank_nn .sendtwo{ float: left;}
+.bank_nn p{ display: inline-block; font-size: .4rem;color: #474d74;}
+.bank_nn p span{    background: #e74747;
+    color: #fff;
+    font-size: 0.3rem;
+    display: inline-block;
+    padding: .1rem 0.15rem .15rem;
+    border-radius: 50px;
+    margin: 0.2rem;}
+.bank_nn p em{ font-size: 1rem;}
+.bank_nn p.weihaom{color: #939ab0; font-size: 1rem; display: block;}
+.bank_nn img.rightjt{     float: right;
+    margin-top: 0.2rem;
+    margin-right: 0.6rem;
+    width: 0.3rem;}
+.ttfukfsi button.queding{     background: #c90000;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 0.5rem;
+    width: 80%;
+    display: block;
+    margin: .5rem auto;
+    height: 1rem;
+    padding: 0;
+    border: none;}
+.ttfukfsi .addbank{ overflow: hidden; padding-bottom: 2rem; display: block;}
+.ttfukfsi .addbank img{float: left;margin: 2px 2% 0 33%; width: 5%;}
+.ttfukfsi .addbank span{ float: left; color: #474d74; font-size: 1.1rem;}
+.haimoney{ position: relative;}
+.haimoney .addawh{ position: absolute; right: 0; font-size: 0.9rem; color: #c90000;}
+.haimoney .addawh img{ width: 10%; margin-right: 5px;}
+.xuqhk{ position:fixed; top:20%;left: 5%; background: #fff; width: 90%; z-index: 101; padding: 15px 0; border-radius: 5px;}
+.xuqhk h3{ padding: 5px 4%; font-size: 1.25rem; font-weight: bold;}
+.xuqhk p{padding: 0 4%; font-size: 0.9rem;}
+.xuqhk button{background: #c90000;  color: #fff; border-radius: 20px; font-size: 1.3rem; width: 60%; margin: 20px 20% 5px; height: 3rem;}
+.haimoney .yiyq{ position: absolute; right: 5%; top:2rem;border: 1px solid #0aba90; color: #0aba90; padding: 8px 18px; border-radius:30px; font-size: 1.1rem;}
+.zuoyminew .daihukan_cont .rowym.addha{ line-height: 35px; font-size: 1rem;}
+.zuoyminew .daihukan_cont .rowym.addha .corname{font-size: 1rem; color: #484e75;}
+.zuoyminew .daihukan_cont .rowym.addha .corliyou{font-size: 1rem; color: #484e75;}
+.tuika .jianzl{background: #e7e7e7;}
+.bank_nn img.zbzchi{ position: absolute;top: 0;width: 30%;right: 2%;}
+
+.Hmask {width: 100%; height: 100%;background: rgba(0,0,0,.7); position: fixed;top: 0;left: 0; z-index: 100;}
+
+/****tan new css***/
+.bank_nn .bank3 img{
+    float: left;
+    width: 7%;
+    padding: 0 5px 0 5%;
+    margin: 5px
+}
+
+.toast_tishi {
+    position: fixed;
+    top: 33%;
+    color: #fff;
+    z-index: 15;
+    padding: 0.3rem 0;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    width: 80%;
+    left: 10%;
+    font-size: 0.4rem;
+}

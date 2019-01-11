@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background-color:#ffffff; _height:100%; font-family:"Microsoft YaHei";}
+.w2{ width:980px; margin:0 auto;}
+.blank40{ height:40px; font-size:0; line-height:0; display:block; clear:both; overflow:hidden;}
+.blank60{ height:60px; font-size:0; line-height:0; display:block; clear:both; overflow:hidden;}
+.blank108{ height:108px; font-size:0; line-height:0; display:block; clear:both; overflow:hidden;}
+.blank120{ height:120px; font-size:0; line-height:0; display:block; clear:both; overflow:hidden;}
+.blank140{ height:140px; font-size:0; line-height:0; display:block; clear:both; overflow:hidden;}
+.blogin{ width:528px; background:#f4f3ee; margin:462px auto 0; position:relative; left:-168px;}
+.blogin .itm .dt{ width:136px; text-align:right; font-size:16px; color:#808182; line-height:30px; float:left;}
+.blogin .itm .dd{ width:380px; height:64px; float:left; padding-left:12px;}
+.blogin .ipt1{ width:246px; height:18px; font-family:"Microsoft YaHei","\5b8b\4f53"; color:#000000; line-height:18px; border:1px solid #dbdbdb; background:#fafafa; float:left; margin:0; padding:5px 6px;}
+.blogin .ipt2{ width:136px; height:18px; font-family:"Microsoft YaHei","\5b8b\4f53"; color:#000000; line-height:18px; border:1px solid #dbdbdb; background:#fafafa; float:left; margin:0; padding:5px 6px;}
+.blogin .z-sel{ border:1px solid #22c4f2;}
+.blogin .yzmn{ float:left; margin-left:10px;}
+.blogin .tips1{ width:260px; text-align:right; clear:both; padding-top:6px;}
+.blogin .tips1 a{ color:#fc7589;}
+.blogin .tips2{ width:260px; color:#b61a3f; clear:both; padding-top:6px;}
+.blogin .btns{ position:relative; margin-top:28px; padding-left:148px;}
+.blogin .btn1{ width:260px; height:38px; border:none; background:url(/static/images/btn.png) left top no-repeat; cursor:pointer;}
+.blogin .btn1:hover{ background:url(/static/images/btn-2.png) left top no-repeat;}
+.blogin .btn1:active{ background:url(/static/images/btn-3.png) left top no-repeat;}
+.bfooter{ width:1020px; text-indent:222px; font-size:14px; color:#ffffff; line-height:74px; background:#b61a3f; float:right; margin:110px 0;}
+.header{ width:100%; height:138px; background:url(/static/images/bg.png) top center no-repeat; position:absolute; left:0; top:0; z-index:9;}
+.header.o{ background-color:#FFF;}
+.header.o2{ background-color:#4d0e2a;}
+.logo{ display:inline; padding-left:14px;}
+.blogo{ padding:20px 0 0 32px;}
+.header .fr{ padding:78px 0 0 0;}
+.exit{ font-size:14px; color:#b61a3f;}
+.exit a{ font-size:18px; color:#b61a3f;}
+.sd{ width:170px; float:left;}
+.sd .tt{ font-size:24px; color:#b61a3f; text-align:center; line-height:36px;}
+.sd .link{ border:1px solid #b61a3f;}
+.sd .link a{ height:38px; font-size:16px; color:#5b636e; line-height:38px; background:#f4f3ee; font-weight:bold; padding:0 10px; display:block;}
+.sd .itm{ border:1px solid #b61a3f;}
+.sd .itm dt{ height:38px; font-size:16px; color:#5b636e; line-height:38px; cursor:pointer; font-weight:bold; background:#f4f3ee url(/static/images/bdd.png) 150px center no-repeat; padding:0 16px;}
+.sd .itm dt.cur{ background-image:url(/static/images/bdd2.png);}
+.sd .itm dd{ border-top:1px solid #b61a3f; position:relative;}
+.sd .itm dd a{ font-size:14px; color:#5b636e; height:32px; line-height:32px; display:block; padding-left:32px;}
+.sd .itm dd a:hover{ text-decoration:none;}
+.sd .itm dd a.hover{ color:#fff; text-decoration:none; background:url(/static/images/bdd3.png) left top repeat-x;}
+.mn{ width:788px; min-height:796px;_height:796px; border:1px solid #dfdfdf; float:right;}
+.crm{ height:32px; font-size:14px; color:#fff; line-height:28px; background:url(/static/images/bdd3.png) left top repeat-x; padding:0 16px;}
+.crm a{ color:#fff;}
+.wrap{ padding:16px;}
+.table{ border-collapse:collapse; border:1px solid #b61a3f;}
+.table .odd{ background:#f4f3ee;}
+.table .even{ background:#fff;}
+.table tr{ cursor:default;}
+.table td{ border:1px solid #b61a3f; padding:8px 0;}
+.table td .itm{ float:left; padding-left:8px;}
+.table td .itm .dt{ line-height:24px; float:left;}
+.table td .itm .dd{ line-height:24px; float:left;}
+.table td select{ width:120px; border:1px solid #b61a3f; margin-top:2px; padding:1px;}
+.table td .ipt{ height:22px; line-height:22px; border:1px solid #b61a3f; float:left; padding:0 2px;}
+.table td span{ float:left; margin:0 4px;}
+.table td .ipt.ipt1{ width:166px;}
+.table td .ipt.ipt2{ width:72px;}
+.table td .ipt.ipt3{ width:96px;}
+.table td .ipt.ipt4{ width:80px;}
+.table td .btns{ width:80px; text-align:center; padding:0 7px; margin:0 auto;}
+.table td .btn{ width:80px; height:32px; color:#fff; font-weight:bold; border:none; background:#b61a3f;}
+.table2{ border-collapse:collapse; border:1px solid #b61a3f; margin-top:16px;}
+.table2 .odd{ background:#f4f3ee;}
+.table2 .even{ background:#fff;}
+.table2 tr{ cursor:default;}
+.table2 th{ color:#fff; line-height:24px; text-align:center; border:1px solid #b61a3f; background:#b61a3f; padding:8px;}
+.table2 td{ text-align:center; border:1px solid #b61a3f; padding:8px;}
+.table2 td a{ color:#0099ff;}
+.page{ line-height:20px; padding:16px 0 0;}
+.page ul{ float:right;}
+.page ul li{ float:left; padding:0 0 0 5px;}
+.page ul li a{ color:#000; display:inline-block; line-height:18px; border:1px solid #b61a3f; padding:0 6px;}
+.page ul li span{ color:#fff; display:inline-block; line-height:18px; border:1px solid #b61a3f; background:#b61a3f; padding:0 6px;}
+.page ul li .ipt{ width:24px; height:18px; line-height:18px; border:1px solid #b61a3f; float:left; padding:0 2px;}
+.page ul li .btn{ width:38px; height:20px; color:#fff; border:none; background:#b61a3f; float:left;}
+.table3{ border-collapse:collapse; border:1px solid #b61a3f;}
+.table3 .odd{ background:#f4f3ee;}
+.table3 .even{ background:#fff;}
+.table3 tr{ cursor:default;}
+.table3 th{ text-align:center; border:1px solid #b61a3f; padding:8px;}
+.table3 td{ text-align:left; border:1px solid #b61a3f; padding:8px;}
+.table3 td a{ color:#0099ff;}
+.table4{ border-collapse:collapse; border:none; background:#b61a3f;}
+.table4 .odd{ background:#f4f3ee;}
+.table4 .even{ background:#fff;}
+.table4 tr{ cursor:default;}
+.table4 th{ color:#fff; line-height:24px; text-align:left; border:none; background:#b61a3f; padding:8px;}
+.table4 td{ text-align:left; border:none; padding:8px;}
+.table4 td a{ color:#0099ff;}
+.table5{ border-collapse:collapse; border:1px solid #b61a3f; margin-top:16px;}
+.table5 .odd{ background:#f4f3ee;}
+.table5 .even{ background:#fff;}
+.table5 tr{ cursor:default;}
+.table5 th{ color:#fff; line-height:24px; text-align:center; border:1px solid #b61a3f; background:#b61a3f; padding:8px;}
+.table5 td{ text-align:center; border:1px solid #b61a3f; padding:8px;}
+.table5 td a{ color:#0099ff;}
+.table5 td img{ width:80px; height:80px; float:left; margin-right:8px;}
+.table5 td p{ text-align:left;}
+.table6{ border-collapse:collapse; border:1px solid #b61a3f; margin-top:16px;}
+.table6 .odd{ background:#f4f3ee;}
+.table6 .even{ background:#fff;}
+.table6 tr{ cursor:default;}
+.table6 th{ text-align:center; border:1px solid #b61a3f; padding:8px;}
+.table6 td{ text-align:left; border:1px solid #b61a3f; padding:8px;}
+.table6 td a{ color:#0099ff;}
+.table6 td img{ width:80px; height:80px; float:left; margin-right:8px;}
+.table6 td p{ text-align:left;}
+.table7{ border-collapse:collapse; border:none; border-top-width:0; background:#b61a3f;}
+.table7 .odd{ background:#f4f3ee;}
+.table7 .even{ background:#fff;}
+.table7 tr{ cursor:default;}
+.table7 th{ color:#fff; line-height:24px; text-align:left; border:none; background:#b61a3f; padding:8px;}
+.table7 td{ text-align:left; border:none; padding:8px;}
+.table7 td a{ color:#0099ff;}
+.table8{ border-collapse:collapse; border:1px solid #b61a3f;}
+.table8 .odd{ background:#f4f3ee;}
+.table8 .even{ background:#fff;}
+.table8 tr{ cursor:default;}
+.table8 th{ text-align:center; font-weight:normal; border:1px solid #b61a3f; padding:8px;}
+.table8 td{ text-align:left; border:1px solid #b61a3f; padding:8px;}
+.table8 td a{ color:#0099ff;}
+.table8 th span{ color:#f00; vertical-align:middle; font-weight:normal; margin-right:4px;}
+.table8 td .ipt{ height:22px; line-height:22px; border:1px solid #b61a3f; float:left; padding:0 2px;}
+.table8 td .ipt.ipt1{ width:306px;}
+.table8 td .btn{ width:80px; height:32px; color:#fff; font-weight:bold; border:none; background:#b61a3f;}
+.table8 td p{ height:21px; line-height:21px;}
+.table8 td p input{ float:left; margin:4px 3px 0 4px; *margin:0; padding:0;}
+.table8 td p label{ float:left;}
+.input40 { background: none repeat scroll 0 0 #F9F9F9;border: 1px solid #666666; font-size: 12px;height: 20px;line-height: 20px;text-align: center;width: 40px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

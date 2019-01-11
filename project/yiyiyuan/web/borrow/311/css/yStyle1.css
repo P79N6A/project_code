@@ -1,0 +1,412 @@
+/*活动一样式，未修改*/
+body,html{
+	width: 640px;
+	/*width: 100%;*/
+	margin: 0 auto;
+}
+.y-wrap{
+	width: 100%;
+	/*position: relative;*/
+	padding-bottom: 80px;
+	background: -webkit-linear-gradient(left,#f91c19, #f95c23); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,#f91c19, #f95c23); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,#f91c19, #f95c23); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right,#f91c19, #f95c23);
+}
+.invite-reward,
+.score-main,
+.notice-main{
+	width: 584px;
+	margin: 0 auto 36px;
+	border-radius: 8px;
+	background: #fef6ee;
+	overflow: hidden;
+}
+.invite-img{
+	display: block;
+	margin: 18px auto 28px;
+}
+.invite-txt{
+	font-size: 24px;
+	color: #444;
+	line-height: 38px;
+	text-align: center;
+	margin: 0 auto;
+	width: 480px;
+}
+.invite-txt span{
+	color: #fa441c;
+}
+.share-btn{
+	width: 488px;
+	height: 98px;
+	display: block;
+	margin: 20px auto 10px;
+	background: url(../images/share-btn.png) no-repeat;
+	background-position: top center;
+	background-size: 100% 100%;
+	border: none;
+	outline: none;
+}
+.notice-tit,
+.score-tit{
+	display: block;
+	margin: 0 auto 32px;
+}
+.score-statistic{
+	width: 522px;
+	height: 56px;
+	margin: 15px auto 22px;
+	background:#ffddde;
+	padding:0 20px;
+	display: flex;
+	border-radius: 8px;
+	justify-content: space-between;
+}
+.score-statistic p{
+	font-size:22px;
+	color: #444;
+	line-height: 56px;
+}
+.score-statistic p span{
+	color: #fc5b38;
+	font-weight: bold;
+}
+.score-statistic p .spacial-size{
+	font-size: 26px;
+}
+.score-three{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.score-item{
+	flex: 1;
+	text-align: center;
+}
+.score-detail{
+	width: 146px;
+	height: 62px;
+	border-radius: 4px;
+	overflow: hidden;
+	margin:14px auto 0;
+}
+.sd1{
+	background: #e9e4e3;
+}
+.sd2{
+	background: #feecc1;
+}
+.sd3{
+	background: #ecddd7;
+}
+.score-detail p{
+	line-height: 1;
+	margin-top: 8px;
+	font-size: 20px;
+}
+.score-table{
+	width: 538px;
+	margin: 30px auto;
+}
+.score-table li{
+	height: 60px;
+	border-bottom: 1px solid #e8e8e8;
+	display: flex;
+	justify-content: center;
+}
+.score-table li p{
+	flex: 1;
+	text-align: center;
+	line-height: 60px;
+	font-size: 22px;
+	color: #444;
+}
+.score-table li.table-tit p,
+.more-list li.table-tit p{
+	font-size: 20px;
+}
+.score-more{
+	font-size: 22px;
+	color: #fa441c;
+	display: block;
+	margin: 28px auto;
+	text-align: center;
+	text-decoration: none;
+}
+.wechat-code{
+	display: block;
+	margin: 24px auto 14px;
+}
+.copy-btn{
+	display: block;
+	width: 186px;
+	height: 54px;
+	line-height: 54px;
+	color: #fff;
+	font-size: 24px;
+	margin: 0 auto;
+	border: none;
+	outline: none;
+	border-radius: 46px;
+	background: -webkit-linear-gradient(left,#fb5b35, #fb5a33); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,#fb5b35, #fb5a33); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,#fb5b35, #fb5a33); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right,#fb5b35, #fb5a33);
+}
+.notice-main{
+	padding-bottom: 26px;
+}
+.notice-main p{
+	font-size: 24px;
+	color: #444;
+	line-height: 1;
+	margin-top: 18px;
+	text-align: center;
+}
+.notice-main p span{
+	color: #fc5b38;
+}
+.active-rules{
+	width: 579px;
+	margin: 45px auto 0;
+}
+.active-rules h3{
+	font-size: 24px;
+	color: #fff;
+	line-height: 1;
+	margin-bottom: 18px;
+	font-weight: bold;
+}
+.active-rules p{
+	font-size: 22px;
+	color: #fff;
+	line-height: 40px;
+}
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:#000;
+	opacity: 0.6;
+}
+.score-more-list{
+	width: 600px;
+	background: #fef6ee;
+	border-radius: 8px;
+	position: fixed;
+	top: 120px;
+	left: 20px;
+	z-index: 9;
+}
+.close-btn{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 34px;
+	height: 34px;
+	font-size: 36px;
+}
+.more-list{
+	display: flex;
+	justify-content: center;
+
+}
+.more-list ul{
+	width: 290px;
+	box-sizing: border-box;
+}
+.more-list ul li{
+	display: flex;
+}
+.more-list ul li p{
+	flex: 1;
+	text-align: center;
+	font-size: 22px;
+	color: #444;
+	line-height: 48px;
+}
+.list-one{
+	border-right: 1px solid #e8e8;
+}
+.score-tit1{
+	display: block;
+	margin: 38px auto;
+}
+.score-tip{
+	text-align: center;
+	font-size: 22px;
+	color: #444;
+	margin: 38px 0;
+}
+
+.login-error{
+	width: 498px;
+	height: 268px;
+	background: #fef6ee;
+	position: fixed;
+	border-radius: 8px;
+	left: 71px;
+	top: 388px;
+}
+.login-tip{
+	font-size: 28px;
+	color: #444;
+	text-align: center;
+	margin: 84px 0 50px;
+}
+.go-login{
+	display: block;
+	width: 236px;
+	font-size: 28px;
+	color: #fff;
+	height: 78px;
+	line-height: 78px;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	margin: 0 auto;
+	background: -webkit-linear-gradient(left,#fb5b35, #fb5a33); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,#fb5b35, #fb5a33); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,#fb5b35, #fb5a33); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right,#fb5b35, #fb5a33);
+}
+.go-share img{
+	display: block;
+	position: fixed;
+	right: 0;
+	top: 36px;
+}
+
+
+
+/*在活动一基础上新增css*/
+.active2-rp{
+	padding: 32px 0 14px;
+}
+.active2-txt{
+	font-size: 22px;
+	color: #444;
+	line-height: 38px;
+	text-align: center;
+	margin: 0 auto 32px;
+	width: 480px;
+}
+.active2-type{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 476px;
+	height: 190px;
+	margin: 0 auto;
+}
+.active2-type img{
+	width: 114px;
+	height: 109px;
+	display: block;
+}
+.active2-rpitem{
+	width: 552px;
+	height: 78px;
+	margin: 0 auto 20px;
+	border: 1px solid #da2828;
+	border-radius: 44px;
+}
+.active2-yyy{
+	display: block;
+	margin-left: 3px;
+	margin-top: 3px;
+	margin-right: 10px;
+	float: left;
+}
+.active2-rpmessage{
+	width: 316px;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+}
+.rpmessage-left p{
+	font-size: 22px;
+	color: #444;
+	line-height: 1;
+	margin-top: 12px;
+}
+.rpmessage-left span{
+	line-height: 1;
+	display: block;
+	font-size: 22px;
+	color: #777;
+	margin-top: 14px;
+}
+.rpmessage-team{
+	font-size: 22px;
+	line-height: 78px;
+	color: #444;
+}
+.rpmessage-team span{
+	color: #da2828;
+}
+.participate-btn{
+	display: block;
+	text-align:left;
+	width: 132px;
+	/*padding-left:12px;*/
+	height: 78px;
+	float: right;
+	outline: none;
+	border: none;
+	/*background:#f0f;*/
+	background:url(../images/active2-ctbtn.png) no-repeat;
+	background-size:100% 100%;
+	background-position: top right;
+	/*background: #da2828;*/
+	/*font-size: 24px;*/
+	/*color: #fff;*/
+	/*line-height: 78px;*/
+	border-top-right-radius: 39px;
+	border-bottom-right-radius: 39px;
+}
+.active2-ptsuccess{
+	width: 498px;
+    height: 370px;
+    background: #fef6ee;
+    position: fixed;
+    border-radius: 8px;
+    left: 71px;
+    top: 288px;
+}
+.active2-success{
+	color: #f7452e;
+	font-weight: bold;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 58px;
+	margin-bottom: 30px;
+}
+.login-tip1,
+.login-tip2{
+	font-size: 26px;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 20px;
+	color: #444;
+}
+.login-tip1 span{
+	color: #f7452e;
+}
+.login-tip2{
+	margin-bottom: 30px;
+}
+.close-btn{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background:url(../images/close-btn.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}

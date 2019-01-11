@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<stream>
+  <action>DLCIDSTT</action>
+  <userName>{userName}</userName>
+  <clientID>{clientID}</clientID>
+</stream>

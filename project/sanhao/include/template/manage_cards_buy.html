@@ -1,0 +1,36 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/cardslist.php?action=printing">三好网卡管理</a>&nbsp;&gt;&gt;&nbsp;购买</div>
+        <div class="wrap">
+           	<form action="/manage/cardslist.php?action=buy" method="post">
+            <table class="table8" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+           		<span>当前购买卡数量为：{$count}张</span>
+            	<input type="hidden" name="chk" value="{$chk}" />
+                    <tr class="odd">
+                        <th width="140"><span>*</span>卡面值：</th>
+                        <td width="602"><input type="text" name="money" class="ipt ipt1" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140"><span>*</span>有效期：</th>
+                        <td width="602"><input type="text" name="validity" id="check_validity_button" onclick="WdatePicker();" class="ipt ipt1" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140"><span>*</span>备注：</th>
+                        <td width="602"><textarea name='remark' rows='3' cols='35'></textarea></td>
+                    </tr>
+                    <tr class="even">
+                    	<td>&nbsp;</td>
+                        <td>
+                        	<input type="submit" class="btn btn1" value="提交" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+	        </form>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

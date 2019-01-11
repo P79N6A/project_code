@@ -1,0 +1,31 @@
+body{width:100%;height:100%; font-family: "微软雅黑"; }
+
+#overDiv {background-color: #000;width: 100%;height: 100%;left: 0;top: 0;filter: alpha(opacity=60);opacity: 0.6;z-index: 30;position: fixed!important; position: absolute;
+    _top: expression(eval(document.compatMode &&
+ document.compatMode=='CSS1Compat') ?
+ documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+ document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+}
+
+
+.newchange { color: #474d74; position: fixed; z-index: 35;bottom: 30%;border-radius: 5px;
+    background: #fff;margin: 0 5%;width: 90%; padding-bottom: 8px;}
+.newchange .error{ position: absolute; width: 4%; right: 5%; top:10px;}
+.newchange .error img{ width: 100%;}
+.newchange h3{ color: #474d74; font-weight: bold; font-size:15px; padding: 13px 0 8px;text-align: center; border-bottom: 1px solid #d0d7e0; margin: 0 3%;}
+.newchange .txtmima{ margin:19px 13% 0; overflow: hidden; }
+@media screen and (min-width: 375px) {
+    .newchange .txtmima{ margin:19px 15% 0; overflow: hidden; }
+}
+.newchange .txtmima img{ float:left; width:7%; margin: 0 3px;}
+.newchange .txtmima img.jtou{margin: 0 5px; width: 4%;}
+.newchange .txtmima span{ float: left;}
+.newchange .btnsure{ color: #fff; padding: 5px 0 6px; text-align: center; font-size:14px; font-weight: bold; border-radius: 50px; background: #c90000; width: 36%; margin:18px 32% 0;border:0;}
+
+.newchange .dbk_inpL{ border:1px solid #c2c2c2; width: 90%; margin: 14px 5% 0; padding: 11px 0;}
+.newchange .dbk_inpL input.yzmwidth { width: 50%; padding-left: 10px; border:0;}
+.newchange .dbk_inpL .hqyzm{ text-align: right; width: 42%; display: inline-block; background:#fff;border:0;}
+.newchange .dbk_inpL .hqyzm span{margin-right: 10px; }
+.newchange .dxinwh{ text-align: center;  padding-top: 14px;}
+.newchange .dxinwh.patop7{padding-top: 7px;}
+.newchange .dbk_inpL input.bfenba {border:0; width: 95%; padding-left: 10px;}

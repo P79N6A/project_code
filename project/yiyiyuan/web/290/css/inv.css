@@ -1,0 +1,235 @@
+body{width:100%;height:100%; background: #f3f3f3; font-family: "微软雅黑";}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, figure, form, fieldset, legend, input, textarea, p, blockquote, th, td,em{
+margin: 0;padding: 0;list-style: none;-webkit-tap-highlight-color: transparent;font-style: normal;}
+img{-webkit-user-select:none;-webkit-touch-callout:none; display: block;}
+a{color:#444}
+
+   /*body {background: #eee; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;font-size: 14px; color:#000; margin: 0; padding: 0;}
+    .swiper-container { width: 100%;}
+    .swiper-slide { text-align: center; font-size: 18px; background: #fff;
+    display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex; -webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center; justify-content: center; -webkit-box-align: center;  -ms-flex-align: center; -webkit-align-items: center; align-items: center; }*/
+       
+          
+body {color:#444; margin: 0;padding: 0;}
+.swiper-container {width: 100%;height: auto; margin: 0px auto;}
+.swiper-slide {text-align: center; font-size: 18px;background: #fff;width: 60%;
+		/* Center slide text vertically */
+        display: -webkit-box;display: -ms-flexbox;display: -webkit-flex; display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+.swiper-slide:nth-child(2n) { width: 40%;}
+.swiper-slide:nth-child(3n) {width: 20%;}
+
+/*底部*/
+.mMenu{height: 50px;  border-top:0.5px solid #e1e1e1; background:#fff; position:fixed; left:0; bottom:0; right:0; z-index: 26;}
+.mMenu li{  width:33.3%; text-align:center; float:left;}
+.mMenu li a{ color:#999; display:block; padding:5px;}
+.mMenu li a:hover{ text-decoration:none;}
+.mMenu li .icon{ width:35px; height:24px; background-position:center center; background-repeat:no-repeat; background-size:cover; display:inline-block; margin:0 auto;}
+.mMenu li em{ font-size:12px; color:#999; display:block;margin-top: -5px;}
+.mMenu li.item-1 .icon{ background-image:url(../../292/images/icon_m_01.png); background-size:25px 25px;}
+.mMenu li.item-2 .icon{ background-image:url(../../292/images/icon_m_02.png); background-size:25px 25px;}
+.mMenu li.item-3 .icon{ background-image:url(../../292/images/icon_m_03.png); background-size:25px 25px;}
+.mMenu li.item-1.active .icon{ background-image:url(../../292/images/icon_m_01_02.png);background-size:25px 25px;}
+.mMenu li.item-2.active .icon{ background-image:url(../../292/images/icon_m_02_02.png); background-size:25px 25px;}
+.mMenu li.item-3.active .icon{ background-image:url(../../292/images/icon_m_03_02.png); background-size:25px 25px;}
+.mMenu li.item-1.active em{ color:#c90000; margin-top: -5px;}
+.mMenu li.item-2.active em{ color:#c90000;margin-top: -5px;}
+.mMenu li.item-3.active em{ color:#c90000;margin-top: -5px;}
+
+/*借款首页*/
+.font14{font-size: 1rem;}
+.font16{font-size: 1.142rem;}
+.swiper-container.swiper-container2,.swiper-container.swiper-container3{ padding-top: 7px;}
+.nav_jk{width: 100%; background: #fff;overflow: hidden; border-bottom: 1px solid #e1e1e1;}
+.nav_jk li{ width: 50%; float: left; text-align: center; color: #aaa; height: 40px; line-height: 40px; border-bottom: 2px solid #fff; padding-top: 2px;}
+.nav_jk li .on a{display:inline-block; color: #c90000; border-bottom: 2px solid #c90000;}
+.user_loan h3,.user_money h3{ text-align: center; color: #444; padding: 15px 0 10px;}
+.user_conte{ border-radius: 5px; border:1px solid #e1e1e1;}
+.user_conte .user_imgtxt img{padding: 10px 0px;}
+#demo12 {border: 6px solid #fff;border-bottom-color: #ccc;width: 0;height: 0;margin:  10px auto 10px;}
+#demo11 {border: 6px solid #fff;border-top-color: #ccc;width: 0;height: 0;margin:  25px auto 15px;}
+.user_money h3.pad10{ padding: 60px 0 15px;}
+.user_qshu{ color: #ccc; vertical-align:middle;}
+.user_qshu p{font-size: 1rem;}
+.user_qshu.addstyle{ font-size: 2.142rem;color: #c90000; border-bottom: 2px solid #c90000;}
+.user_qshu.addstyle p{ font-size: 1rem;}
+.user_qshu.addstyle_amount{ font-size: 2.142rem;color: #c90000; border-bottom: 2px solid #c90000; font-weight: bold;}
+.user_qshu.addstyle_amount p{ font-size: 1rem;}
+.user_qshu.addstyle_days{ font-size: 2.142rem;color: #c90000; border-bottom: 2px solid #c90000;}
+.user_qshu.addstyle_days p{ font-size: 1rem;}
+.user_qshu div{line-height: 36px;}
+.user_qshu div.liheght{line-height: 25px;}
+.user_qshu div.liheght span{ font-weight: bold;}
+button.fqi_jkuan{ width: 90%; margin: 20px 5%; background: #c90000; color: black; color: #fff; position: fixed;bottom: 55px;padding: 10px 0; border-radius: 20px;font-size:1.142rem; z-index: 50;}
+.Hmask { width: 100%;height: 100%;background: rgba(0,0,0,.7); position: fixed;top: 0;left: 0; z-index: 100;}
+/*弹框样式*/
+.duihsucc{width: 90%;position: fixed; top: 20%;left: 5%;border-radius: 5px; z-index: 100;background: #fff; color: #444;}
+.duihsucc button{ width: 80%; height: 40px; background: #c90000; color: #fff; font-size: 1.2rem;border-radius: 30px;}
+.duihsucc button.sureyemian{ margin: 15px 10% 20px;}
+.duihsucc p{ text-align: center; font-size: 1rem;}
+.duihsucc p.xuhua{ padding:30px 0 5px; font-size: 1.25rem;}
+.duihsucc p span{ color: #c90000;}
+.duihsucc .margbor{ margin-top: 10px; }
+.duihsucc .margbor .dbk_inpL{border-bottom: 1px solid #e7edf0; height: 3rem;border-top: 1px solid #e7edf0; line-height: 3rem;}
+.duihsucc .tsmes {color: #c90000;text-align: center; margin-top: 0.7rem;font-size: 0.916rem;}
+.duihsucc .nzsdsm {padding-left: 5%; height: 3rem;;}
+.duihsucc .nzsdsm .dbk_inpL label {text-align: left;float: left;margin-bottom: 0;font-size: 1.2rem;color: #444;}
+.duihsucc .nzsdsm .dbk_inpL input{border: none;float: left;padding-left:5px;font-size: 1.2rem;line-height:2.9rem;}
+.bohomeg{ padding-bottom: 6%; }
+.bohomeg .iconjth{position: absolute;width: 7%;right: 5%;top: 6%;}
+.bohomeg h3{ font-size: 1.4rem; color: #c90000; margin: 0 5%; padding: 3% 0; border-bottom: 1px solid #c2c2c2;}
+.bohomeg p{ text-align: left; margin: 0 5%;}
+.bohomeg .bhtime{ font-size: 14px; color: #c2c2c2; padding-top: 5px;}
+.bohomeg .sfmiao{ font-size: 14px; color: #444; padding-bottom: 5%;}
+.bohomeg button.yesknow{ width: 40%; height: 40px; background: #c90000; color: #fff; font-size: 1.2rem;border-radius: 30px; margin-left: 55%;}
+
+
+/*待还款*/
+.haimoney{ background: #fff; padding: 10px 0;}
+.haimoney p.haitxt{ text-align: left; color: #c90000; font-size:2.142rem;}
+.haimoney .yiyq{ position: absolute; right: 5%; top:30px;border: 1px solid #ccc; color: #ccc; padding: 3px 10px; border-radius:30px; font-size: 1rem;}
+.zuoyminew .daihukan_cont.matop0{margin: 0;}
+.shezhiminay{ background: #fff; overflow: hidden; padding: 10px 0 5px;}
+.shezhiminay .imgimgnew{ margin: 15px 13% 5px;}
+.shezhiminay .yuqiym{margin: 15px 6%;color: #c90000; font-size: 1rem;}
+.shezhiminay .wenzicont{ padding: 0 3%; text-indent: 24px; font-size: 1.1rem; padding-top: 10px; color: #c90000;}
+.zuoyminew{ clear: both;}
+.zuoyminew .daihukan_cont{ margin-top: 10px; background: #fff; padding:0px 5%; color: #444; font-size: 1rem; }
+.zuoyminew .daihukan_cont .daoqihk{border-radius: 5px; padding: 20px 0 5px;text-align: center; }
+.zuoyminew .daihukan_cont .daoqihk .xzuoym{float: left; width: 50%; text-align: left;}
+.zuoyminew .daihukan_cont .rowym .corname{ float: left;}
+.zuoyminew .daihukan_cont .rowym .corliyou{float: right;}
+.zuoyminew .daihukan_cont .daoqihk span{ color: #c90000; font-size:2.142rem; }
+.zuoyminew .daihukan_cont .rowym{ background: #fff;clear: both; border-bottom: 1px dotted #e1e1e1; overflow: hidden;padding: 10px 0;}
+.zuoyminew .daihukan_cont .rowym:last-child{ border-bottom: 0;}
+.zuoyminew .bgrey{ width: 90%; margin: 20px 5%; background: #c90000; color: black; color: #fff;padding: 10px 0; border-radius: 20px;font-size:1.142rem; z-index: 50; }
+.zuoyminew .hanhaoyou{ background: #fff; color:#c90000; margin-top: 0;border:1px solid #c90000; }
+.zuoyminew .marbot100{height: 50px; }
+/*协议*/
+.touzita{ padding: 0 5%;background:#fff; color: #444; margin-top: 10px;}
+.bjys { background: #fff;padding: 10px 0;position: relative;border-bottom: 1px solid #e1e1e1; font-size: 1.142rem;}
+.bjys:last-child{ border-bottom: 0;}
+.bjys span {display: inline-block;width:2%; position: absolute;top:15px; right: 0%;color: #2b487e; float: right;font-size: 1.45rem;}
+
+/*借款确认*/
+.jinemes.none_yhui{position: relative; font-size: 1.142rem;}
+.jinemes .zitibh span{ float: right; margin-right: 5%; color: #ccc; font-size: 1rem;}
+.jinemes .tuzizi img { width: 2%; position: absolute;right: 5%;top: 15px;display: inline-block;}
+.jinemes.none_yhui .wh_bank{ float: right;font-size: 1rem;}
+.jinemes.none_yhui .wh_bank img{width: 22px;height: 25px; float: left;margin: -4px 5px 0 0;;}
+.jinemes.none_yhui .wh_bank em{ color: #999;padding-left: 5px; }
+.hkxqg.hkjhua{ background: #fff; padding-bottom: 10px;}
+.hkxqg.hkjhua h3{ font-size: 1.142rem; text-align: center; padding-top: 15px;}
+.hkxqg.hkjhua .youbianjlone span.bianjlone{ width: 16%;  }
+.hkxqg.hkjhua .youbianjlone span.bianjltwo{ width: 44%; text-align: center; }
+.hkxqg.hkjhua .youbianjlone span.bianjltwo em{color: #c90000; }
+.hkxqg.hkjhua .youbianjlone span.bianjlthree{ width: 37%; text-align: right;  }
+.xieyidejinr{ margin:15px 0 0 5%; color: #444; font-size: 1rem;}
+.xieyidejinr a{ color: #c90000; text-decoration: none; }
+.dutsmeg{ font-size: 0.857rem; color: #999; margin:  0 5%;}
+
+.regular-checkbox {display: none;}
+.regular-radio:checked + label {color: #99a1a7;border: 1px solid #adb8c0;box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);}
+.regular-radio + label {-webkit-appearance: none;border: 1px solid #cacece; padding: 9px;border-radius: 50px;display: inline-block; position: relative;}
+.regular-checkbox + label{padding: 7px; position: relative;float: left;margin-right: 10px;}
+.regular-radio:checked + label:after {content: ' ';width: 12px;height: 12px;border-radius: 50px; position: absolute;top: 3px;background: #e74747;text-shadow: 0px;left: 3px;font-size: 32px;}
+.regular-checkbox:checked + label:after{content: ' ';width: 15px;height: 15px;background: url(../images/done2.png);background-size: 100% 100%;position: absolute;top: 1px;left: 2px;}
+
+
+
+
+
+
+/*还款页面*/
+.haimoney .hkje{ text-align: center;}
+.haimoney .hkje .haitxt{text-align: center;}
+.haimoney .hkje .hailast{ color: #999;}
+.jinemes{ clear: both; font-size:1.142rem; margin: 10px 0; width: 90%; background: #fff;padding: 10px 5%; overflow: hidden;}
+.jinemes span em{ float: left;}
+.jinemes span input{float: left; display: inline-block; padding:1px 10px; width: 80%;}
+.fukfsi {border-radius: 5px;z-index: 100;background: #fff; width: 100%;  margin-top: 10px;}
+.fukfsi .errore{display:block;position: relative; top:0; left:0; border-bottom:1px #f0f4f6 solid; width: 100%; color: #aeb1c2;  }
+.fukfsi .errore span{display: block;text-align: left; font-size: 1rem; padding: 10px 5%;}
+.fukfsi .gzmess{overflow: hidden; border-bottom: 1px solid #f0f4f6;}
+.fukfsi .gzmess .ymxinxi{ position: relative;}
+.fukfsi .gzmess .ymxinxi p{ width:7% ; float: left;margin: 10px 10px 8px 5%;}
+.fukfsi .gzmess .ymxinxi span{ float: left; font-size: 1.142rem; margin-top: 10px; color: #444;}
+.fukfsi .gzmess .ymxinxi em{ display: block; width: 4%; position: absolute; top:13px; right: 5%;}
+.fukfsi .gzmess.yumendyu p img{ width: 85%;}
+button.bgrey,button.queding{ width: 90%; margin: 20px 5%; background: #c90000; color: black; color: #fff;padding: 10px 0; border-radius: 20px;font-size:1.142rem; z-index: 50; }
+
+.haimoney .hkxqg{ border-top:1px solid #e1e1e1; margin-top: 10px;}
+.haimoney .hkxqg h3{ text-align: center; padding-top: 10px;}
+.youbianjl{ background: #fff;  padding: 0 5%; color: #444;}
+.haimoney #demo11{ margin: 10px auto 0;}
+.haimoney #demo12{ margin: 0 auto 10px;}
+.youbianjl .youbianjlone.over_end{ color: #ccc;}
+.youbianjl .youbianjlone span{ display:inline-block; padding: 10px 0;}
+.youbianjl .youbianjlone span.bianjlone{ width: 16%;  }
+.youbianjl .youbianjlone span.bianjltwo{ width: 28%; text-align: center; }
+.youbianjl .youbianjlone span.bianjltwo em.changec{color: #c90000;}
+.youbianjl .youbianjlone span.bianjlthree{ width: 32%; text-align: center;  }
+.youbianjl .youbianjlone span.bianjlfour{ width: 20%; text-align: right;  position: relative; }
+.youbianjl .youbianjlone span.bianjlfour img{    position: absolute; width: 17px;height: 17px;right:0; top: 7px;}
+.youbianjl .youbianjlone{border-top: 1px dashed  #c2c2c2;}
+.youbianjl .youbianjlone:first-child{border-top:0;}
+.danbao6 a{ display: block;}
+.danbao6 img{ display: inline-block; width: 80%; margin: 20px 10% 5px;}
+
+
+/*付款方式弹窗*/
+.Hmask {width: 100%; height: 100%;background: rgba(0,0,0,.7); position: fixed;top: 0;left: 0; z-index: 100;}
+.ttfukfsi {width: 90%;position: fixed;top: 10%;left: 5%;border-radius: 5px;z-index: 100;background: #fff;}
+.ttfukfsi .errore{ position: relative; top:0; left:0; border-bottom:1px #f0f4f6 solid; width: 100%; color: #444;}
+.ttfukfsi .errore img{position: absolute; left:6%; top: 15px; width: 4%;}
+.ttfukfsi .errore span{display: block; width: 100%; text-align: center; font-size: 1.25rem; padding: 8px 0;}
+.haimoneys{ border-bottom: 1px solid #f0f4f6; padding: 10px 0;}
+.haimoneys p.haitxts{ text-align: center; color: #c90000; font-size: 2.5rem; padding-bottom:5px;font-weight: normal;}
+.haimoneys p.haitxts em{ font-size: 1.2rem;font-weight: normal;}
+.tuika{margin-bottom:20px;}
+.tuika a{ display: block; overflow: hidden;border-bottom:1px #f0f4f6 solid ; position: relative; padding: 5px 0;}
+.bank_nn .bank2 img{ float: left; width:7%;padding: 0 5px 0 5%; margin: 5px;}
+.bank_nn .sendtwo{ float: left; margin-top:0.5rem;}
+.bank_nn p{ display: inline-block; font-size: 1.1rem;color: #474d74;}
+.bank_nn p span{background: #dadbe3; color: #fff; font-size: 1rem; display: inline-block; padding: 0 7px; border-radius: 50px; margin: 0 5px;}
+.bank_nn p em{ font-size: 1rem;}
+.bank_nn p.weihaom{color: #939ab0; font-size: 1rem; display: block;}
+.bank_nn img.rightjt{ position: absolute;width: 3%;right: 5%;top: 1.2rem;}
+.ttfukfsi .addbank{ overflow: hidden; padding-bottom: 2rem; display: block;}
+.ttfukfsi .addbank img{float: left;margin: 2px 2% 0 33%; width: 4%;}
+.ttfukfsi .addbank span{ float: left; color: #474d74; font-size: 1.1rem;}
+
+
+.duihsucc_new {width: 90%;position: fixed;top: 20%;left: 5%;border-radius: 5px;z-index: 100;background: #fff;color: #444;}
+.duihsucc_new p.xuhua_new {padding: 30px 0 5px;font-size: 1.25rem;}
+.duihsucc_new p {text-align: center;font-size: 1rem;}
+.duihsucc_new button.sureyemian_new {margin: 15px 10% 20px;}
+.duihsucc_new button {width: 80%;height: 40px;background: #c90000;color: #fff;font-size: 1.2rem;border-radius: 30px;}
+
+
+/*借款用途*/
+.user_money h3.pad10{ padding: 40px 0 20px;}
+h3.jkyongtu{ padding: 40px 0 20px; text-align: center;}
+#demo11{ margin: 0 auto;}
+.user_conte .user_imgtxt img{ padding-bottom: 0; width: 70%; margin: 0 15%;}
+.user_conte .user_imgtxt p{ font-size: 1rem; padding: 5px 0 10px;}
+
+
+.fukfsis {width: 90%;position: fixed;top:20%;left: 5%;z-index: 100;background: #fff;}
+.fukfsis .errore{ position: relative; top:0; left:0; border-bottom:1px #e1e1e1 solid; width: 100%; color: #444;  }
+.fukfsis .errore img{position: absolute; left:5%; top: 10px; width: 4%;}
+.fukfsis .errore span{display: block; width: 100%; text-align: center; font-size: 1.3rem; padding: 10px 0;}
+.fukfsis .gzmess{overflow: hidden; border-bottom: 1px solid #e1e1e1;}
+.fukfsis .gzmess .ymxinxi{ position: relative;}
+.fukfsis .gzmess .ymxinxi p{ width:10% ; float: left; margin:15px 10px 10px 20px;}
+.fukfsis .gzmess .ymxinxi span{ float: left; font-size: 1.15rem; margin-top: 17px; color: #444;}
+.fukfsis .gzmess .ymxinxi em{ display: block; width: 6%; position: absolute; top:17px; right: 6%;}
+.fukfsis .gzmess.yumendyu p img{ width: 85%;}
+.fukfsis button.queding{ background: #c90000;  color: #fff; border-radius: 20px; font-size: 1.4rem; width: 80%; margin: 20px 10%; height: 3.5rem;}
+
+.txtxtexs .chakan{font-size: 1.2rem;text-align: center; width: 100%; padding: 10px 8%; height: 3.5rem;border-bottom:1px #e1e1e1 solid; }
+.txtxtexs .chakan span{float: left;display: inline-block;}
+.txtxtexs .chakan img{ float: left; width: 4%; display: inline-block;margin: 6px 5px;}
+.sure{ margin: 10px 0;}
+button.sure{ width:30%; margin-left: 35%; color: #fff; background: #c90000; font-size: 1.25rem; border-radius: 50px;}
+
+

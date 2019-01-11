@@ -1,0 +1,67 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/product.php?action=list">商品管理</a>&nbsp;&gt;&gt;&nbsp;<!-- {if $func == 'list'} -->在售商品<!-- {else if $func == 'offlist'} -->下架商品<!-- {else if $func == 'draftlist'} -->草稿商品<!-- {else if $func == 'recyclelist'} -->商品回收站<!-- {/if} -->&nbsp;&gt;&gt;&nbsp;商品详情 </div>
+        <div class="wrap">
+            <table class="table3" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+                    <tr class="odd">
+                        <th width="140">商品名称：</th>
+                        <td width="602">{$product['pname']}</td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">商品价格：</th>
+                        <td width="602">{$product['price']}</td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140">商品时间：</th>
+                        <td width="602"></td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">物流费用：</th>
+                        <td width="602">{$product['express_price']}</td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140">库        存：</th>
+                        <td width="602"><!-- {if $product['max_number'] == 0} -->无限<!-- {else} -->{$product['max_number']-$product['sale_number']}<!-- {/if} --></td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">购买次数：</th>
+                        <td width="602">{$product['sale_number']}次</td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140">商品描述：</th>
+                        <td width="602">{$product['description']}</td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">商品图片：</th>
+                        <td width="602">
+                        <!-- {loop $productimage $index $one} -->
+                        <img width="80" height="60" src="/{$one['image']}" />
+                        <!-- {/loop} -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <table class="table6" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+                    <tr class="even">
+                    	<th width="140">卖　　家：</th>
+                        <td width="602" style="padding:0;">
+                        	<table class="table7" width="100%" border="0" bordercolor="#b61a3f" cellpadding="0" cellspacing="0">
+                            	<tr class="odd">
+                                	<td>三好网账户：{$user['mobile']}（{$user['nickname']}）</td>
+                                </tr>
+                                <tr class="even">
+                                    <td>支付通账户：{$usericardpay['payno']}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

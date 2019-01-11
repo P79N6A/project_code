@@ -1,0 +1,19 @@
+html{ width: 100%; position: absolute;}
+body{width:100%;  font-family: "Microsoft YaHei"; background: #7929e0;}
+
+.actvete .bannerimg img{ width: 100%; display: block;}
+.actvete  .dwlhbao{ background: #ffec1a; width: 90%; margin: 2rem 5% 3rem; border-radius: 5px; color: #7929e0; font-size: 1.4rem; padding: 10px 0; font-weight: bold; }
+.actvete .certifn .bortop{ border-top:1px #ffec1a solid;}
+.actvete .certifn h3 { color: #ffec1a; font-size: 1.4rem; font-weight:bold;text-align: left;width: 30%;background: #7929e0;margin: -16px 0 5px;}
+.actvete .certifn.hdguize p{ color: #fff; font-size: 1rem; line-height: 30px; padding-top: 0;}
+.actvete .certifn.hdguize p span{color: #ffec1a;}
+.actvete .certifn.hdguize{ width: 90%; margin: 0 auto;}
+.buttxt .mestishi{ width: 85%; background: #9131e7; margin: 2rem auto 0; border-radius: 5px; padding: 2rem 0;}
+.buttxt .mestishi h3{ text-align: center; color: #ffec1a; font-size: 2rem; font-weight: bold;} 
+.buttxt .mestishi p{ text-align: center;color: #fff; font-size: 1.2rem; padding-top: 5px;}
+.buttxt .tishimes{ text-align: center; color: #fff; font-size: 1rem; padding-top: 5px;}
+.srphone{ width: 87%; margin: 2rem 5% 0; background: #581da4; color: #fff;padding: 1rem 0 1rem 3%; font-size: 1.1rem; border-radius: 5px;}
+.bottombanner{position: absolute;bottom: -0.3rem; left: 0;}
+.xzapp{ color: #fff; margin: 2rem 0 0; text-align: center; font-size: 1rem;}
+.xzapp p{ padding-top: 5px;}
+.xzapp p span{ color: #ffec1a;}

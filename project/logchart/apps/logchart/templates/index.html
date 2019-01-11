@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block content %}
+    <style>
+        .table th{text-align: center}
+    </style>
+    <div class="outer">
+        <div class="inner bg-light lter" id="viewDiv">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="box">
+                        <header>
+                            <h5>{{ peanutData.name }}</h5>
+                        </header>
+                        <div class="body collapse in">
+                            <table class="table responsive-table">
+                                <tr>
+                                    <th>昨日注册量</th>
+                                    <th>今日注册量</th>
+                                    <th>上周注册量</th>
+                                    <th>本周注册量</th>
+                                </tr>
+                                <tr>
+                                    <td>{{ peanutData.dayData.yesterdayRegister }}</td>
+                                    <td>{{ peanutData.dayData.todayRegister }}</td>
+                                    <td>{{ peanutData.weekData.lastWeekRegister }}</td>
+                                    <td>{{ peanutData.weekData.thisWeekRegister }}</td>
+                                </tr>
+                                <tr>
+                                    <th>昨日浏览量</th>
+                                    <th>今日浏览量</th>
+                                    <th>上周浏览量</th>
+                                    <th>本周浏览量</th>
+                                </tr>
+                                <tr>
+                                    <td>{{ peanutData.dayData.yesterdayBrowse }}</td>
+                                    <td>{{ peanutData.dayData.todayBrowse }}</td>
+                                    <td>{{ peanutData.weekData.lastWeekBrowse }}</td>
+                                    <td>{{ peanutData.weekData.thisWeekBrowse }}</td>
+                                </tr>
+                                <tr>
+                                    <th>昨日订阅量</th>
+                                    <th>今日订阅量</th>
+                                    <th>上周订阅量</th>
+                                    <th>本周订阅量</th>
+                                </tr>
+                                <tr>
+                                    <td>{{ peanutData.dayData.yesterdaySubscribe }}</td>
+                                    <td>{{ peanutData.dayData.todaySubscribe }}</td>
+                                    <td>{{ peanutData.weekData.lastWeekSubscribe }}</td>
+                                    <td>{{ peanutData.weekData.thisWeekSubscribe }}</td>
+                                </tr>
+                                <tr>
+                                    <th>昨日投标量</th>
+                                    <th>今日投标量</th>
+                                    <th>上周投标量</th>
+                                    <th>本周投标量</th>
+                                </tr>
+                                <tr>
+                                    <td>{{ peanutData.dayData.yesterdayBid }}</td>
+                                    <td>{{ peanutData.dayData.todayBid }}</td>
+                                    <td>{{ peanutData.weekData.lastWeekBid }}</td>
+                                    <td>{{ peanutData.weekData.thisWeekBid }}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <header>
+                            <h5>{{ yiyiyuanData.name }}</h5>
+                        </header>
+                        <div class="body collapse in">
+                            <table class="table responsive-table">
+                                <tr>
+                                    <th>昨日注册量</th>
+                                    <th>今日注册量</th>
+                                    <th>上周注册量</th>
+                                    <th>本周注册量</th>
+                                </tr>
+                                <tr>
+                                    <td>{{ yiyiyuanData.dayData.yesterdayRegister }}</td>
+                                    <td>{{ yiyiyuanData.dayData.todayRegister }}</td>
+                                    <td>{{ yiyiyuanData.weekData.lastWeekRegister }}</td>
+                                    <td>{{ yiyiyuanData.weekData.thisWeekRegister }}</td>
+                                </tr>
+                                <tr>
+                                    <th>昨日浏览量</th>
+                                    <th>今日浏览量</th>
+                                    <th>上周浏览量</th>
+                                    <th>本周浏览量</th>
+                                </tr>
+                                <tr>
+                                    <td>{{ yiyiyuanData.dayData.yesterdayBrowse }}</td>
+                                    <td>{{ yiyiyuanData.dayData.todayBrowse }}</td>
+                                    <td>{{ yiyiyuanData.weekData.lastWeekBrowse }}</td>
+                                    <td>{{ yiyiyuanData.weekData.thisWeekBrowse }}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

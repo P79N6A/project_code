@@ -1,0 +1,121 @@
+html,body{width:100%;height:100%; background: #dfe7ec; font-family: "Microsoft YaHei"; color: #dfe7ec;}
+a{color:#000}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, figure, form, fieldset, legend, input, textarea, p, blockquote, th, td,em{
+margin: 0;padding: 0;list-style: none;-webkit-tap-highlight-color: transparent;font-style: normal;}
+img{ display:block;}
+
+.marg15{ margin-top: 15px;}
+.loginmeg{ background: #fff;}
+.loginmeg .dbk_inpL {border-top: 1px solid #e7edf0;background: #fff;overflow: hidden; position: relative;margin: 0 5%;}
+.loginmeg .dbk_inpL label {float: left;margin-bottom: 0;color: #444;font-size: 1.083rem;line-height: 3.75rem;}
+.loginmeg .dbk_inpL input {float: left;padding-left:4% ;font-size: 1.083rem;line-height:3.75rem;}
+.loginmeg .dbk_inpL .gracode {position: absolute; right: 3%; width: 25%;height: 2rem; top: 0.7rem;}
+.loginmeg .dbk_inpL .Obtain{color: #c90000; position: absolute;width: 32%; right: 0; padding: 5px;border-left: 1px solid #c90000;text-align: center; bottom: 10px;}
+.tsmes {color: #c90000;text-align: center;margin-top: 0.7rem; font-size: 0.916rem;}
+.promptsuc{ color: #444;margin: 0;}
+.promptsuc a{ color: #c90000; }
+ button.loginbtn {width: 90%;background: #c90000; border-radius: 50px;color: #fff;font-size: 1.25rem;padding: 10px 0;margin: 0.7rem 5%;font-size: 1.25rem;}
+button.registerbtn{ background: #fff; color: #c90000;border: 1px solid #c90000;margin-top: 8rem;}
+.loginsuc{width:30%;position: fixed;top:40%;left:35%;text-align: center;color: #fff; background: #000; padding: 10px;opacity: 0.9;}
+.Borrowing{ color: #444;}
+.p_ipt{background: #fff; padding: 1rem 5%;}
+.form-group { clear: both;  overflow: hidden; margin-bottom: 10px;font-size: 1.083rem; position: relative;}
+.form-group.liyou{border-bottom: 1px solid #c2c2c2; padding-bottom: 5px;}
+.form-group .Bortitle{ width: 25%; float: left;line-height: 2.4rem; }
+.form-group .Bortext{ float: left; color: #444; border:1px solid #c2c2c2; padding: 5px 8px; margin-right: 3%; border-radius: 5px;}
+.form-group .Bortext.on{ background: #c90000;border:1px solid #c90000; color: #fff;}
+.form-group .buymeg{width: 75%; float: left; font-size: 1.083rem; line-height: 2.4rem;}
+.form-group .buymeg .seltxt{font-size: 1.083rem;width: 100%; border: 0; padding-left: 10px;margin-left: -5%;appearance: none;-moz-appearance: none;-webkit-appearance: none;background:url(../images/yumen.png) no-repeat scroll right center transparent;background-size: 6%;}
+.form-group .Coupon{ color: #c2c2c2;}
+.padb1{padding-bottom: 1px;}
+.form-group .bottomjt{ position: absolute; width: 4%;height: 0.5rem; right: 4%;top: 1rem;pxz-index: 50;}
+.Borrowing .expire{ float: right; padding: 1rem 5%;}
+.Borrowing .expire span{ color: #C90000;}
+
+.jdall{ font-size: 1.2rem; color: #aaa;}
+.jdall .pleadecard{ color: #444; font-size: 1rem; padding: 10px 5%;}
+.jdall .tsmes {color: #C90000;text-align: center;margin-top:10px;}
+.jdyyy{ background: #fff; position: relative; padding-left: 5%;}
+.jdyyy .crome{position: absolute;top: 0;background: #fff;right: 0; width: 25%;height: 6rem; border-left: 1px solid #e7edf0; margin: 0.9rem 0;}
+.jdyyy .crome img{width: 80%;height: 6rem;}
+.jdyyy .dbk_inpL {border-top: 1px solid #e7edf0;border-radius: 5px;background: #fff; padding: 4% 0%;overflow: hidden; position: relative;}
+.jdyyy .dbk_inpL:first-child{ border-top: 0;}
+.jdyyy .dbk_inpL .icon_Rem{ position: absolute; right: 3%;width: 7%;}
+.jdyyy .dbk_inpL label {text-align: left;float: left;margin-bottom: 0;font-size: 1.2rem;color: #444;}
+.jdyyy .dbk_inpL input{border: none;float: left;padding-left:5px;font-size: 1.2rem;line-height: 1.7rem;}
+.jdyyy .dbk_inpL span{ margin-left: 3%; color: #444;}
+.jdyyy .dbk_inpL span em{ font-size: 1rem; background: #c7c9d5; padding: 2px 5px; border-radius: 30px; color: #fff;}
+.jdyyy .dbk_inpL select { width: 72%; background: transparent; -webkit-appearance: none; /*for chrome*/    font-size: 1.2rem; padding-left: 10px;}
+.jdyyy .dbk_inpL .Obtain {color: #c90000; position: absolute;width: 30%;right: 3%; padding: 5px; border-left: 1px solid #c90000;text-align: center;bottom: 8px;}
+.jdyyy .dbk_inpL .hqyzm{color: #e74747; position: absolute;width: 25%;right: 10px; padding: 5px;border: 1px solid #e74747; text-align: center; border-radius: 50px; bottom: 10px;}
+.button {margin: 0 5%; margin-top: 15px;}
+.button button {width: 100%;background: #c90000;border-radius: 50px;color: #fff;font-size: 1.25rem; padding: 10px 0;}
+.jdyyy .dbk_inpL span.mingzi{ color: #444; padding-left: 10px;}
+.jdall .clicktzhan{ padding-top: 15px; text-align: right; margin-right: 5%;}
+.jdall .clicktzhan a{color: #3b709e; font-size: 1.2rem;}
+.jdyyy.danweimes{ margin-top: 10px;}
+.jdyyy.danweimes .dbk_inpL input{ width: 77%;line-height: 1.7rem;}
+.jdyyy .dbk_inpL .dibujtou{width: 4%;position: absolute; right: 3%;top: 40%;height: 0.7rem;}
+.jdyyy.ximgxtel{ margin-top: 10px;}
+.jdyyy.ximgxtel .dbk_inpL label{ width: 13%;}
+.jdyyy.ximgxtel .dbk_inpL input{ line-height: 22px;}
+.jdall .qingbingd{padding-top: 10px; margin-left: 5%;}
+.jdyyy .dbk_inpL .selectList select{ width: 24%;}
+.jdall .dxinsure{ padding: 15px 0; font-size: 1.1rem;}
+.jdall .dxinsure p{ text-align: center; color: #444;}
+.jdall .dxinsure p span{ color: #c90000;}
+
+.Hmask {width: 100%; height: 100%;background: rgba(0,0,0,.7); position: fixed;top: 0;left: 0; z-index: 100;}
+.duihsucc{width: 90%;position: fixed; top: 20%;left: 5%;border-radius: 5px; z-index: 100;background: #fff; color: #444;}
+.duihsucc button{ width: 80%; height: 40px; background: #c90000; color: #fff; font-size: 1.2rem;border-radius: 30px;}
+.duihsucc button.sureyemian{ margin: 15px 10% 20px;}
+.duihsucc p{ text-align: center; font-size: 1rem;}
+.duihsucc p.xuhua{ padding:30px 0 5px; font-size: 1.25rem;}
+.duihsucc p span{ color: #c90000;}
+.duihsucc.hkaapp button{ width: 40%; margin: 15px 0 15px 7%;  height: 35px; line-height: 33px; font-size: 1.1rem; border:1px solid #c90000;}
+.duihsucc.hkaapp button.xzai{ border:1px solid #c90000; color: #c90000; background: #fff;}
+.duihsucc .margbor{ margin-top: 10px; }
+.duihsucc .margbor .dbk_inpL{ border-bottom: 1px solid #e7edf0;}
+
+.touzita{ padding-left: 5%;background: #fff;}
+.bjys{position: relative; background: #fff; padding: 10px 0; font-size: 1.1rem;border-bottom: 1px solid #dfe7ec; color: #444;}
+.bjys span{ position: absolute;right: 5%; float: right; }
+.bjys span em{color: #c90000;}
+.argeehd{ margin: 10px 3%; font-size: 1rem; color: #444;}
+.argeehd .underL{color: #279cff;}
+.regular-checkbox {display: none;}
+.regular-radio + label {-webkit-appearance: none;border: 1px solid #cacece; padding: 9px;border-radius: 50px;display: inline-block; position: relative;}
+.regular-checkbox + label{border: 1px solid #cacece;padding: 7px; position: relative;float: left;margin-right: 10px;}
+.regular-radio:checked + label:after {content: ' ';width: 12px;height: 12px;border-radius: 50px; position: absolute;top: 3px;background: #e74747;text-shadow: 0px;left: 3px;font-size: 32px;}
+.regular-checkbox:checked + label:after{content: ' ';width: 20px;height: 16px;background: url(../images/done.png);background-size: 100% 100%;position: absolute;top: -2px;left: -2px;}
+
+.banks{ margin-top: 10px;}
+.banks li{overflow: hidden;background: #fff;padding: 10px 6.25% 5px; margin-bottom: 10px;}
+.banks li .icon_bank{width:15%; float: left; margin-right: 3%; }
+.banks li .bank_cont{float: left;width: 60%; font-size: 1.2rem;}
+.banks li .bank_cont .bankN{font-size: 1.35rem; padding-top:10px; color: #444; }
+.banks li .bank_cont i{background: #c2c2c2; padding: 2px 8px; color: #fff; font-size: 1rem; border-radius: 20px;}
+.banks li .bank_cont .grey4{ color: #b2b4c1; font-size: 1rem;}
+.banks .text-right{float: right; width: 4%; font-size: 1.1rem; margin-top: 1.1rem;}
+
+.ttfukfsi {width: 90%;position: fixed;top: 15%;left: 5%;border-radius: 5px;z-index: 100;background: #fff;}
+.ttfukfsi .errore{ position: relative; top:0; left:0; border-bottom:1px #f0f4f6 solid; width: 100%; color: #444;}
+.ttfukfsi .errore span{display: block; width: 100%; text-align: center; font-size: 1.25rem; padding: 12px 0;}
+.tuika a{ display: block; overflow: hidden;border-bottom:1px #f0f4f6 solid ; position: relative; padding: 5px 0;}
+.bank_nn .bank2 img{ float: left; width:16%;padding: 0 5px 0 5%;}
+.bank_nn .sendtwo{ float: left; margin-top:0.5rem;}
+.bank_nn p{ display: inline-block; font-size: 1.1rem;color: #474d74;}
+.bank_nn p span{background: #c7c9d5; color: #fff; font-size: 1rem; display: inline-block; padding: 0 7px 2px; border-radius: 50px; margin: 0 5px;}
+.bank_nn p em{ font-size: 1rem;color:#d2d2d2}
+.ttfukfsi .addbank{ background: #fff; padding: 15px 0; padding-left: 33%;border-radius: 5px;}
+.ttfukfsi .addbank img{ display: inline-block;  width: 20%; float: left;}
+.ttfukfsi .addbank span{ float: left; padding-left: 5%;line-height: 1.8rem; font-size: 1.2rem; color: #c2c2c2;}
+
+.hkcguy{ background: #fff; padding: 0 5%; color: #444;}
+.hkcguy .click{width:20%; margin-left:40%; padding-top: 20px;}
+.hkcguy h3{ text-align: center; font-size: 1.2rem; padding-top: 10px;}
+.hkcguy h3 span{ color: #c90000; }
+.hkcguy p{text-align:center;font-size: 1rem; }
+.hkcguy .yywen{ color: #c2c2c2; padding: 20px 0 10px; text-align: center; border-bottom: 1px solid #c2c2c2;}
+.hkcguy .clicktwo{ padding: 15px 0;}
+.hkcguy .yywen img{ width: 8%; display: inline-block; padding-left: 3%;}

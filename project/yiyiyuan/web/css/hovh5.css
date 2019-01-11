@@ -1,0 +1,48 @@
+html,body{width:100%;background: #f3f3f3;  color: #444; font-family: "微软雅黑"; font-size: 14px; }
+a{color:#444}
+img{ display:block; width: 100%;}
+
+/*身份证验证*/
+.my_ziliao h3{ padding: 10px 5%; color: #999;}
+.sfenzeng{ background: #fff; padding: 15px 5%; overflow: hidden;}
+.sfenzeng .sfz_one{ width: 48%; float: left;}
+.sfenzeng .sfz_one:first-child{margin-right: 4%;}
+.sfenzeng .sfz_one p{text-align: center; color: #999; font-size: 0.857rem; padding-top: 10px;}
+.yhmaold{ background: #fff; position: relative;margin-bottom: 10px;}
+.yhmaold .dbk_inpL {position:relative;border-top: 1px solid #f3f3f3;border-radius: 5px;background: #fff; padding: 4% 5%;overflow: hidden;}
+.yhmaold .dbk_inpL label {text-align: left;float: left;margin-bottom: 0;width:22%;font-size: 1rem;color: #444;}
+.yhmaold .dbk_inpL input{border: none;float: left; margin-top:2px; width: 75%;}
+.yhmaold .dbk_inpL p.rightgray{position: absolute;right: 5%;width: 3%;top: auto;}
+.buttonyi {margin: 0 5%; margin-top: 25px;}
+.buttonyi button {width: 100%;background: #C90000;color: #fff;font-size: 1.25rem; padding: 10px 0; border-radius: 50px;}
+
+/*弹窗*/
+.Hmask { width: 100%;height: 100%;background: rgba(0,0,0,.6); position: fixed;top: 0; left: 0;}
+.dl_tcym{position: fixed; top: 25%; width: 90%; background: #fff;z-index: 110; margin: 0 5%; border-radius: 5px; padding-bottom:2rem;}
+.dl_tcym img{position: absolute;top: -25%; width: 9%;right: 0;}
+.dl_tcym h3{text-align: center; padding-top:2rem; font-size: 1.285rem;}
+.dl_tcym .btbuy_false{text-align: center; margin: 5px 5% 0; color: #999;}
+.dl_tcym button{ width: 40%;margin: 20px 30% 0;  font-size: 16px; padding:10px 0; border-radius: 50px; background: #c90000; color: #fff;font-size: 1.1rem;}
+/*弹窗*/
+.jiebangcg{position: fixed;top: 33%;color: #fff; z-index: 15; border-radius: 5px;text-align: center;background: rgba(0,0,0,0.7); width: 70%;left: 15%; padding: 15px 0;}
+.jiebangcg.txwzend{width: 50%;left: 25%;}
+/*视频认证*/
+.shiprzg{background: #fff;}
+.shiprzg h3{font-size:18px; color: #444; text-align: center;}
+.shiprzg img.sprg{width: 23%; margin: 0 auto; padding: 30px 0;}
+.shiprzg p{text-align:center; padding-bottom: 20px;}
+.shiprzg p.yutime{color: #999;}
+.shiprzg p.ysccg{padding-bottom: 0;}
+.sprzg{font-size: 0.857rem; color: #999; text-align: center; padding-top: 10px;}
+.shiprzg .success{width: 8%; margin: 0 auto; padding: 30px 0 5px;}
+.shiprzg img.imgtu{width: 50%; margin: 0 auto; padding: 30px 0;}
+.shiprzg h3.yhands{font-size: 1.285rem; color: #c90000;}
+.shiprzg p.qschuan{padding-top: 20px; color: #999; padding: 0; margin: 0; padding-top: 15px;}
+.shiprzg .zyoutu{border-top:1px solid #e1e1e1; margin: 0 5%;}
+.shiprzg .zyoutu img{padding: 10px 0 25px;}
+
+.main{ width: 100%;text-align: center; position: fixed; bottom: 20px;}
+.main .returnsp{overflow: hidden; display: inline-block; color: #c90000;}
+.main .returnsp img{float: left; width:16%;}
+.main .returnsp span{float: left;}
+.main  p{width: 100%; text-align: center; color: #999;}

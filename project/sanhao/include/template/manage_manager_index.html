@@ -1,0 +1,39 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/manager.php?action=list">管理员管理</a>&nbsp;&gt;&gt;&nbsp;管理员列表</div>
+        <div class="wrap">
+            <table class="table2" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<thead>
+                	<tr>
+                    	<th width="26">ID</th>
+                        <th width="100">登录名</th>
+                        <th width="80">真实姓名</th>
+                        <th width="80">手机号码</th>
+                        <th width="126">邮箱</th>
+                        <th width="80">操作</th>
+                    </tr>
+                </thead>
+            	<tbody>
+            	<!--{loop $manager $index $one}-->
+                	<tr <!--{if $index%2 != 0}--> class="odd" <!-- {else} --> class="even" <!-- {/if} --> >
+                    	<td>{$one['id']}</td>
+                        <td><a href="/manage/order.php?action=detail&id={$one['id']}" >{$one['username']}</a></td>
+                        <td>{$one['realname']}</td>
+                        <td>{$one['mobile']}</td>
+                        <td>{$one['email']}</td>
+                        <td><a href="/manage/manager.php?action=update&id={$one['id']}">修改</a>&nbsp;&nbsp;&nbsp;<a href="/manage/rightsmanage.php?action=list&rights={$one['id']}">设置权限</a></td>
+                    </tr>
+                <!--{/loop}-->
+                </tbody>
+            </table>
+            <div class="page clearfix">
+            <!--{if $count > 20}-->
+		       {$pagestring}
+	       <!--{/if}-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

@@ -1,0 +1,173 @@
+<script type="text/javascript">
+    var dom = document.getElementById("main");
+    var myChart = echarts.init(dom);
+    var app = {};
+    option = null;
+    var posList = [
+        'left', 'right', 'top', 'bottom',
+        'inside',
+        'insideTop', 'insideLeft', 'insideRight', 'insideBottom',
+        'insideTopLeft', 'insideTopRight', 'insideBottomLeft', 'insideBottomRight'
+    ];
+    app.configParameters = {
+        rotate: {
+            min: -90,
+            max: 90
+        },
+        align: {
+            options: {
+                left: 'left',
+                center: 'center',
+                right: 'right'
+            }
+        },
+        verticalAlign: {
+            options: {
+                top: 'top',
+                middle: 'middle',
+                bottom: 'bottom'
+            }
+        },
+        position: {
+            options: echarts.util.reduce(posList, function (map, pos) {
+                map[pos] = pos;
+                return map;
+            }, {})
+        },
+        distance: {
+            min: 0,
+            max: 100
+        }
+    };
+
+    app.config = {
+        rotate: 90,
+        align: 'left',
+        verticalAlign: 'middle',
+        position: 'insideBottom',
+        distance: 15,
+        onChange: function () {
+            var labelOption = {
+                normal: {
+                    rotate: app.config.rotate,
+                    align: app.config.align,
+                    verticalAlign: app.config.verticalAlign,
+                    position: app.config.position,
+                    distance: app.config.distance
+                }
+            };
+            myChart.setOption({
+                series: [{
+                    label: labelOption
+                }, {
+                    label: labelOption
+                }, {
+                    label: labelOption
+                }, {
+                    label: labelOption
+                }]
+            });
+        }
+    };
+
+
+    var labelOption = {
+        normal: {
+            show: true,
+            position: app.config.position,
+            distance: app.config.distance,
+            align: app.config.align,
+            verticalAlign: app.config.verticalAlign,
+            rotate: app.config.rotate,
+            formatter: '{c}  {name|{a}}',
+            fontSize: 16,
+            rich: {
+                name: {
+                    textBorderColor: '#fff'
+                }
+            }
+        }
+    };
+    option = {
+        title: {
+            text:{{ clb_text|safe }},
+            x: 'center'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        legend: {
+            left: '10px',
+            data: {{ clb_legend|safe }}
+        },
+        toolbox: {
+            show: true,
+            orient: 'vertical',
+            left: 'right',
+            top: 'center',
+            feature: {
+                mark: {show: true},
+                dataView: {show: true, readOnly: false},
+                magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                restore: {show: true},
+                saveAsImage: {show: true}
+            }
+        },
+        calculable: true,
+        dataZoom: [{
+            type: 'slider',
+            start: 50,
+            end: 70
+        }, {
+            type: 'inside',
+            start: 50,
+            end: 70
+        }],
+        xAxis: [
+            {
+                type: 'category',
+                axisTick: {show: false},
+                data:{{ clb_x_axis|safe }}
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: '安卓',
+                type: 'bar',
+                barGap: 0,
+                label: labelOption,
+                data: {{ clb_an_num }}
+            },
+            {
+                name: 'ios',
+                type: 'bar',
+                label: labelOption,
+                data: {{ clb_ios_num }}
+            },
+            {
+                name: '微信',
+                type: 'bar',
+                label: labelOption,
+                data: {{ clb_weixin_num }}
+            },
+            {
+                name: 'PC',
+                type: 'bar',
+                label: labelOption,
+                data: {{ clb_pc_num }}
+            },
+        ]
+    };
+    ;
+    if (option && typeof option === "object") {
+        myChart.setOption(option, true);
+    }
+</script>

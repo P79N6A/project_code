@@ -1,0 +1,48 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/cardslist.php?action=list">支付通卡管理</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/cardslist.php?action=printing">印刷卡管理</a>&nbsp;&gt;&gt;&nbsp;支付 </div>
+        <div class="wrap">
+        <form action="/manage/pay.php" method="post" id="order-pay-form">
+            <table class="table3" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+            		<tr class="odd">
+                        <th width="140">订单号：</th>
+                        <td width="602">{$cardslist['pid']}</td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">卡面值：</th>
+                        <td width="602">{$cardslist['money']}</td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140">卡数量：</th>
+                        <td width="602">{$cardslist['number']}</td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">总金额：</th>
+                        <td width="602">{$cardslist['total_amount']}</td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140">卡有效期：</th>
+                        <td width="602">{$cardslist['validity']}</td>
+                    </tr>
+                    <tr class="even">
+                        <th width="140">备注：</th>
+                        <td width="602">{$cardslist['remark']}</td>
+                    </tr>
+                   <tr class="odd">
+                    	<td>&nbsp;</td>
+                        <td>
+                        	<input type="hidden" name="order_id" id="cards_offline_id" value="{$cardslist['id']}" class="btn btn1"/>
+                        	<input type="submit" class="btn btn1" id="order-pay-button" value="在线支付" />
+                            <input type="button" id="cards_offline_button" class="btn btn1" value="线下支付" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </form>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

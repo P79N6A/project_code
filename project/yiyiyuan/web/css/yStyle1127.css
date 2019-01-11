@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+/* HTML5 hidden-attribute fix for newer browsers */
+
+*[hidden] {
+    display: none;
+}
+
+body {
+    line-height: 1;
+}
+
+html,
+body {
+    font-family: "微软雅黑"
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+body,html{
+	height: 100%;
+	overflow: auto;
+	font-family: "微软雅黑";
+}
+.y-wrap{
+	margin:0 auto;
+	width: 750px;
+}
+.y-top{
+	background: url(../images/activity/yyy-top.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+	width: 750px;
+	height: 416px;
+}
+.y-main{
+	display: block;
+	background: url(../images/activity/yyy-main.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+	width: 750px;
+	height: 648px;
+}
+.liberty-tit{
+	margin: 0 auto 44px;
+	background: url(../images/activity/main-title.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+	width: 343px;
+	height: 78px;
+}
+.liberty-list{
+	display: flex;
+	width: 688px;
+	margin: 0 auto 48px;
+	justify-content: center;
+}
+.liberty-item{
+	flex: 1;
+	width: 50%;
+}
+.liberty-item img{
+	display: block;
+	width: 93px;
+	height: 93px;
+	margin: 0 auto 16px;
+}
+.liberty-item p{
+	font-size: 24px;
+	color: #45403d;
+	text-align: center;
+	line-height: 36px;
+	font-weight: bold;
+}
+.y-bottom{
+	background: url(../images/activity/yyy-bottom.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+	width: 750px;
+	height: 1038px;
+}
+.notice-title{
+	background: url(../images/activity/yyy-notice.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+	width: 207px;
+	height: 43px;
+	margin: 0 auto 34px;
+}
+.notice-txt{
+	width: 621px;
+	margin: 0 auto;
+	font-size: 24px;
+	color: #444;
+	font-weight: bold;
+	line-height: 34px;
+}
+.notice-txt span{
+	color: #f44c0b;
+	font-size: 28px;
+}
+.notice-txt img{
+	padding:0 6px;
+}
+.y-weichat{
+	background: url(../images/activity/yyy-wbg.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: 10px 10px;
+	width: 352px;
+	height: 221px;
+	margin:22px auto 42px;
+}
+.y-weichat img{
+	width: 221px;
+	height: 221px;
+	display: block;
+	margin: 0 auto;
+}
+.y-tips{
+	background: url(../images/activity/yyy-img.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+	width: 481px;
+	height: 334px;
+	margin:27px auto 25px;
+}
+.notice-txt1{
+	width: 688px;
+	margin: 0 auto;
+	font-size: 23px;
+	color: #444;
+	line-height: 38px;
+	text-align: center;
+	font-weight: bold;
+}
+.y-btn{
+	color: #fff;
+	border-radius: 4px;
+	padding:4px 1px;
+	display: inline-block;
+	width: 108px;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-align: center;
+	background: -webkit-linear-gradient(left, #f96f34, #f72d10);  
+    background: -o-linear-gradient(right, #f96f34, #f72d10);  
+    background: -moz-linear-gradient(right, #f96f34, #f72d10);    
+    background: linear-gradient(right, #f96f34, #f72d10); 
+}

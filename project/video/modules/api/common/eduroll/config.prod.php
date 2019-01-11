@@ -1,0 +1,25 @@
+<?php
+// 生产配置
+return [
+	'userid' => 'xhhuser',
+	'password' => 'xhhuser_01',
+	'servicecode' => 'EduRollAction',
+	
+	'url' => "http://credit1.rongsz.com:8081/internetfinance/webservice/creditInfoExt?wsdl",
+	'privateKey' => "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBALKQXp1sZfYbkjzFJk1Y6ITuiFvYYoT5+oToUKeaOd+YSaoeBHmtg2pNQP/onLhoxprLaLX+2tsre9qQra1/RSiXs93NKFmXxMIsXHQwCCX7+NeQzZG2/hROVYmgbR788tX+ZfQFPAd5jMk+0QHGJTwVtfp5Hg1oTcC5UyfTxZrZAgMBAAECgYBDKMt9OAztUJdi5d+vDbZ+cNy2dp8vVnnjzSCwuO/1aeii5CFYxmr760x8M7fmH/o6tDCQ6ubTsfomTW4VKB4RMo9iCUuqRD5ATUmOk7EEpA4eZgqJAonDY/EP688d5MvFebcJAMkJa1zGmzIKONi0R/cyVkf1u1THndNW7YLA1QJBANfFhG4uMmN6PXmVo04Z9AuV9baDaZPn++Ma3mYAYEnILa7IzoOZmj6TVJDhxOGJ5JCvH5P8Br3OmlhsaIPF/08CQQDT2vvW9QxBB3OTsX7KW92oR6/9HS+H71i9xVzLviRDgHZW+4PVDY3jve9bZEgcYSDHiFefrgwoNjCqIdhdWPlXAkBJH5ULyfglok2nIMEhPMZqDr4gxlRHXb0NcBOiucnn90EUFNV339xYDJICL6ELVjHxnoezHRwjwxqnkMWysq0dAkEAqP6H4eK7kawV//yYfWdmm3QD6M69OZwtl8O10DiuyMHSpHQhp3QWeVLremW2OB0qfsA91XyK6hDAJRa2d1AgJQJBAI5U4yoibkJp9L+p4mexlfFrXzM1A428HkkcPcDzvEhGMDQ5mqa4G4eWSVHPXBesggFaNY6rIP9q6kj6c0DL1u0=",
+	'publicKey' => "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCykF6dbGX2G5I8xSZNWOiE7ohb2GKE+fqE6FCnmjnfmEmqHgR5rYNqTUD/6Jy4aMaay2i1/trbK3vakK2tf0Uol7PdzShZl8TCLFx0MAgl+/jXkM2Rtv4UTlWJoG0e/PLV/mX0BTwHeYzJPtEBxiU8FbX6eR4NaE3AuVMn08Wa2QIDAQAB",
+];
+
+// 测试账号
+/*
+return [
+	'userid' => 'huahua',
+	'password' => 'huahua_01',
+	'servicecode' => 'EduRollAction',
+	
+	'url' => "http://121.41.87.97:8081/internetfinance/webservice/creditInfoExt?wsdl",
+	'privateKey' => "MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBANI9Lva/AlC68AC/XT+BHbmN8JI0iVJAKyONaoZSsumghtApvPA9mDMH7antLQLvTsjSvny0cAsQr6ayqfSUqTGpAzfRj+do6bj9LMFcly1XPTfXzP2yZsEZURkFEWSJJc3VFYMUa9RGmoDfGxgFdQX7qeEj387g5ejJ0IzlWi1tAgMBAAECgYEAgCARcwbNXm3OvmXhakZB20eJiVDDL4EzySLx/JKBvqe6ATqujqq7Cr6WNKz6dYNqPDFTLaS5c8Tjh2/y6799rE7XEc5sFDZ8hbzO0sE5CK0bz8XU4Hdp1+nqy/VgAoKoV3eL45LlERuG7cwTCHcBgURCr6HKIusOKidqyTWhdYECQQD19+ooIiClynxR8Scwq2OEQZQvI+i1+jGedZ5lamSazUTpS7eQfVijGS+E0YiQcowdLQBw08DTcEUR6WjfxLuVAkEA2tA6bGWu9AkVfBsR4JIrd6FIobviyLjdZY9fPZxv+smwe14lDXpQqjJRNIrOik13f8EGg1klK7tKnVXeg2Z0eQJBALNNO9ZxulbhGmspXiYuaecZXwpWJOezMMSQfRz0x83I4PkoBvI/TYPncipiDCkwN091ZKLa2e/IIbGC8r5cTVkCQBDCunbrIweWWorzF9930tSLCiE5Xxm471yEKutxPDKdmGMaxwPNRriCui2oJEH7xReIFZOiFHLRGdoLZcvy4SECQQCkJg6Zua0KP+MnW14VeKiaCoSIX6TzJkN0QJGt0nJNUG3gdz7pQPGH5is7ZsVv/5/dbKVF55mU3JwTm0+OQnkd",
+	'publicKey' => "",
+	
+];
+*/

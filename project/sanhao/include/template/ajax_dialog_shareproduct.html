@@ -1,0 +1,69 @@
+
+<div class="tShare clearfix">
+	<a href="javascript:void(0);" onclick="return X.boxClose();" class="close">X</a>
+    <div class="fl">
+    	<div class="top">
+        	<div class="silder-new">
+                <div id="slider" class="slider-box">
+                <!--{loop $image $index $one}-->
+                    <div class="contentimg"><img src="/{$one['image']}" width="304" height="228" alt="" /></div>
+                <!--{/loop}-->
+                </div>
+                <div class="pagination-box">
+                    <div id="paginate-slider" class="paginate-slider">
+                    <!--{loop $image $index $one}-->
+                        <a href="javascript:void(0);" class="toc"><img src="/{$one['image']}" width="80" height="60" alt="" /></a>
+                    <!--{/loop}-->
+                    </div>
+                </div>
+            </div>
+            <div class="name">{$product['pname']}</div>
+            <div class="intro">
+                <div class="fore1">{$product['description']}</div>
+            </div>
+        </div>
+        <div class="bottom">
+        	<div class="fore1 clearfix"><span>￥{$product['price']}</span><span class="s2">购买</span></div>
+        	<div class="fore2 clearfix"><img src="/static/images/jxt.png" alt="" /></div>
+        </div>
+    </div>
+    <div class="fr">
+    	<div class="fore1">分享你的商品</div>
+        <div class="fore2">将你的商品信息一键分享到下面这些网站上：</div>
+        <ul class="fore3">
+            <li class="item1"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://v.t.sina.com.cn/share/share.php?',pname='{$productweibo}',u=d.location.href,p=['url=',e(u),'&title=',e(pname),'&appkey=2051999832'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));">分享到</a></li>
+            <li class="item2"><a href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href)+'&desc={$productqone}');return false;">分享到</a></li>
+            <li class="item3"><a href="javascript:void(0);" onclick="{ var _t = '{$productweibo}';  var _url = encodeURI(window.location); var _appkey = 'ac191e7394d68f793435034125d4443e'; var _site = encodeURI; var _pic = ''; var _u = 'http://v.t.qq.com/share/share.php?title='+_t+'&url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic; window.open( _u,'转播到腾讯微博', 'width=700, height=580, top=180, left=320, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );  };" >分享到</a></li>
+            <li class="item4"><a href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href)+'&desc={$productqone}');return false;">分享到</a></li>
+            <li class="item5"><a href="javascript:window.open('http://www.douban.com/recommend/?url='+encodeURIComponent(location.href)+'&title={$productqone}','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes'); void 0">分享到</a></li>
+            <li class="item6"><a href="javascript:void(0);" onclick="javascript:void((function(s,d,e){var f='http://share.renren.com/share/buttonshare?link=',u=location.href,l='{$productqone}',p=[e(u),'&title=',e(l)].join('');function a(){if(!window.open([f,p].join(''),'xnshare',['toolbar=0,status=0,resizable=1,width=626,height=436,left=',(s.width-626)/2,',top=',(s.height-436)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();})(screen,document,encodeURIComponent));">分享到</a></li>
+            <li class="item7"><a href="javascript:window.open('http://www.kaixin001.com/repaste/share.php?rurl='+encodeURIComponent(location.href)+'&rcontent={$productqone}','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes'); void 0">分享到</a></li>
+            <li class="item8"><a href="javascript:void(0);" onclick="window.open('http://connect.qq.com/widget/shareqq/index.html?url='+encodeURIComponent(document.location.href)+'&title={$product['pname']}&desc={$productqone}');return false;">分享到</a></li>
+        </ul>
+        <div class="fore4">复制并分享你的商品链接</div>
+        <div class="fore5">你可以复制下面的商品链接，通过email，微博或QQ聊天等方式分享给你的顾客：</div>
+        <div class="fore6" onclick="copyText('http://www.jxtuan.com/team.php?id={$id}');" id="product_url">http://www.jxtuan.com/team.php?id={$id}<span id="shareproduct_copy"></span></div>
+        <div class="fore7"></div>
+        <div class="fore8"></div>
+        <div class="fore9"></div>
+        
+    </div>
+</div>
+
+<script language="JavaScript">
+function copyText(txt)  
+{
+	if(window.clipboardData)
+	{
+		window.clipboardData.clearData();
+		if(window.clipboardData.setData("Text",txt))
+		{
+			document.getElementById('shareproduct_copy').className = 'yfz';
+		}
+	}
+	else
+	{
+		alert('请按Ctrl+C复制');
+	}
+} 
+</script>

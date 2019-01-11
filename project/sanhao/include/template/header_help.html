@@ -1,0 +1,30 @@
+<!--{include html_header}-->
+
+<div class="header o">
+	<div class="w2">
+    	<h2 class="logo fl"><a href="/"><img src="/static/images/logo.png" alt="" /></a></h2>
+        <div class="fr">
+        	<!--{if $login_user_id == ''}-->
+        	<div class="nav"><a href="/" class="lk1">首页</a> <!--{if $nav == 'flow'}--><a href="/help/flow.php" class="lk2 cur">玩转交享</a><!--{else}--><a href="/help/flow.php" class="lk2">玩转交享</a><!--{/if}--><a href="#" class="lk3">帮助</a></div>
+            <div class="regLogin"><a href="/account/login.php">登录</a><span>|</span><a href="/account/signup.php">注册</a></div>
+            <!--{else}-->
+            <div class="nav"><a href="/" class="lk1">首页</a> <!--{if $nav == 'list'}--><a href="/account/productlist.php" class="lk2 cur">商品列表</a><!--{else}--><a href="/account/productlist.php" class="lk2">商品列表</a><!--{/if}--><a href="#" class="lk3">订单</a></div>
+            <div class="yesLogin">
+				<div class="setup"><a href="javascript:void(0);">设置</a></div>
+				<div class="uname">
+					<span class="s1"><!--{if $_SESSION['type'] == 1}-->${mb_strimwidth($_SESSION['email'],0,12)}<!--{else}-->${mb_strimwidth($_SESSION['mobile'],0,12)}<!--{/if}--></span><span class="s2"></span>
+					<div class="u">
+						<span class="s3"></span>
+						<ul>
+							<li><a href="/account/personal.php">个人资料</a></li>
+							<li><a href="/account/place.php">收货地址</a></li>
+							<li><a href="/account/reset.php">更改密码</a></li>
+							<li><a href="/account/logout.php">退出</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            <!--{/if}-->
+        </div>
+    </div>
+</div>

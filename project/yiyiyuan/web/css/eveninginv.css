@@ -1,0 +1,21 @@
+html,body{width:100%;height:100%; background: #62292f; font-family: "Microsoft YaHei"; position: relative;
+font-family: "微软雅黑";
+}
+a{color:#000}
+
+/*弹出层*/
+.Hmask { width: 100%;height: 100%;background: rgba(0,0,0,.7);position: fixed;top: 0;left: 0; z-index: 100;}
+.tanchuceng{ position: fixed;top: 30%;left: 0%;border-radius: 5px;z-index: 100; margin: 0 15%;}
+.tanchuceng img{ position: relative;}
+.tanchuceng .masyong{width: 33%; height: 3rem;position: absolute; bottom: 1rem;left: 9%; background: rgba(0,0,0,0);}
+.tanchuceng .lijlingq{width: 33%; height: 3rem; position: absolute;bottom: 1rem;right: 9%;background: rgba(0,0,0,0);}
+
+.qixiactve .qixitxtx { margin-top: -5rem;}
+.qixiactve .qixitxtx p{ text-align: center; color: #fceab8; font-size: 1.2rem; padding-top: 5px;}
+.qixiactve .qixibutton{ margin: 20px 10% 0; background: rgba(0,0,0,0);}
+.qixiactve .liwuha img{ width: 25%; float: right; margin-right: 5%;}
+.qixiactve .qiqixq img{width:70%;margin: 20px 15%;}
+.qixiactve .ljilqv{ width: 40%; margin: 0 30% 20px; background: rgba(0,0,0,0);}
+.qixiactve .actverule{ color: #fff; margin: 0 10%; font-size: 1.1rem; line-height: 2rem; position: relative;}
+.qixiactve .actverule p.faily{  margin: 20px 0; font-size: 1rem; margin-left: 5%;}
+.qixiactve .liwuha.heihya{position: absolute; right:-10%; width: 100%; bottom: 0;}

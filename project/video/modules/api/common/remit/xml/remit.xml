@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<stream>
+    <action>DLOUTTRN</action>
+    <userName>{userName}</userName>
+    <clientID>{clientID}</clientID>
+    <preFlg>0</preFlg>
+    <preDate>{preDate}</preDate>
+    <preTime>{preTime}</preTime>
+    <payType>05</payType>
+    <recBankNo>{recBankNo}</recBankNo>
+    <payAccountNo>{payAccountNo}</payAccountNo>
+    <recAccountNo>{recAccountNo}</recAccountNo>
+    <recAccountName>{recAccountName}</recAccountName>
+    <abstract>{abstract}</abstract>
+    <citicbankFlag>1</citicbankFlag>
+    <cityFlag>{cityFlag}</cityFlag>
+    <tranAmount>{tranAmount}</tranAmount>
+</stream>

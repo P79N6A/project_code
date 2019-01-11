@@ -1,0 +1,15 @@
+<div class="sd">
+	<div class="tt">功能菜单</div>
+    <!-- {loop $aHome $index $one} -->
+    <dl class="itm">
+        <dt class="cur">{$one['name']}</dt>
+        <dd>
+         <!-- {loop $sMenu $skey $sval} -->
+         <!-- {if $one['id'] == $sval['pid']} -->
+            <a <!-- {if $menucolor == $sval['name'] } --> class='hover' <!-- {/if} --> href="{$sval['url']}">{$sval['name']}</a>
+            <!-- {/if} -->
+        <!-- {/loop} -->
+        </dd>
+    </dl>
+    <!-- {/loop} -->
+</div>

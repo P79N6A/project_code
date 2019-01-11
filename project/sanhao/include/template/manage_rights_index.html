@@ -1,0 +1,40 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/modelsmanage.php?action=list">系统管理</a>&nbsp;&gt;&gt;&nbsp;权限管理</div>
+        <div class="wrap">
+        <form action="/manage/rightsmanage.php?action=add" method="post" id="excel_form_button">
+            <table class="table" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+                <tbody>
+				<input type="hidden" name="uid" value="{$uid}" />	
+              	<!-- {loop $aRes $index $one} -->
+                  <tr <!-- {if $index%2 == 0} --> class="odd" <!-- {else} --> class="even" <!-- {/if} --> >
+					<td style="padding-left:8px;">
+                       	<input type="checkbox" name="rights[]" value="{$one['id']}" <!-- {if in_array($one['id'],$rightsinfo)} --> checked <!-- {/if} --> />{$one['name']}
+						<!-- {loop $sChk $skey $sval} -->
+						<!-- {if $one['id'] == $sval['pid']} -->
+						<input type="checkbox" name="rights[]" value="{$sval['id']}" <!-- {if in_array($sval['id'],$rightsinfo)} --> checked <!-- {/if} --> />{$sval['name']}
+						<!-- {/if} -->
+						<!-- {/loop} -->				
+					</td>
+                  </tr>
+                <!-- {/loop} -->
+	              <tr <!-- {if count($sRes)%2 == 0} --> class="odd"<!-- {else} --> class="even" <!-- {/if} --> >
+	                <td>
+	                   	<input type="submit" class="btn btn1" value="提交" />
+	                </td>
+	              </tr>
+                </tbody>
+            </table>
+            </form>
+           
+            <div class="page clearfix">
+            <!--{if $count > 20}-->
+		       {$pagestring}
+	       <!--{/if}-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

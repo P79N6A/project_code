@@ -1,0 +1,235 @@
+body{
+    font-family: '微软雅黑';
+    background: #f3f3f3;
+}
+.left{float: left;}
+.right{float: right;}
+.sure_lrht{
+    margin: 0.40rem 0.40rem 0;
+    background:#fff;
+    padding:0.40rem 0.80rem;
+}
+.sure_lrht .lrtcont{
+    border-bottom: 0.03rem solid #e1e1e1;
+    overflow: hidden;
+}
+.sure_lrht .lrtcont:last-child{
+    border:0;
+}
+.sure_lrht .lrtcont p{
+    color: #444;
+    font-size: 0.37rem;
+    line-height: 1.20rem;
+}
+.sure_lrht .lrtcont p.rt_ticket{
+    color: #F00D0D;
+}
+.sure_lrht .lrtcont p.rt_ticket em{
+    display: inline-block;  
+    margin:0.08rem 0 0 0.21rem;
+}
+.sure_lrht .lrtcont p.rt_ticket em img{
+    width: 0.27rem;
+}
+.sure_lrht .lrtcont p.lt_should{
+    font-weight: bold
+}
+.sure_lrht .lrtcont p.rt_should{
+    font-size: 0.53rem;
+    font-weight: bold;
+}
+.mode_payment{
+    margin: 0.13rem 0.40rem;
+    background:#fff;
+    padding:0 0.80rem;
+}
+.mode_payment h3{
+    font-size: 0.37rem;
+    color:#444;
+    font-weight: bold;
+    padding:0.53rem 0 0.16rem;
+}
+.payment_cont{
+    overflow: hidden;
+    line-height: 1.60rem;
+    border-bottom:0.03rem solid #f3f3f3;
+}
+.payment_cont.none_line{
+    border-bottom:0;
+}
+.payment_cont p{
+    font-size: 0.43rem;
+    color:#444;
+}
+.payment_cont .payment_bank {
+    margin: 0.13rem 0.27rem 0 0;
+}
+.payment_cont .payment_bank img{
+    display:inline-block;
+    width: 0.53rem;
+    height:0.53rem;
+}
+.payment_cont .payment_chooes{
+    margin-top: 0.13rem;
+}
+.payment_cont .payment_chooes img{
+    display:inline-block;
+    width: 0.53rem;
+    height:0.53rem;
+}
+.arrows_moredown{
+    width: 100%;
+    height: 0.80rem;
+    text-align: center;
+}
+.arrows_moredown img{
+    display: inline-block;
+    width: 0.53rem;
+    text-align: center;
+}
+
+.payment_money{
+    margin: 0.13rem 0.40rem;
+    background: #fff;
+    padding:0 0.80rem;
+    line-height: 1.60rem;
+    overflow: hidden;
+}
+.payment_money p{
+    font-size: 0.37rem;
+    color: #444;
+    font-weight: bold;
+}
+.payment_money p:last-child{
+    font-size: 0.43rem;
+    font-weight: normal;
+}
+button {
+    width: 90%;
+    margin: 0.53rem 5% 0.2rem;
+    background: #ff7200;
+    background:-webkit-linear-gradient(left,#F00D0D,#FF4B17);
+    color: #fff;
+    border-radius: 0.13rem;
+    font-size: 0.48rem;
+    padding: 0.40rem 0;
+}
+/*button.immediately{*/
+    /*position:fixed;*/
+    /*bottom:0.27rem;*/
+/*}*/
+.hint_text{
+    padding: 0.27rem 0.40rem;
+    color: #999;
+    font-size: 0.37rem;
+}
+.buy_hkuan{
+    background:#fff;
+}
+.buy_hkuan .hkuan_cont{
+    overflow:hidden;
+    padding: 0.59rem 0;
+    margin-left: 0.40rem;
+    border-bottom:0.03rem solid #f3f3f3;
+    padding-right: 0.40rem;  
+}
+.buy_hkuan .hkuan_cont.none_line{
+    border:0;
+}
+.buy_hkuan .hkuan_cont p{
+    font-size: 0.43rem;
+    color: #444;
+}
+.buy_hkuan .hkuan_cont p a{
+    color:#F00D0D;
+}
+.buy_hkuan .hkuan_cont p input{
+    font-size: 0.43rem;
+}
+.buy_hkuan .jirtu1 {
+    border-top:0.03rem solid #f3f3f3;
+    padding-top: 0.53rem;
+}
+.buy_hkuan .jirtu1 img {
+    width: 30%;
+    float: left;
+    margin-left: 2.6%;
+}
+.buy_hkuan  .zhifjtu{
+    clear: both;
+    padding:0.53rem;
+    font-size: 0.32rem;
+    color:#999;
+    line-height: 0.53rem;
+}
+.hkxq_five img{
+    display: block;
+    width: 100%;
+    margin-bottom: 0.40rem;
+}
+.smallbulb{
+    color:#3D81FF;
+    font-size: 0.37rem;
+    text-align: center;
+    padding-bottom: 0.53rem;
+}
+
+.yyhuqmeg{
+    margin-top: 0.27rem;
+    padding: 0.27rem 0.40rem; 
+}
+.yyhuqmeg .vipquan{
+    position: relative; 
+    background: url(../images/hkquan.png) no-repeat; 
+    background-size: 100% 100%; 
+    overflow: hidden; 
+    margin-bottom: 0.27rem;
+}
+.yyhuqmeg .vipquan.hkquan {
+    background: url(../images/jkquan.png) no-repeat;
+    background-size: 100% 100%;
+}
+.yyhuqmeg .vipquan .vipqzuo{ 
+    float: right; 
+    width: 66%; 
+    color: #444; 
+    padding: 0.96rem 0 1.07rem;
+}
+.yyhuqmeg .vipquan .vipqzuo p{
+    font-size: 0.37rem;
+}
+.yyhuqmeg .vipquan .vipqzuo h3{
+    font-size: 0.48rem; 
+    padding-bottom: 0.27rem;
+}
+.yyhuqmeg .vipquan .vipqyou{
+    float: left;
+    width: 33%;
+    text-align: center; 
+    color: #F00D0D;
+    padding-top: 1.07rem; 
+}
+.yyhuqmeg .vipquan .vipqyou em{ 
+    font-size: 0.96rem;
+}
+.yyhuqmeg .vipquan .vipqzuo p.yxioqi{ 
+    font-size: 0.32rem; 
+    color: #999;
+}
+.yyhuqmeg .znouser{
+    color: #F00D0D;
+    font-size: 0.37rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1.33rem;
+    margin-bottom: 0.68rem;
+}
+
+.userrule{
+    font-size: 0.37rem;
+    color: #3D81FF;
+    text-align: center;
+    position: fixed;
+    bottom: 0.27rem;
+    width: 100%;
+}

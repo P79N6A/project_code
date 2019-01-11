@@ -1,0 +1,166 @@
+.top_bg {
+  background: url('../../images/traffic/new/top_bg.jpg') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 514px;
+}
+.bg_02 {
+  width: 100%;
+  height: 471px;
+  background: url('../../images/traffic/new/bg_02.jpg') no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.bg_02 input {
+  width: 519px;
+  margin: 10px 0;
+  border: none;
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#ffffff, #ffffff);
+  border-radius: 10px;
+  padding: 22px 20px;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: normal;
+  color: #666666;
+}
+.relative {
+  position: relative;
+}
+.relative .yzm {
+  width: 158px;
+  height: 62px;
+  position: absolute;
+  right: 68px;
+  top: 18px;
+}
+.relative .num {
+  font-size: 24px;
+  color: #ce2125;
+  border-left: 1px solid #aaaaaa;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 68px;
+  top: 32px;
+}
+.bg_02 .tip {
+  height: 50px;
+  font-size: 18px;
+  text-align: left;
+  padding: 15px 60px 0;
+  color: #ffffff;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+.btn {
+  color: #d8232a;
+  font-size: 28px;
+  font-weight: 800;
+  width: 519px;
+  height: 72px;
+  border-radius: 36px;
+  background-color: #fecf4c;
+  margin: auto;
+  line-height: 72px;
+  text-align: center;
+  box-shadow: 0px 4px 0px 0px #f49e22;
+}
+.bg_02 .xieyi {
+  font-size: 22px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.bg_02 .xieyi img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.bg_03 {
+  width: 100%;
+  height: 285px;
+  background: url('../../images/traffic/new/bg_03.jpg') no-repeat;
+  background-size: 100% 100%;
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+}
+.bg_03 .des {
+  width: 100%;
+  height: 205px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0 13px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.bg_03 .des .touxiang {
+  width: 60px;
+  margin-right: 10px;
+}
+.bg_03 .des .des_list {
+  height: 102px;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  color: #444444;
+  line-height: 1.5;
+  border-bottom: 1px solid #eaeaea;
+  transition: margin 1s;
+}
+.des_list p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.des_list p .zan {
+  width: 21px;
+}
+
+.bg_04 {
+  width: 100%;
+  height: 651px;
+  background: url('../../images/traffic/new/bg_04.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.bg_05 {
+  width: 100%;
+  height: 569px;
+  background: url('../../images/traffic/new/bg_05.jpg') no-repeat;
+  background-size: 100% 100%;
+  padding-top: 90px;
+  box-sizing: border-box;
+}
+.comp {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.comp input {
+  width: 402px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: none;
+  font-size: 24px;
+  color: #666666;
+  margin: 11px 0;
+}
+.comp label {
+  font-size: 24px;
+  color: #ffffff;
+}
+.bg_05 .bottom {
+  font-size: 24px;
+  font-weight: normal;
+  color: #ffdd7f;
+  text-align: center;
+  line-height: 2;
+  margin-top: 20px;
+}
+.btn a {
+  text-decoration: none;
+  color: #d8232a;
+}

@@ -1,0 +1,72 @@
+html,body{width:100%;height:100%; background: #dfe7ec; font-family: "Microsoft YaHei"; position: relative;}
+a{color:#000}
+.wape { padding-bottom: 40px;}
+.wape .wap5{ padding: 40px 0 20px;}
+.wape img { width: 100%;padding: 0;display: block;margin-top: -1px;}
+.freemfei{ text-align: center; font-size: 13px; color: #4d5983;padding:5px 0;}
+.selftximg{position: relative; margin:0 4%;border-radius: 0 0 5px 5px; }
+.selftximg .dbk_inpL {border-radius: 5px;padding: 10px 5% 0;overflow: hidden;}
+.selftximg .dbk_inpL input {height:40px; line-height:40px;width:96%;float: left;padding-left: 10px;font-size: 1.2rem;    background: #fff;border-radius:5px;}
+.selftximg .dbk_inpL  input.yzmwidth { width: 45%;}
+.selftximg .dbk_inpL .hqyzm {width: 48%;text-align: center;border-radius:5px;float: left; margin-left:3%;color: #fff;background: #e74747;font-size: 14px;height: 40px;line-height: 40px;}
+.selftximg .tsmes{color: #e74747;margin:10px 0 5px; text-align: center;  }
+.selftximg .button{ margin-top:15px;}
+.selftximg .button button {width: 100%;background: #e74747;border-radius: 5px;color: #fff;font-size: 1.25rem;padding: 10px 0;}
+/*导流2*/
+.main {padding: 0 5%;font-size: 1.2rem;}
+.main .p_ipt{ margin-top:12px; clear: both; overflow: hidden; }
+.main .p_ipt div{ float: left; overflow: hidden; height: 40px; line-height: 42px;}
+.main .p_ipt .colxs3 {width: 26%;}
+.main .p_ipt .colxs4 {width: 35%;background: #fff;border: 1px solid #cdcdcd;text-align: center;border-radius: 0; }
+.magrht{ margin-right: 2%; }
+.main .p_ipt .colxs2.photodw,.main .p_ipt .colxs4.photodw {position: relative;border: 1px solid #e74747; }
+.main .p_ipt .photodw img { width: 15%;display: inline-block;position: absolute; right: 0;top: -2px;}
+.main .p_ipt .colxs2.photodw img {width: 30%;}
+.main .p_ipt .colxs2 {width: 17%;text-align: center;background: #fff;border: 1px solid #cdcdcd; margin-right: 2px;border-radius: 0;}
+.main .p_ipt .colxs2Llast-child{margin-right: 0px;}
+.main .p_ipt .colxs9 {width: 70%;background: #fff; border: 1px solid #cdcdcd;text-align: left;border-radius: 0; padding-left: 3%;color: #c2c2c2;}
+.main .p_ipt .colxs9 select { width:90%; border:0;color: #444;}
+.main .p_ipt .colxs9 .seltxt {width: 95%;height: 35px;appearance: none;-moz-appearance: none;-webkit-appearance: none;background: url(/images/yumen.png) no-repeat scroll right center transparent;background-size: 8%; font-size: 1.2rem; }
+.main .imgtuzi { position: relative;}
+.main .imgtuzi img {width: 40px;height: 55px;position: absolute;right: 0;top: -55px;display: inline-block;}
+.main .reder{ color: #e74747; margin-top:15px; }
+.main .teright{ text-align: right; margin-top:10px;  }
+.main .teright label{ color: #e74747; }
+.main .btn {width: 100%;background-color: #e74747;color: #fff;border-radius: 5px;border: none;font-size: 1.4rem; height: 45px; margin-top: 15px;}
+
+/*信息*/
+.jdall{font-size: 1.2rem;color: #aaa;}
+.jdall .tsmes {color: #e74747;text-align: center;margin-top:10px;}
+.jdyyy{ background: #fff; position: relative;margin-top: 10px;}
+.jdyyy .jdimg img{ width: 30%; margin: 40px 35% 50px; }
+.jdyyy .dbk_inpL {border-top: 1px solid #e7edf0;border-radius: 5px;background: #fff; padding: 4% 6.3%;overflow: hidden; position: relative;}
+.jdyyy .dbk_inpL .icon_Rem{ position: absolute; right: 3%;width: 7%;}
+.jdyyy .dbk_inpL label {text-align: left;float: left;margin-bottom: 0;font-size: 1.2rem;color: #444;  width: 23%;}
+.jdyyy .dbk_inpL input{border: none;float: left;padding-left:5px;font-size: 1.2rem; width: 70%;margin-top: 1px;}
+.jdyyy .dbk_inpL select { width: 72%; background: transparent; -webkit-appearance: none; /*for chrome*/    font-size: 1.2rem; padding-left: 10px;}
+.jdyyy.studtyimg.hengyames  .dbk_inpL label{ width: 22%;}
+.jdyyy.danweimes .dbk_inpL label{ width: 22%;}
+.jdyyy.danweimes .dbk_inpL input{ width: 70%;}
+.jdyyy .dbk_inpL .dibujtou{ width: 5%;position: absolute; right: 3%; top:40%;}
+.button {margin: 0 5%; margin-top: 15px;}
+.button button {width: 100%;background: #c90000;border-radius: 5px;color: #fff;font-size: 1.25rem; padding: 10px 0; margin-bottom: 25px;}
+.jdall .messtutu{ width: 100%;}
+.jdall .messtutu img{ width: 26%; margin: 20px 37% 10px;}
+.jdall .messtutu .zilaox{ text-align: center; font-size: 1.35rem; color: #E74747;}
+.jdall .messtutu .zilaox2{text-align: center; font-size: 1.2rem; color: #444;;}
+
+/* 8月24日  /dev/coupon/couponappsixnew */
+.wape_new { padding-bottom: 20px;}
+.wape_new .wap5{ padding: 40px 0 10px;}
+.wape_new img { width: 100%;padding: 0;display: block;margin-top: -1px;}
+.wape_new .addreeb{ text-align: center; font-size: 1rem;color: #c6c6c6; padding-top: 1rem;}
+.selftximg_new{position: relative; margin:0 4%;border-radius: 0 0 5px 5px; }
+.selftximg_new .dbk_inpL {border-radius: 5px;padding: 10px 5% 0;overflow: hidden;}
+.selftximg_new .dbk_inpL input {height:40px; line-height:40px;width:96%;float: left;padding-left: 10px;font-size: 1.2rem;    background: #f0f7ff;border-radius:5px; border:1px solid #cbddff;}
+.selftximg_new .dbk_inpL  input.yzmwidth { width: 45%;}
+.selftximg_new .dbk_inpL .hqyzm {width: 47%;text-align: center;border-radius:5px;float: left; margin-left:3%;color: #fff;background: #337ceb;font-size: 14px;height: 40px;line-height: 40px;}
+.selftximg_new .tsmes{color: #337ceb;margin:10px 0 5px; text-align: center;  }
+.selftximg_new .button{margin: 0 5%; margin-top: 15px;}
+.selftximg_new .button button {width: 100%;background: #337ceb;border-radius: 5px;color: #fff;font-size: 1.25rem;padding: 10px 0;}
+.selftximg_new .dbk_inpL.dxyznmes{ position: relative;}
+.selftximg_new .dbk_inpL.dxyznmes .dxyzn{position: absolute;width: 35%;right: 5%; top: 1.6rem;font-size: 15px; background: rgba(0,0,0,0); color: #337ceb; border-left: 1px solid #337ceb;}

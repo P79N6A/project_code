@@ -1,0 +1,70 @@
+body{width:100%;height:100%; background: #f3f3f3; font-family: "微软雅黑";}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, figure, form, fieldset, legend, input, textarea, p, blockquote, th, td,em{
+margin: 0;padding: 0;list-style: none;-webkit-tap-highlight-color: transparent;font-style: normal;}
+img{-webkit-user-select:none;-webkit-touch-callout:none; display: block;}
+a{color:#444}
+
+   /*body {background: #eee; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;font-size: 14px; color:#000; margin: 0; padding: 0;}
+    .swiper-container { width: 100%;}
+    .swiper-slide { text-align: center; font-size: 18px; background: #fff;
+    display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex; -webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center; justify-content: center; -webkit-box-align: center;  -ms-flex-align: center; -webkit-align-items: center; align-items: center; }*/
+
+
+
+/*借款首页*/
+.font14{font-size: 1rem;}
+.font16{font-size: 1.142rem;}
+.nav_jk{width: 100%; background: #fff;overflow: hidden; border-bottom: 1px solid #e1e1e1;}
+.nav_jk li{ width: 50%; float: left; text-align: center; color: #aaa; height: 40px; line-height: 40px; border-bottom: 2px solid #fff; padding-top: 2px;}
+.nav_jk li .on a{display:inline-block; color: #c90000; border-bottom: 2px solid #c90000;}
+.user_loan h3,.user_money h3{ text-align: center; color: #444; padding: 10px 0 12px;}
+.user_conte{ border-radius: 5px; border:1px solid #e1e1e1;}
+.user_conte .user_imgtxt img{padding: 10px 0px;}
+#demo12 {border: 6px solid #fff;border-bottom-color: #ccc;width: 0;height: 0;margin:  10px auto;}
+#demo11 {border: 6px solid #fff;border-top-color: #ccc;width: 0;height: 0;margin:  10px auto;}
+.user_money h3.pad10{ padding: 40px 0 1px;}
+.user_qshu{ color: #ccc; vertical-align:middle;}
+.user_qshu p{font-size: 1rem;}
+.user_qshu.addstyle{ font-size: 2.142rem;color: #c90000; border-bottom: 2px solid #c90000;font-weight: bold;}
+.user_qshu.addstyle p{ font-size: 1rem;}
+.user_qshu div{line-height: 36px; }
+.user_qshu div.liheght{line-height: 25px;}
+button.fqi_jkuan{ width: 90%; margin: 20px 5%; background: #c90000; color: black; color: #fff; position: fixed;bottom: 55px;padding: 10px 0; border-radius: 20px;font-size:1.142rem; z-index: 50;}
+
+
+.haimoney{ background: #fff; padding: 10px 0;}
+.haimoney p.haitxt{ text-align: left; color: #c90000; font-size:2.142rem;}
+.haimoney .yiyq{ position: absolute; right: 5%; top:30px;border: 1px solid #ccc; color: #ccc; padding: 3px 10px; border-radius:30px; font-size: 1rem;}
+.zuoyminew .daihukan_cont.matop0{margin: 0;}
+.shezhiminay{ background: #fff; overflow: hidden; padding: 10px 0 5px;}
+.shezhiminay .imgimgnew{ margin: 15px 13% 5px;}
+.shezhiminay .yuqiym{margin: 15px 6%;color: #c90000; font-size: 1rem;}
+.shezhiminay .wenzicont{ padding: 0 3%; text-indent: 24px; font-size: 1.1rem; padding-top: 10px; color: #c90000;}
+.zuoyminew{ clear: both;}
+.zuoyminew .daihukan_cont{ margin-top: 10px; background: #fff; padding:0px 5%; color: #444; font-size: 1rem; }
+.zuoyminew .daihukan_cont .daoqihk{border-radius: 5px; padding: 20px 0 5px;text-align: center; }
+.zuoyminew .daihukan_cont .daoqihk .xzuoym{float: left; width: 50%; text-align: left;}
+.zuoyminew .daihukan_cont .rowym .corname{ float: left;}
+.zuoyminew .daihukan_cont .rowym .corliyou{float: right;}
+.zuoyminew .daihukan_cont .daoqihk span{ color: #c90000; font-size:2.142rem; }
+.zuoyminew .daihukan_cont .rowym{ background: #fff;clear: both; border-bottom: 1px dotted #e1e1e1; overflow: hidden;padding: 10px 0;}
+.zuoyminew .daihukan_cont .rowym:last-child{ border-bottom: 0;}
+.zuoyminew .bgrey{ width: 90%; margin: 20px 5%; background: #c90000; color: black; color: #fff;padding: 10px 0; border-radius: 20px;font-size:1.142rem; z-index: 50; }
+.zuoyminew .hanhaoyou{ background: #fff; color:#c90000; margin-top: 0;border:1px solid #c90000; }
+.zuoyminew .marbot100{height: 50px; }
+.jiebangcg {
+    position: fixed;
+    top: 28%;
+    color: #fff;
+    z-index: 15;
+    padding: 25px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.25rem;
+    background: rgba(0,0,0,0.8);
+    width: 80%;
+    left: 10%;
+    padding: 15px 0;
+}
+
+

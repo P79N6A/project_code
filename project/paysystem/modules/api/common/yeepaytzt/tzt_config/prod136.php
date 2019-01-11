@@ -1,0 +1,21 @@
+<?php
+//  易宝投资通(花生米富)
+
+// 商户编号
+$merchantaccount = '10015495609';
+
+
+// 商户私钥
+$merchantPrivateKey = 'MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAInMaiPtT+y238HWMcqCIKXM8l2q5mqumFEXPkjnH+lvgcajVufCzNPjkXO0QhQiym456jYWvDMP4izdPUS+U0n5CbTtnCrL6BEeJebxcz8wdhrEWUvGnoQKUfTG1Lv+sP6sY2NffkkIm8wu9wD68r2eb8DrF4HrD2T7eXp5YZc/AgMBAAECgYB+LwbfAVgYDtpVmPwdUg3tZgBmz7GR7XGjiCJMBgGN9MMlD7vsHNEOEyzFhEKiR72RNE2J3EXYiGn35VxOj+6ZxzpOG/4707yySSa2lIAUE9XhEvMwlobnIq50pyOlek0Pg4/mN2udpCo6ixHzFFK3hSOGn5IkV05ab5mCXzMcQQJBAONw/QlbA6W1H2zJCauY4egCpbNE462qFa5iR36bXEe6wCM5lQ3GkcALWWlx2V/PXnkrBj6HjF5k+yjc3vkQdp8CQQCbGeRgtdjrfdrOybBYW/a1lxf8FA32qz/cK6OVY97vuUzniFXydt4s13yqtB2aB6qU4rzRv3EIQznltJgEcjthAkAuirmNB43og/bpSP5smf1of9oupCM/L3X+WGgu9VXd685Tpv3kcsTymp/yXvTPkVzQyMgfVZeY3Ws0AnayWvcbAkEAg3CO1NJm0TLn4kST+F1/FubDwbFxH/CCfuBQkgJ/5GIBZVlplL/ditzW3ocjauxCSEhaQdpePOVTxHGmPmZcIQJBAMlXuuVq0ej1GCGexltMe9nJHiD9XoEeG9zn9yDzQ8TjS+UiFn5j+NWAV4WDTCguiNlrCck087uZW5omQ+50Upw=';
+
+// 商户公钥
+$merchantPublicKey = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCJzGoj7U/stt/B1jHKgiClzPJdquZqrphRFz5I5x/pb4HGo1bnwszT45FztEIUIspuOeo2FrwzD+Is3T1EvlNJ+Qm07Zwqy+gRHiXm8XM/MHYaxFlLxp6EClH0xtS7/rD+rGNjX35JCJvMLvcA+vK9nm/A6xeB6w9k+3l6eWGXPwIDAQAB';
+
+// 易宝公钥
+$yeepayPublicKey = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCUlcBv0sdoLkoFrvy/o5znCufLtfh7IwwzM69Ca49EDpqeANOS849I5dCGcdZpCe+iUEgw+jYGB1FPS8ZkxKZ1cqOmpX58KOSoQkfm+UyUnIikw92yEIjO/gQI+MufzX57ez40/pS00CXZGX7rRMxbM7mWVqrqhGcPcGwV5zdFZwIDAQAB';
+return [
+	'merchantaccount'=>$merchantaccount,
+	'merchantPublicKey'=>$merchantPublicKey,
+	'merchantPrivateKey'=>$merchantPrivateKey,
+	'yeepayPublicKey'=>$yeepayPublicKey,
+];

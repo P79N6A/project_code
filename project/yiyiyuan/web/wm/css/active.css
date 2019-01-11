@@ -1,0 +1,30 @@
+body{background-color: #2ebafd; font-family: "Microsoft YaHei";}
+.wrap img{display: block;}
+.money_txt{ margin:15px 3%; background: #fff; padding: 10px; border: #000 solid 2px; border-radius: 10px; }
+.money_txt p{ line-height: 25px;  font-size: 1.15rem;}
+.money_txt p.small{font-size: 1rem;}
+
+
+.lysptime{ margin: 0 3%;}
+.linerff{ background: #fff;height: 2px; border-top: 1px #000 solid;border-bottom: 1px #000 solid;  margin-top: 15px;}
+.team{ margin-left: 4%;font-size: 1.25rem;color: #fff;margin-top: 10px;position: relative;}
+.team img{ width: 60%;margin: 10px 20%}
+.choose{ margin-left: 5%; color: #444; font-size:1.2rem; margin-top: 5px;}
+.gerentd{ margin:5px 3%; background: #000; border-radius: 5px; border: 4px #000 solid;}
+.gerentd span{ display: inline-block; width: 49.39%; font-size: 1.25rem; padding: 10px 0; text-align: center; color: #fff; }
+.gerentd span.geren{ text-align: center;background: #fff; color: #000;}
+
+.formColor{ color: #444;}
+.commWid{width: 94%;margin: 1em auto;}
+.formColor p.inputName{color:#fff;line-height: 3em; width: 22%;float: left;font-size: 1.2rem;}
+.formColor p.yesno{color:#fff;width: 75%;float: left;font-size: 1.2rem;}
+.formColor input[type=text]{height: 3em;border: #cacaca 1px solid; float: left;}
+.formColor input{width: 73%; padding-left: 3%; border-radius: 5px;}
+.formColor .smallee{ margin-top: 2em;}
+.formColor .smallee input{width: 6%;  border-radius: 5px;position: relative;left: 1%;top: 2px;}
+.formColor textarea{width: 73%; height: 8em; border-radius: 5px;}
+.tjsq{ width: 100%;}
+.tjsq button{ background: #000; border-radius: 8px; width: 62%; padding: 12px 0; color: #fcff00; font-size: 1.3rem; font-weight: bold; margin: 10px 20% 20px;}
+.mybm{background:#444; height: 1px; margin: 0 2%; position: relative;}
+.mybm p{width: 26%; background: #fff; position: absolute; padding: 5px 0; color: #000; text-align: center; top:-16px; left:35%; border: 2px solid #fff; }
+

@@ -1,0 +1,32 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/cardslist.php?action=list">三好网卡管理</a>&nbsp;&gt;&gt;&nbsp;购买记录--查看</div>
+        <div class="wrap">
+            <table class="table2" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<thead>
+                	<tr>
+                        <th width="80">卡号</th>
+                        <th width="100">开卡时间</th>
+                    </tr>
+                </thead>
+            	<tbody>
+            		<span>订单号:{$cardslist['pid']}</span>
+            	<!--{loop $carsArr $index $one}-->
+                	<tr <!--{if $index%2 != 0}--> class="odd" <!-- {else} --> class="even" <!-- {/if} --> >
+                        <td>{$one['cno']}</td>
+                        <td>{$one['created']}</td>
+                    </tr>
+                <!--{/loop}-->
+                </tbody>
+            </table>
+            <div class="page clearfix">
+            <!--{if $count > 20}-->
+		       {$pagestring}
+	       <!--{/if}-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

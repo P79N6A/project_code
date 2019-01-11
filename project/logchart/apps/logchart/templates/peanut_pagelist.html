@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% block content %}
+    <style>
+        .method{cursor: pointer;}
+    </style>
+    <div class="outer">
+        <div class="inner bg-light lter" id="viewDiv">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="box">
+                        <header>
+                            <h5>筛选</h5>
+                        </header>
+                        <div class="body">
+                            <form id="from" class="form-inline">
+                                <div class="row form-group">
+                                    <div style="margin-left: 10px">
+                                        <div class="doc-dd">
+                                            页面：<select name="pageId" id="pageId" style="width: 150px">
+                                                <option value=-1>所有页面</option>
+                                                {% for id,name in nameList %}
+                                                    <option value="{{ id }}" {% if pageId == id %} selected {% endif %}>{{ name }}</option>
+                                                {% endfor %}
+                                            </select>
+                                            设备：<select name="equipment" id="equipment" onchange="changeProgram()">
+                                                <option value="1" {% if equipment == 1 %} selected {% endif %}>安卓</option>
+                                                <option value="2" {% if equipment == 2 %} selected {% endif %}>苹果</option>
+                                                <option value="3" {% if equipment == 3 %} selected {% endif %}>微信</option>
+                                                <option value="4" {% if equipment == 4 %} selected {% endif %}>Web</option>
+                                            </select>
+                                            <input type="submit" id="search">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <script type="text/javascript">
+                                $("#search").click(function () {
+                                    $("form").submit(function (e) {
+                                        if (!result) {
+                                            e.preventDefault();
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="box">
+                        <header>
+                            页面列表
+                        </header>
+                        <div>
+                            <div id="collapse4" class="body">
+                                <table id="dataTable"
+                                       class="table table-bordered table-condensed table-hover table-striped"
+                                       style="text-align: left">
+                                    <thead>
+                                    <tr>
+                                        <th>页面链接</th>
+                                        <th>页面名称</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for eachUrl in pageList %}
+                                        {% if eachUrl.isRed %}
+                                            <tr pageId="{{ eachUrl.id }}">
+                                                <td style="color: red">{{ eachUrl.pageName }} </td>
+                                                <td style="color: red">{{ eachUrl.pageValue }}</td>
+                                                <td>
+                                                    <div onclick="addPageName($(this))" class="method">新建</div>
+                                                    <div onclick="editPageName($(this))" class="method">编辑</div>
+                                                </td>
+                                            </tr>
+                                        {% else %}
+                                            <tr pageId="{{ eachUrl.id }}">
+                                                <td>{{ eachUrl.pageName }} </td>
+                                                <td>{{ eachUrl.pageValue }}</td>
+                                                <td><div onclick="editPageName($(this))" class="method">编辑</div></td>
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function addPageName(obj) {
+            html = '<input type="text" />';
+            obj.parent().prev().removeAttr('style').html(html);
+            html = '<div onclick="savePageName($(this),1)" class="method">保存</div><div onclick="cancelPageName()" class="method">取消</div>';
+            obj.parent().html(html);
+        }
+        function editPageName(obj) {
+            html = '<select style="width: 150px">';
+            {% for pageId,pageName in nameList %}
+                html += '<option value="{{ pageId }}">{{ pageName }}</option>';
+            {% endfor %}
+            html += '</select>';
+            obj.parent().prev().removeAttr('style').html(html)
+            html = '<div onclick="savePageName($(this),2)" class="method">保存</div><div onclick="cancelPageName()" class="method">取消</div>';
+            obj.parent().html(html);
+        }
+        function cancelPageName(obj) {
+            window.location.reload()
+        }
+        function savePageName(obj,flag) {
+            equipment = $('#equipment').val();
+            pageId = obj.parent().parent().attr('pageId');
+            if(flag === 1){
+                $.ajax({
+                    url: '/peanut/addPageName',
+                    type: "POST",
+                    data: {
+                        pageName: obj.parent().prev().find('input').val(),
+                        equipment: equipment,
+                        pageId: pageId
+                    },
+                    dataType: "json",
+                    success: function(data){
+                        window.location.reload()
+                    }
+                });
+            }else if(flag === 2){
+                $.ajax({
+                    url: '/peanut/editPageName',
+                    type: "POST",
+                    data: {
+                        valueId: obj.parent().prev().find('select').val(),
+                        equipment: equipment,
+                        pageId: pageId
+                    },
+                    dataType: "json",
+                    success: function(data){
+                        window.location.reload()
+                    }
+                });
+            }
+        }
+    </script>
+{% endblock %}

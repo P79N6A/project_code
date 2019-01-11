@@ -1,0 +1,64 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/cardslist.php?action=list">三好网卡管理</a>&nbsp;&gt;&gt;&nbsp;已激活卡管理</div>
+        <div class="wrap">
+        <form action="/manage/cardslist.php?action=sold" method="post" id="excel_form_button">
+            <table class="table" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+                <tbody>
+                <tr class="odd">
+                        <td>
+                        	<div class="itm">
+                                <div class="dt">卡号：</div>
+                                <div class="dd"><input type="text" name="cno" <!-- {if !empty($cno) } --> value="{$cno}"<!-- {/if} --> class="ipt ipt1" /></div>
+                            </div>
+                            <div class="itm">
+                                <div class="dt">起始时间：</div>
+                                <div class="dd"><input type="text" name="startime" onclick="WdatePicker();" <!-- {if !empty($newstartime) } --> value="{$newstartime}"<!-- {/if} --> class="ipt ipt3" /></div>
+                            </div>
+                            <div class="itm">
+                                <div class="dt">终止时间：</div>
+                                <div class="dd"><input type="text" name="endtime" onclick="WdatePicker();" <!-- {if !empty($newendtime) } --> value="{$newendtime}"<!-- {/if} --> class="ipt ipt3" /></div>
+                            </div>
+                        </td>
+                        <td rowspan="2">
+                        	<div class="btns"><input type="submit" value="查找" class="btn btn1" /></div>
+                        </td>
+                    </tr>
+                  <tr class="even">
+                    </tr>
+                </tbody>
+            </table>
+            </form>
+            <table class="table2" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<thead>
+                	<tr>
+                        <th width="80">卡号</th>
+                        <th width="40">面值</th>
+                        <th width="40">余额</th>
+                        <th width="100">激活时间</th>
+                        <th width="100">有效期</th>
+                    </tr>
+                </thead>
+            	<tbody>
+            	<!--{loop $cards $index $one}-->
+                	<tr <!--{if $index%2 != 0}--> class="odd" <!-- {else} --> class="even" <!-- {/if} --> >
+                    	<td>{$one['cno']}</td>
+                        <td>{$one['money']}</td>
+                        <td>{$one['money']}</td>
+                        <td>{$one['startime']}</td>
+                        <td>{$one['endtime']}</td>
+                    </tr>
+                <!--{/loop}-->
+                </tbody>
+            </table>
+            <div class="page clearfix">
+            <!--{if $count > 20}-->
+		       {$pagestring}
+	       <!--{/if}-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

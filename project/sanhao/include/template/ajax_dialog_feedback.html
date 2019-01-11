@@ -1,0 +1,30 @@
+<script type="text/javascript">
+	$(function(){ $("label").inFieldLabels(); });
+	$('#content').artTxtCount($('#feedback_ts'), 500);
+</script>
+
+<div class="yijianfankui">
+	<div class="close"><a href="javascript:void(0);" onclick="return X.boxClose();">X</a></div>
+	<div class="mt"><strong>意见反馈/联系我们</strong></div>
+    <div class="mc">
+    <!--{if $login == 'nologin'}-->
+    	<dl id="item_email" class="item">
+            <dt>邮箱</dt>
+            <dd><input type="text" class="text" id="email" /><label for="email">请输入您的邮箱，以便我们回复您（必填）</label><em id="email_error"></em></dd>
+        </dl>
+        <dl id="item_username" class="item">
+            <dt>姓名</dt>
+            <dd><input type="text" class="text" id="username" /><label for="username">请输入您的姓名（选填）</label></dd>
+        </dl>
+   <!--{/if}-->
+   		<input type="hidden" id="feedback_id" value="{$login}">
+        <dl class="item">
+            <dt>内容</dt>
+            <dd><textarea id="content" class="textarea selected" maxlength="500"></textarea><label for="content">请输入您的意见或咨询内容（必填，500字以内）</label></dd>
+        </dl>
+        <div id="feedback_ts" class="ts"></div>
+        <div class="btns">
+        	<input type="button" class="btn" id="feedback_dialog_submit" />
+        </div>
+    </div>
+</div>

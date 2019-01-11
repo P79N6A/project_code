@@ -1,0 +1,100 @@
+html,body{
+    height: 100vh;
+    background: #fff;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.code-n { padding: 0 0.533rem; }
+
+.code-n-title { font-size: 0.8rem; color: #444444; padding: 1.067rem 0 0.373rem; font-weight: bold;box-sizing: border-box; }
+
+.code-n-result { font-size: 0.427rem; color: #444444; }
+
+.code-n .input-number { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 1.867rem; }
+
+.code-n .input-number .input-lists { width: 1.333rem; height: 1.333rem; border: 0.027rem solid #e1e1e1; margin: 0 0.133rem; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 0.693rem; font-weight: bold; text-align: center; }
+
+.code-n .input-tip { font-size: 0.32rem; color: #f00d0d; text-align: center; margin-top: 0.373rem; }
+
+.code-n .reset { font-size: 0.427rem; color: #f00d0d; margin-top: 1.013rem; text-align: center; }
+
+.code-n .timer { font-size: 0.427rem; color: #999999; margin-top: 1.013rem; text-align: center; }
+
+.code-alert { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.5); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.code-alert-box { width: 7.893rem; height: 6.4rem; margin-top: 40%; background: #ffffff; border-radius: 0.133rem; text-align: center; padding: 0 0.533rem; -webkit-box-sizing: border-box; box-sizing: border-box; position: relative; }
+
+.code-alert-box .code-close { width: 0.427rem; height: 0.427rem; position: absolute; top: 0.267rem; right: 0.267rem; }
+
+.code-alert-box h3 { font-size: 0.48rem; color: #444444; margin: 0.693rem 0 0.693rem; font-weight: bold;}
+
+.code-alert-box .input-box { border-bottom: 0.027rem solid #e1e1e1; text-align: left; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; background: #fff; }
+
+.input-box input { border: none; }
+
+.code-alert-box .input-box img { width: 1.68rem; height: 1.36rem; }
+
+.code-alert-box .img-input { width: 4.133rem; font-size: 0.48rem; padding: 0.267rem 0; -webkit-box-sizing: border-box; box-sizing: border-box; position: relative;bottom: 0}
+
+.code-alert-box .err-tip { font-size: 0.32rem; color: #f00d0d; text-align: right; margin: 0.187rem 0 0.24rem; }
+
+.code-alert-box .alert-btn { background-image: -o-linear-gradient(right, #f00d0d 0%, #ff4b17 100%); background-image: -webkit-gradient(linear, right top, left top, from(#f00d0d), to(#ff4b17)); background-image: linear-gradient(-90deg, #f00d0d 0%, #ff4b17 100%); border-radius: 0.133rem; width: 3.147rem; height: 1.067rem; font-size: 0.427rem; color: #ffffff; line-height: 1.067rem; margin: auto; }
+
+.code-alert-box .dim { font-size: 0.373rem; color: #f00d0d; margin-top: 0.533rem; }
+
+.longin-container { position: relative; padding: 0.533rem; padding-bottom: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.longin-container-title { font-size: 0.8rem; color: #444444; margin: 1.067rem 0 2.667rem; font-weight: bold; }
+
+.longin-container .info-box .input-box { border-bottom: 0.027rem solid #e1e1e1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0.667rem; }
+
+.longin-container .info-box input { font-size: 0.48rem; color: #444444; padding: 0.213rem 0; }
+
+.longin-container .info-box img { width: 0.533rem; height: 0.533rem; margin-left: 0.213rem; }
+
+.longin-container .login-btn { width: 100%; height: 1.28rem; background-image: -o-linear-gradient(left, #f00d0d 0%, #ff4b17 100%); background-image: -webkit-gradient(linear, left top, right top, from(#f00d0d), to(#ff4b17)); background-image: linear-gradient(90deg, #f00d0d 0%, #ff4b17 100%); border-radius: 0.133rem; font-size: 0.48rem; color: #ffffff; line-height: 1.28rem; text-align: center; margin-top: 0.4rem; }
+
+.longin-container .login-tip-a { width: 5.333rem; height: 1.173rem; line-height: 1.173rem; font-size: 0.427rem; color: #ffffff; opacity: 0.8; background: #000000; border-radius: 0.133rem; text-align: center; position: fixed; top: 44%; left: 0; right: 0; margin: auto; }
+
+.longin-container .err-tip { font-size: 0.32rem; color: #f00d0d; text-align: right; margin-top: -0.48rem; visibility: hidden; }
+
+.pw-login { padding: 0.933rem 0.8rem; -webkit-box-sizing: border-box; box-sizing: border-box; background: #fff; }
+
+.pw-login .logo { width: 2.48rem; height: 0.587rem; }
+
+.pw-login-title { font-size: 0.8rem; color: #444444; margin-top: 0.267rem; margin-bottom: 0.8rem; }
+
+.pw-login .login-btn { width: 100%; }
+
+.pw-login .password { font-size: 0.427rem; color: #f00d0d; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 0.400rem; }
+
+.pw-login .forget { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.pw-login .forget img { width: 0.480rem; margin-right: 0.133rem; }
+
+.pw-login .deal { font-size: 0.32rem; color: #444444; text-align: center; margin-top: 7.5rem; }
+
+.pw-login .deal span { color: #6298ff; }
+
+.tel-login { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.tel-login img { width: 2.480rem; height: 0.587rem; }
+
+.tel-login .pw-login-title { margin-bottom: 2.4rem; }
+
+.tel-login .disable { opacity: 0.3; }
+
+::-webkit-input-placeholder { /* WebKit browsers */ color: #cccccc; letter-spacing: 0; }
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #cccccc; letter-spacing: 0; }
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #cccccc; letter-spacing: 0; }
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */ color: #cccccc; letter-spacing: 0; }
+
+input { outline: none; }

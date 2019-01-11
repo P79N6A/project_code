@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+/* 样式初始化ddd
+--------------------------------------------------*/
+
+/*主页*/
+html{font-size:62.5%; /* 10÷16=62.5% */} 
+body{width:100%;height:100%;font-size: 1.4rem;background:url(../images/mianbg.png);}
+ul{list-style:none;padding:0px;-webkit-padding-start: 0px;margin-bottom:0px;}
+hr{margin-top: 5px;margin-bottom: 5px;}
+p {margin: 0 0 5px;}
+.text-left{text-align:left !important;}
+a{text-decoration:none;}
+a:link {text-decoration:none;} /* 未访问的链接 */
+a:visited {text-decoration:none;} /* 已访问的链接 */
+a:hover {text-decoration:none;} /* 鼠标移动到链接上 */
+a:active {text-decoration:none;}
+.mg2{margin:0px 20px 0px 0px; color:#444444;}
+.mt10{margin-top:10px;}
+
+
+.container-fluid{padding:0px;margin:0px;min-width:1190px;width:100%;overflow:hidden;}
+.header{background:url(../images/topbg.png) repeat-x;}
+.navbar-brand{height:82px;padding:0px;font-size:2rem; color:#FFF; line-height:82px; margin-right:25px;}
+.navbar{margin-bottom:0px;border:none;}
+.logo{margin-right:26%}
+.mr65{margin-right:3%;}
+.mr5{margin-right:5px;}
+.navbar-header{width:100%;}
+.mb10{margin-bottom:10px;}
+.with250{width:250px;}
+.c_blue{color:#0079b6;}
+.red{color:red;}
+
+.row{margin:0px; height:100%;}
+.col-xs-2{padding:0px;margin:0px;box-shadow:#c6c6c6 3px 3px 10px; height:100%; overflow-y:auto;}
+.col-xs-2::-webkit-scrollbar{width: 0px;}
+.bgColor{background-color:#ededed;}
+#main-nav{list-style:none;width:100%;margin:0px;padding:0px;box-shadow:#c6c6c6 3px 3px 10px;}
+#main-nav .li-header{border-bottom:1px solid #c6c6c6;font-size:1.8rem; display:block;padding:10px 0px;color:#444444; text-align:center; background-color:#ededed;}
+#main-nav .li-header:hover{color:#0079b6;}
+#main-nav .li-header.active{color:#0079b6;}
+.icon{margin-right:10px; display:inline-block;width:22px;height:25px; vertical-align:middle;}
+.mer{background-image:url(../images/icon/mer.png);height:22px;}
+.mer.active{background-image:url(../images/icon/mer_on.png);height:22px;}
+.sys{background-image:url(../images/icon/sys.png);}
+.sys.active{background-image:url(../images/icon/sys_on.png);}
+.user{background-image:url(../images/icon/user.png);}
+.user.active{background-image:url(../images/icon/user_on.png);}
+.cou{background-image:url(../images/icon/cou.png);}
+.cou.active{background-image:url(../images/icon/cou_on.png);}
+.stat{background-image:url(../images/icon/stat.png);}
+.stat.active{background-image:url(../images/icon/stat_on.png);}
+.due{background-image:url(../images/icon/due.png);}
+.due.active{background-image:url(../images/icon/due_on.png);}
+.fina{background-image:url(../images/icon/fina.png);}
+.fina.active{background-image:url(../images/icon/fina_on.png);}
+.gran{background-image:url(../images/icon/gran.png);}
+.gran.active{background-image:url(../images/icon/gran_on.png);}
+.loan{background-image:url(../images/icon/loan.png);}
+.loan.active{background-image:url(../images/icon/loan_on.png);}
+.son_list{text-align:left;width:100%; float:right;background-color:#FFF;}
+.son_list a{color:#444444;font-size:1.4rem;padding:10px 0px; display:block;width:90%;border-bottom:1px solid #e1f1f9; margin-left:10%;padding-left:31%;}
+.son_list a:hover{color:#0079b6;}
+.son_list a.active{color:#0079b6; border-right:5px solid #0079b6;}
+
+
+.col-xs-10{padding-right:0px;margin:0px; height:99%;}
+#mainContent{width:100%;height:100%; }
+.title{padding:10px 20px 10px 20px; background-color:#67737c;color:#FFF;font-size:1.8rem; font-weight:bold;}
+.title .position{color:#b4c0c8;}
+.panel-content{margin: 10px 20px 20px 0;}
+.panel-content td,.panel-content th,.panel-content thead{border:1px solid rgb(239,238,236)}
+.panel-content table tr .active{background-color:red !important;}
+.table-hover>tbody>tr:hover>td,.table-hover>tbody>tr:hover>th{background-color:rgb(213,236,244)}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{padding:8px;}
+
+.table{ background-color:#fff;}
+td.titleFont{background-color:#F8F8F8;width:10%;}
+td.titleFont + td{width:15%;}
+
+.panel_pager{text-align:right;}
+.panel_req{margin-bottom:10px;padding-left:20px;overflow:hidden;}
+.pagination>li>a, .pagination>li>span{margin-left:5px; border-radius:5px; border-color:rgb(94,177,214);color:#444444;font-size: 1.4rem;}
+.pagination-lg>li>a, .pagination-lg>li>span{padding:5px;}
+.pagination>li>a:hover,.pagination>li>span:hover,.pagination>li>a:focus,.pagination>li>span:focus{color:#FFF;background-image:url(../images/page.png); background-size:auto 100%;border-color:#ddd}
+.searchbtn{background:url(../images/houtai_01.png);width:80px;height:30px; border:none; outline:none;color:#0079b6;}
+
+.btn{outline:none !important;}
+.panel_group{text-align:center; margin-top:20px;}
+.panel_btn .btn,.panel_group .btn{background:url(../images/houtai_02.png) no-repeat;width:84px;background-color:transparent;color:#fff;font-size:1.4rem;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);outline:none;border:none;padding:0px 0px 6px 3px; height:34px; line-height:34px; outline:none;}
+
+.content{width:100%;border:1px solid #ececec; padding:0 ;margin:10px auto; background-color:#FFF;}
+.content .row{margin:10px 0px;background-color:#FFF;}
+.titleFont{font-size:1.4rem;font-weight:bold;}
+.title_span{width:100px;display:inline-block;text-align:right;}
+.merImg{border:1px solid #b2b2b2;width:120px;height:90px; border-radius:5px; vertical-align:text-top;}
+
+.radiobox{font-weight:normal; margin-right:20px;}
+.sel{height:26px !important;width:175px;}
+
+textarea{width:175px; vertical-align:text-top; height:100px;}
+
+.file-div{width:175px;position:relative; display:inline-block; vertical-align:text-top;}
+.file{position:absolute;width:100%; height:100%;opacity:0;}
+.error{color:red;font-weight:normal;margin-left:10px;}
+
+.loginIpt{width:260px;height:44px;padding-left:64px; margin:auto; box-shadow:none;margin-bottom:20px; border-radius:5px;border:1px solid rgb(220,217,213); background-color:#efefef;}
+.id-icon{background:#efefef url(../images/ID.png) no-repeat left top;}
+.pwd-icon{background:#efefef url(../images/key.png) no-repeat left top;}
+.code{width:144px;height:44px;border-radius:5px;border:1px solid rgb(220,217,213); background-color:#efefef; padding-left:20px;}
+.codetxt{width:100px;height:44px;border-radius:5px;border:1px solid rgb(220,217,213); background-color:#efefef;display:inline-block; vertical-align:middle;margin-left:10px; line-height:44px; text-align:center;}
+.loginbtn{background:url(../images/loginbtn.png); width:260px;height:44px; color:#FFF;border:none;font-size:1.4rem; margin-top:10px;}
+.loginbtn:hover{color:#fff;background:url(../images/loginbtn.png);}
+.memo{color:#0089ff; margin-top:10px;}
+
+.list-info{overflow-x:scroll;}
+.list-info table{width:1800px;}
+
+.txt{vertical-align:middle; display:inline-block;color:#000;}
+
+.btn-default{border:1px solid; border-radius:5px;}
+
+
+.favorable td{border:none;}
+.favorable>thead>tr>th,.favorable>tbody>tr>td{text-align: left;padding: 10px 0;padding-left: 2%;}
+.favorable>thead>tr>th{font-size: 1.6rem;font-weight: bold;}
+.favorable{text-align: left;}
+.favorable span{color: gray;}
+.favorable b{font-weight: normal;}
+.favorable input[type="radio"]{margin-right: 5px;}
+.favorable td.titleFont{text-align: center;padding-left: 0;}
+.favorable td.titleFont + td{width:auto;}
+.mask{display:none;width: 100%;height:100%;background: rgba(0,0,0,.7);position: absolute;top:0;left: 0;z-index: 100}
+.pop{display:none;width: 400px;height:300px;position: absolute;top:50%;left:50%;margin-top: -150px;margin-left: -200px;background: #E7EDEF;z-index: 200;}
+.pop h3{width:400px;height:50px;font-size: 2.4rem;background: -webkit-linear-gradient(top,#90cef2,#347bbb);padding: 0;margin: 0;padding-left:20px;line-height: 50px;}
+.import .import_text{width:400px;height:120px;margin: 10px auto;}
+.import .import_file{background:url(../images/houtai_02.png) no-repeat;width:84px;height:34px;color: #fff;text-align: center;line-height: 30px;position: relative;}
+.import .import_btn{opacity: 0;line-height: 34px;position: absolute;left:0;top:0;}
+.pop .sure{margin-top: 25px;text-align: center;}
+.pop .sure a{text-align:center;display:inline-block;background:url(../images/houtai_02.png) no-repeat;width:84px;background-color:transparent;color:#fff;font-size:1.4rem;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);outline:none;border:none;padding:0px 0px 6px 3px; height:34px; line-height:30px; outline:none;}
+
+.btnBtn{width: 84px;height:34px;background: url(../images/houtai_02.png);color: #fff;font-size: 1.4rem;border:none;line-height: 30px;text-align: center;}
+
+
+
+@media (min-width: 640px) { 
+	html{font-size:62.5%;}
+}
+@media (min-width: 490px) and (max-width: 640px) { 
+	html{font-size:50%;}
+}	
+
+@media (min-width: 410px) and (max-width: 490px){ 
+	html{font-size:40%;}
+}
+
+@media (max-width: 410px){ 
+	html{font-size:31.25%;}
+}
+	

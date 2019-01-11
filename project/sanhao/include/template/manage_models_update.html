@@ -1,0 +1,39 @@
+<!--{include manage_header}-->
+<div class="w2 clearfix">
+	<!--{include manage_left}-->
+    <div class="mn">
+    	<div class="crm"><a href="/manage/order.php?action=list">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/manage/manager.php?action=list">管理员管理</a>&nbsp;&gt;&gt;&nbsp;添加管理员</div>
+        <div class="wrap">
+            <table class="table8" width="100%" border="1" bordercolor="#b61a3f" cellpadding="0" cellspacing="0" rules="rows">
+            	<tbody>
+            	<form action="/manage/modelsmanage.php?action=update" method="post">
+            	<input type='hidden' name="id" value="{$ainfo['id']}"/>
+                    <tr class="even">
+                        <th width="140"><span>*</span>模块名称：</th>
+                        <td width="602"><input type="text" name="name" value="{$ainfo['name']}" class="ipt ipt1" /></td>
+                    </tr>
+           			<tr class="odd">
+                        <th width="140"><span>*</span>模块排序：</th>
+                        <td width="602"><input type="text" name="sort" value="{$ainfo['sort']}" class="ipt ipt1" /></td>
+                    </tr>
+                    <tr class="even">
+                   		<th width="140"><span>*</span>模块url：</th>
+                        <td width="602"><input type="text" name="url"  value="{$ainfo['url']}" class="ipt ipt1" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <th width="140"><span>*</span>模块简介：</th>
+                        <td width="602"><textarea name='desc'>{$ainfo['desc']}</textarea></td>
+                    </tr>
+                    <tr class="even">
+                    	<td>&nbsp;</td>
+                        <td>
+                        	<input type="submit" class="btn btn1" value="提交" />
+                        </td>
+                    </tr>
+                    </form>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--{include manage_footer}-->

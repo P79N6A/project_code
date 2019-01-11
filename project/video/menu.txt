@@ -1,0 +1,42 @@
+{
+    "button": [
+        {
+            "type":"view",
+            "name":"信用投资",
+		    "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx476bb3649401c450&redirect_uri=http://weixin.xianhuahua.com/dev/invest&response_type=code&scope=snsapi_userinfo&state=xhh123#wechat_redirect"
+        },
+		{
+            "name": "互动优惠",
+            "sub_button": [
+                {
+                    "type":"view",
+                    "name":"邀请熟人",
+                    "key":"yi_youhui_2_0",
+			    "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx476bb3649401c450&redirect_uri=http://weixin.xianhuahua.com/dev/share/invite&response_type=code&scope=snsapi_userinfo&state=xhh123#wechat_redirect"
+                 }
+            ]
+        },
+        {
+            "name": "更多服务",
+            "sub_button": [
+                {
+                    "type":"click",
+                    "name":"常见问题",
+                    "key":"yi_service_3_0"
+                 },
+                {
+                    "type":"view",
+                    "name":"我的账户",
+                    "key":"yi_service_1_2",
+                    "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx476bb3649401c450&redirect_uri=http://weixin.xianhuahua.com/dev/account&response_type=code&scope=snsapi_userinfo&state=xhh123#wechat_redirect"
+                },
+                {
+                    "type":"view",
+                    "name":"解冻攻略",
+                    "key":"yi_service_1_3",
+                    "url":"http://weixin.xianhuahua.com/html/jiedong.html"
+                }
+            ]
+        }
+    ]
+}

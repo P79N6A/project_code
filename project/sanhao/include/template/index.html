@@ -1,0 +1,41 @@
+<!--{include header}-->
+
+<div class="blank108"></div>
+<div class="blank10"></div>
+<div class="imain">
+	<div class="w3">
+      	<ul class="pulist">
+      	<!--{loop $aproductlist $index $one}-->
+              <li>
+              	<div class="img"><a href="/account/productdetail.php?id={$one['id']}"><img src="/{$one['pic']}" alt="{$one['pname']}" /></a></div>
+                  <div class="text">
+                  	<div class="name"><a href="/account/productdetail.php?id={$one['id']}">{$one['pname']}</a></div>
+                  	<div class="fl">
+                      	<div class="t">
+                          	<strong>￥{$one['price']}</strong>
+                             	<!--{if $one['old_price'] != ''}--><span>{$one['old_price']}</span><!--{/if}-->
+                          </div>
+                          <div class="b">
+                          	<span>库存：<!--{if $one['max_number'] != ''}-->{$one['max_number']-$one['sale_number']}件<!--{else}-->不限<!--{/if}--></span>
+                          </div>
+                      </div>
+                      <div class="fr">
+                      	<div class="t">
+                          	<span>运费：<!--{if $one['express_price'] != ''}-->{$one['express_price']}<!--{else}-->免运费<!--{/if}--></span>
+                          </div>
+                          <div class="b">
+                          	<span><a href="/account/productdetail.php?id={$one['id']}">去看看</a></span>
+                          </div>
+                      </div>
+                  </div>
+                  <!--{if $one['today'] == 'y'}--><div class="tag xindan">今日新单</div><!--{/if}-->
+              </li>
+              <!--{/loop}-->      
+          </ul>
+        <!--{if $count > 50}-->
+        {$pagestring}
+        <!--{/if}-->
+    </div>
+</div>
+<div class="blank40"></div>
+<!--{include footer}-->

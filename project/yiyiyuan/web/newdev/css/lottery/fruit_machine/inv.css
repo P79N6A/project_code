@@ -1,0 +1,45 @@
+html,body{width:100%;height:100%; background:#341b77; font-family: "Microsoft YaHei"; position: relative;}
+a{color:#000}
+
+.bgtwo{position:relative; height: 31rem; margin-top: 20px; }
+.bgtwo h3{width: 100%; position: absolute; top: 2px;z-index: 100;text-align: center; color: #fff;}
+.bgtwo h3 span{ color: #ffe500;}
+.htmleaf-container{ width: 100%;}
+#lottery{width:90%;height:auto;margin:0px 5%; position: absolute;top:0;}
+#lottery table{position: absolute;top: 2.4rem;left: 8%;width: 85%; z-index: 110;}
+#lottery table td{position:relative;width:25%;text-align:center;color:#333;font-index:-999}
+#lottery table td img{display:block;width:97%; margin: 0 auto;}
+#lottery table td{height: 5rem; padding-bottom: 5px;}
+		/*#lottery table td a{width:100%;height:6rem;display:block;text-decoration:none;background:url(../img/5.png) no-repeat; background-size: 100%;}
+		#lottery table td a:hover{background-image:url(../img/5.png);}*/
+#lottery table td.active .mask{display:block;}
+#lottery table td a{position: relative; display: block;}
+#lottery table td .syucshu{color: #fff;text-align: center; position: absolute; bottom: 0.85rem;z-index: 999;font-size:0.5rem;width: 100%;}
+.mask{width:100%; height:96%; position:absolute;left:0;top:0;border-radius: 8px;background-color: rgba(0,0,0,0.5); display:none;}
+.yaoqbo{ position:relative;  width: 100%;}
+.yaoqbo .bobao{width: 100%; }
+.yaoqbo .bobao img{width: 100%; height: 100%;}
+#content{height:25px;width:72%;position: absolute;overflow: hidden; top:0.7rem; color: #fff; margin-left: 18%; font-size: 0.8rem;}
+#scroll{width:100%;line-height: 25px;position: absolute;top: 0;left: 0;}
+#scroll div{ width:100%;}
+.bgner{background: linear-gradient(to right, #551489,#5e2397,#55158b);}
+
+.dangdang,.dangdang2{position: absolute; top: 7px;width: 98%;z-index: 100;left: 1%;}
+
+
+.Hmask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.dl_tcym{position: fixed; top: 25%; width: 90%; background: #fff;z-index: 110; margin: 0 5%; border-radius: 5px; padding-bottom:2rem;}
+.dl_tcym button{ width: 40%;margin: 0 30%; font-size: 16px; padding:8px 0; border-radius: 50px; background: #BF974D; color: #fff;}
+.dl_tcym .qjfbz{font-size: 15px; text-align: center; padding: 35px 0 15px; color: #444;}
+.dl_tcym .qwcky{ font-size: 1.1rem; text-align: center; padding-bottom: 15px;}
+.hidden{display:none;}
+
+

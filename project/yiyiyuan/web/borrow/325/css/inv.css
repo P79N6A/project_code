@@ -1,0 +1,60 @@
+body{width:100%;height:100%; background: #f3f3f3; font-family: "微软雅黑"; color: #444;font-size: 14px; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, figure, form, fieldset, legend, input, textarea, p, blockquote, th, td,em{
+margin: 0;padding: 0;list-style: none;-webkit-tap-highlight-color: transparent;font-style: normal;}
+img{-webkit-user-select:none;-webkit-touch-callout:none; display: block;}
+a{color:#444}
+
+
+.depository_set,.depository_open{
+  width: 375px;
+  height: 219px;
+  background: #fff;
+  position: relative;
+}
+.depository_set_img,.depository_open_img{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 173px;
+  top: 42px;
+}
+.depository_set_text,.depository_open_text{
+  font-family: "微软雅黑";
+  font-size: 18px;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 18px;
+  height: 18px;
+  width: 100%;
+  position: absolute;
+  top: 88px;
+  left: 0;
+  text-align: center;
+}
+.depository_set_tip,.depository_open_tip{
+  font-family: "微软雅黑";
+  font-size: 14px;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 14px;
+  height: 14px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 154px;
+  left: 0;
+}
+.depository_reset,.depository_reset_open,.paycount_btn{
+  background-image: linear-gradient(-90deg, #F00D0D 0%, #FF4B17 100%);
+  border-radius: 5px;
+  width: 345px;
+  height: 48px;
+  font-family: "微软雅黑";
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 48px;
+  margin-left: 15px;
+  margin-top: 15px;
+  text-align: center;
+}

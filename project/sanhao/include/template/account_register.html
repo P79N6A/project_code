@@ -1,0 +1,79 @@
+<!--{include header}-->
+
+<div class="blank108"></div>
+<div class="blank60"></div>
+<div class="cRegLogin2">
+    <div class="mt"></div>
+    <div class="mc">
+        <div class="uinfo clearfix">
+        	<img src="{$user['sns_headerurl']}" alt="{$user['sns_nickname']}" />
+            <p>{$user['sns_nickname']}，您好！请完善您的账号信息</p>
+        </div>
+        <div class="ulogin">
+        	<div class="ut">还没有三好网账号</div>
+            <div class="ub">
+                <dl class="item">
+                    <dt>手机号码</dt>
+                    <dd><input type="text" class="text" name="username" id="username" /><em id="username_check"></em></dd>
+                </dl>
+                <dl class="item sjyzm" id="sms_vocide">
+                    <dt><input type="button" id="sms_button" class="hqyzm" /></dt>
+                </dl>
+                <dl class="item">
+                    <dt>短信验证码</dt>
+                    <dd><input type="password" class="text" id="smscode" maxlength="4" /><em id="smscode_check"></em></dd>
+                </dl>
+                <dl class="item">
+                    <dt>密码</dt>
+                    <dd><input type="password" class="text" name="password" id="password" /><em id="password_check"></em></dd>
+                </dl>
+                <dl class="item" id="repeatpassword" style="display:none;">
+                    <dt>确认密码</dt>
+                    <dd><input type="password" class="text" name="repassword" id="repassword" /><em id="repassword_check"></em></dd>
+                </dl>
+                <div class="link2"><input type="checkbox" name="agree" id="agree" checked />我看过并同意<a href="/help/agreement.php" target="_blank">三好网用户协议</a></div>
+                <input type="hidden" name="type" id="username_type" value="2" />
+                <input type="hidden" name="user_sns_id" id="user_sns_id" value="{$user['id']}" />
+                <input type="hidden" name="loginsns" id="loginsns" value="{$user['sns_type']}" />
+                <div class="item"><input type="button" id="register_submit" class="btn2" /><a href="http://www.jxtuan.com" class="lj">跳过这一步！</a></div>
+            </div>
+        </div>
+        <div class="ulogin">
+        	<div class="ut">已有三好网账号</div>
+            <div class="ub">
+                <dl class="item">
+                    <dt>手机号码</dt>
+                    <dd><input type="text" class="text" name="username" id="binding_mobile" /><em id="binding_mobile_check"></em></dd>
+                </dl>
+                <dl class="item">
+                    <dt>密码</dt>
+                    <dd><input type="password" class="text" name="password" id="binding_password" /><em id="binding_password_check"></em></dd>
+                </dl>
+                <div class="link2"></div>
+                <input type="hidden" name="user_sns_id" id="user_sns_id" value="{$user['id']}" />
+                <input type="hidden" name="loginsns" id="loginsns" value="{$user['sns_type']}" />
+                <div class="item"><input type="submit" value="" id="binding_login_submit" class="btn3" /><a href="http://www.jxtuan.com" class="lj">跳过这一步！</a></div>
+                <div class="cont">{$msg}</div>
+            </div>
+        </div>
+    </div>
+    <div class="mb"></div>
+</div>
+<div class="blank120"></div>
+
+
+<script type="text/javascript">
+$(function(){
+	var $crlut = $(".cRegLogin2 .ulogin .ut");
+	var $crlub = $(".cRegLogin2 .ulogin .ub");
+	$crlut.first().addClass("cur");
+	$crlub.first().show();
+	$crlut.click(function(){
+		$(this).addClass("cur").next().show()
+		.parent().siblings().children(".ut").removeClass("cur")
+		.next().hide();
+	});
+})
+</script>
+
+<!--{include footer}-->

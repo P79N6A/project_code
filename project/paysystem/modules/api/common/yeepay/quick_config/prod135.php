@@ -1,0 +1,21 @@
+<?php
+// 一键支付接口文档  易宝一键支付(花生米富)
+
+// 商户编号
+$merchantaccount = '10015495675';
+
+
+// 商户私钥
+$merchantPrivateKey = 'MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAJD/A6ipQlp67MlWNQI4FNSCJzi4d8JQ0XFSJZGaOY0cT/aisjfMwflA5eC2jK0y2bVyfAF/P3KI40uEnv+tgOW5sE925P/7PXO4BsVFaF+ZuETczAMXCvJxkIl6ud0fHS7tw8+/Sm9Ca7htxY36IMTcirFbEunTpHGgu94VTLMpAgMBAAECgYAS29hR+5HRyuM5XKkQXNL4wOTxD60j7PcQ0ipowbJylBgicA7WCx+/l51OmO+7Jz4Bx54xY6eQ8hT+IYW8o4h8JoiN5ln53AoGWv1clqO3QybXh9loZ48Hy/nWf3/bGv7z0wKuCeZ+xaPUDANAqqFCh5BGLwlpF636SCZPygEe8QJBAMC1cJ+vpq0CkM1C2MuE+Cjca58Fqivi9oY6X9rMbJLUwZVeUdcRuWrt+VhKtnk+XwOsj4FOV0Hv8QXcuhRt3UcCQQDAnf7y16PYvrf/6r0k8j5FEVi9cj9r9DoOmynx6BNcSed1wOFbxZqwIVCRWzoTJYQ3NO9LyOS0z7aZpwqGq2QPAkAgTcoFWsKL+gQgBHanFzEqWFjKHX77QF6m/Z4X5XDF5FhXG6qIbPYyEJZd0JhqFqSCzyh3OpSx/vDeVLP0vL39AkEAhsqJ7Rrmd/kO/jIg5sf2t5KqDPj0VPF1517B/Z0wXzcAmLC/g99GntbRcMbsXxWz7oZGpzwQgE+TMvdoMFGkFQJADyrTlPcAk6hWMCAZfLMaDP9HEaKvDMnttk4AKVGuUJ4IKthLolLCu85cDuHvRS09AhvVLlloaRLyBHB9/nXVJA==';
+
+// 商户公钥
+$merchantPublicKey = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCQ/wOoqUJaeuzJVjUCOBTUgic4uHfCUNFxUiWRmjmNHE/2orI3zMH5QOXgtoytMtm1cnwBfz9yiONLhJ7/rYDlubBPduT/+z1zuAbFRWhfmbhE3MwDFwrycZCJerndHx0u7cPPv0pvQmu4bcWN+iDE3IqxWxLp06RxoLveFUyzKQIDAQAB';
+
+// 易宝公钥
+$yeepayPublicKey = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxfwRe6Xr1LGaySAEk7Z3CwRUtnlPNlkONTDLpcRzPTDIerY64HP9FEblDqmJW7vANsNuUIPpHZei5m+ogtWz2rVmy8LQ7JowLPtlHB618FD2/ZTuUy/zm57lIQDyAsqIfDopMub/g4Rz4EnJo5U46ETyoO1Qv5TgvGbWVasOeNwIDAQAB';
+return [
+	'merchantaccount'=>$merchantaccount,
+	'merchantPublicKey'=>$merchantPublicKey,
+	'merchantPrivateKey'=>$merchantPrivateKey,
+	'yeepayPublicKey'=>$yeepayPublicKey,
+];

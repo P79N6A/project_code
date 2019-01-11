@@ -1,0 +1,7 @@
+<div class="mMenu">
+    <ul class="fCf">
+        <?php if( $page == 'loan'){?><li class="item-2 active"><?php }else{?><li class="item-2"><?php }?> <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=<?php echo Yii::$app->params['AppID'];?>&redirect_uri=<?php echo Yii::$app->params['app_url'];?>/dev/loan&response_type=code&scope=snsapi_base&state=xhh123#wechat_redirect"><i class="icon"></i> <em>借款</em></a> </li>
+        <?php if( $page == 'friends'){?><li class="item-1 active"><?php }else{?><li class="item-1"><?php }?> <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=<?php echo Yii::$app->params['AppID'];?>&redirect_uri=<?php echo Yii::$app->params['app_url'];?>/dev/friends/first&response_type=code&scope=snsapi_base&state=xhh123#wechat_redirect"><i class="icon"></i> <em>信用圈</em></a> </li>
+        <?php if( $page == 'account'){?><li class="item-3 active"><?php }else{?><li class="item-3"><?php }?> <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=<?php echo Yii::$app->params['AppID'];?>&redirect_uri=<?php echo Yii::$app->params['app_url'];?>/dev/account&response_type=code&scope=snsapi_base&state=xhh123#wechat_redirect"><i class="icon"></i> <em>我</em></a> </li>
+    </ul>
+</div>

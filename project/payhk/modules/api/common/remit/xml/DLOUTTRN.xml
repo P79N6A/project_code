@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK"?>
+<stream>
+	<action>DLOUTTRN</action>
+	<userName>leetest5</userName>
+	<clientID>1603</clientID>
+	<preFlg>0</preFlg>
+	<preDate></preDate>
+	<preTime></preTime>
+	<payType>00</payType>
+	<payAccountNo>7111010182100038589</payAccountNo>
+	<recAccountNo>7111010182100030618</recAccountNo>
+	<recAccountName>12345601234</recAccountName>
+	<recOpenBankName>中国银行天津</recOpenBankName>
+	<recOpenBankCode>011100000003</recOpenBankCode>
+	<citicbankFlag>1</citicbankFlag>
+	<cityFlag>1</cityFlag>
+	<tranAmount>10.00</tranAmount>
+	<abstract>aaaaaaaaaaaaaaaaaaaaaa</abstract>
+	<takerName>dsds</takerName>
+	<takerID>1</takerID>
+	<takerIDType>1</takerIDType>
+</stream>

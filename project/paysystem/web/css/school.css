@@ -1,0 +1,64 @@
+body{
+ padding:0;
+ margin:0;
+ text-align:center;
+ background-color:#ffffff;
+}
+.peopleNoOne{
+ width:100%;
+ border-bottom:1px solid #d9dcdd;
+ border-top:1px solid #d9dcdd;
+ cursor:pointer;
+ background:#fff;
+ overflow: hidden;
+ margin-top: 105px;
+}
+
+.bg{background-color: green;}
+.peopleList {margin: 0 3% 0;}
+.barDiv{width:100%;height:35px; line-height:35px;background-color:#f5f3ef;}
+
+.peopleSearch{
+	 width:100%;
+ border-bottom:1px solid #9aaffe;
+ cursor:pointer;
+ background:url(../images/unselectBg.png) repeat ;
+ overflow: hidden;
+}
+
+.ZM{
+ height:35px;
+ line-height:35px; 
+ margin-left:4%;
+ float:left;
+ color:#666666;
+ font-size: 0.8em;
+}
+.name{float:left;height:58px;line-height:58px;font-size:1.1em;color:#666;}
+.searchZone{position:fixed;top:0px;width: 100%;height:55px;background-color: #f3f0eb;z-index:50;vertical-align: middle;line-height: 55px;}
+.includeSearch{background:#fff;border:1px solid #dcddde;overflow: hidden;width: 80%;  margin-left: 3%; float:left;height:35px;border-radius: 3px;vertical-align: middle;margin-top: 0.7em;}
+.xiaoqxiao{ float:left;color:#027aff; font-size: 14px; margin-left: 5px;}
+.searchInput{padding-left:5%;width:80%;float:left;height:35px;line-height:35px;text-align:left;font-size:1.2em;color:#ccc;font-weight: bold;}
+.searchBtn{height:100%;width:10%;float:right;margin-right:5%;background:url(../images/search.png) no-repeat center center;background-size:65%;cursor:pointer;}
+.searchBtn:active{background-size:85%;}
+
+
+.people {
+  padding: 0.5em 0 0.5em 0;width:100%;border-bottom:1px solid #d9dcdd;cursor:pointer;background-color:#fff;overflow: hidden;
+  vertical-align: middle;
+  height: 45px;
+  line-height: 50px;
+  font-family: '微软雅黑';
+  color: #444;
+  font-size: 1.1em;
+}
+.peopleList .slider-nav {line-height:124%;position: fixed; right: 0; top: 105px;min-height: 250px;}/*will delete width's style' */
+.slider-nav li{color:#999;}
+.slider-content { float: left; width: 100%; display: block; overflow: auto; min-height: 250px;  margin-top: 15px; }
+
+.header{height: 50px;position: fixed;top:0;width: 100%;z-index: 88; background: #000; line-height: 50px;} 
+.header .tag{width: 50%;overflow:hidden;color: #fff;height:30px;display: inline-block;line-height: 30px;text-align: center;margin-top: 10px; font-size: 1.5em;}    
+.myInfo{float:left; font-size:1.29em; padding-left:10px; }
+        
+.slider-nav li a{ display: inline-block; width: 30px; height: 18px;}
+

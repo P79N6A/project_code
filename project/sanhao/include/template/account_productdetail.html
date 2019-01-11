@@ -1,0 +1,254 @@
+<!--{include header}-->
+
+<div class="blank108"></div>
+<div class="blank60"></div>
+<div class="w2 clearfix">
+	<div class="commodityDetail clearfix">
+    	<div class="detailMain">
+        	<div class="name">{$product['pname']}</div>
+            <div class="silder-new fl">
+                <div id="slider" class="slider-box">
+                <!--{loop $image $index $one}-->
+                    <div class="contentimg"><img src="/{$one['image']}" width="500" height="375" alt="" /></div>
+               <!--{/loop}-->
+                </div>
+                <img src="/account/count.php?id={$product['id']}" width="1" height="1" />
+                <div class="pagination-box">
+                    <div id="paginate-slider" class="paginate-slider">
+                    <!--{loop $image $index $one}-->
+                        <a href="javascript:void(0);" class="toc"><img src="/{$one['image']}" width="80" height="60" alt="" /></a>
+                   <!--{/loop}-->
+                    </div>
+                </div>
+                <!--{if $product['end_time'] != '' && $product['max_number'] != ''}-->
+                <!--{if ($product['end_time'] < $now) || ($product['max_number']-$product['sale_number'] <= 0)}-->
+                <div class="silder-mask">
+                	<p>已下架</p>
+                </div>
+                <!--{/if}-->
+                <!--{/if}-->
+                <!--{if $product['end_time'] != '' && $product['max_number'] == ''}-->
+                <!--{if $product['end_time'] < $now}-->
+                <div class="silder-mask">
+                	<p>已下架</p>
+                </div>
+                <!--{/if}-->
+                <!--{/if}-->
+                <!--{if $product['end_time'] == '' && $product['max_number'] != ''}-->
+                <!--{if ($product['max_number']-$product['sale_number'] <= 0)}-->
+                 <div class="silder-mask">
+                	<p>已下架</p>
+                </div>
+                <!--{/if}-->
+                <!--{/if}-->
+            </div>
+            <div class="clear"></div>
+            <div class="nshare clearfix">
+            	<span>分享：</span>
+                <ul class="clearfix">
+		            <li class="item1"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://v.t.sina.com.cn/share/share.php?',pname='{$productweibo}',u=d.location.href,p=['url=',e(u),'&title=',e(pname),'&appkey=2051999832'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));">分享到</a></li>
+		            <li class="item2"><a href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href)+'&desc={$productqone}');return false;">分享到</a></li>
+		            <li class="item3"><a href="javascript:void(0);" onclick="{ var _t = '{$productweibo}';  var _url = encodeURI(window.location); var _appkey = 'ac191e7394d68f793435034125d4443e'; var _site = encodeURI; var _pic = ''; var _u = 'http://v.t.qq.com/share/share.php?title='+_t+'&url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic; window.open( _u,'转播到腾讯微博', 'width=700, height=580, top=180, left=320, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );  };" >分享到</a></li>
+		            <li class="item4"><a href="javascript:void(0);" onclick="window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(document.location.href)+'&desc={$productqone}');return false;">分享到</a></li>
+		            <li class="item5"><a href="javascript:window.open('http://www.douban.com/recommend/?url='+encodeURIComponent(location.href)+'&title={$productqone}','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes'); void 0">分享到</a></li>
+		            <li class="item6"><a href="javascript:void(0);" onclick="javascript:void((function(s,d,e){var f='http://share.renren.com/share/buttonshare?link=',u=location.href,l='{$productqone}',p=[e(u),'&title=',e(l)].join('');function a(){if(!window.open([f,p].join(''),'xnshare',['toolbar=0,status=0,resizable=1,width=626,height=436,left=',(s.width-626)/2,',top=',(s.height-436)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();})(screen,document,encodeURIComponent));">分享到</a></li>
+		            <li class="item7"><a href="javascript:window.open('http://www.kaixin001.com/repaste/share.php?rurl='+encodeURIComponent(location.href)+'&rcontent={$productqone}','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes'); void 0">分享到</a></li>
+		            <li class="item8"><a href="javascript:void(0);" onclick="window.open('http://connect.qq.com/widget/shareqq/index.html?url='+encodeURIComponent(document.location.href)+'&title={$product['pname']}&desc={$productqone}');return false;">分享到</a></li>
+		        	<li class="item9" id="share_detail"><a href="javascript:void(0)">分享到</a>
+		        		<div class="slink" id="share_detail_div">
+		        			<input  id="shareproduct_copy" type="text" class="ntxt" value="{$INI['system']['wwwprefix']}/account/productdetail.php?id={$id}"></span>
+		        			<input type="button" class="nbtn"  onclick="copyText('{$INI['system']['wwwprefix']}/account/productdetail.php?id={$id}');" id="product_url" value="点击复制" />
+		        		</div>
+                    </li>
+		        </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="intro">
+            	<div class="fore1"><strong>商品描述</strong></div>
+                <div class="fore2">{$product['description']}</div>
+            </div>
+            <div class="clear"></div>
+            <div class="comment">
+                <div class="textarea"><textarea id="sdsm" name="comment"></textarea><input type="button" value="提交" id="shopping_detail_comment_button" pid="" /><label for="sdsm">您可以在这说点什么...</label></div>
+                <div class="bqzs clearfix">
+					<div class="smileysbox">
+				        
+				    </div>                
+                    <span class="zsxz" id="comment_reset"></span><span class="xzbq"  onclick="findexpress($(this))" id="choice_img">选择表情</span>
+                </div>
+                <div class="detail_comments">
+				<!-- {loop $procomments $cval} -->
+                <dl class="commentlist">
+                   	<!-- {loop $userlists $uval} -->
+                	<dt><a href="javascript:void(0)"><img src="{$uval['headerurl']}" alt="" /></a></dt>
+                    <dd>
+                    	<p class="p1"><span>{$cval['created']}</span><!-- {if $cval['uid'] == $uval['id'] } -->{$uval['mobile']}<!--{if $uval['nickname'] != ''}-->（{$uval['nickname']}）<!--{/if}--><!-- {/if} --></p>
+                        <p class="p2">{$cval['comment']}</p>
+                    </dd>
+                   	<!-- {/loop} -->
+                </dl>
+				<!-- {/loop} -->
+				<!--{if $count > 10}-->
+		        {$pagestring}
+		        <!--{/if}-->
+		        </div>
+            </div>
+        </div>
+        <div class="detailSide">
+            <div class="buy">
+                <h3><span>￥{$product['price']}</span></h3>
+                <dl class="item">
+                    <dt>数量</dt>
+                    <dd>
+                        <div class="wrap-input">
+                            <a href="javascript:void(0);" class="btn-reduce">-</a>
+                            <input type="text" value="1" name="buy_num" maxlength="5" id="buy_num" class="text" />
+                            <a href="javascript:void(0);" class="btn-add">+</a>
+                        </div>
+                        <div class="store-prompt"></div>
+                    </dd>
+                </dl>
+                <!--{loop $property $index $one}-->
+                <dl class="item">
+                    <dt>{$one['name']}</dt>
+                    <dd><select class="select">
+                    <!--{loop $one['size'] $key $value}-->
+                    <!--{if $value != ''}-->
+                    <option value="{$value}">{$value}</option>
+                    <!--{/if}-->
+                    <!--{/loop}-->
+                    </select></dd>
+                </dl>
+                <!--{/loop}-->
+                
+                <div class="buybtn">
+                <!--{if $product['end_time'] != '' && $product['max_number'] != ''}-->
+                <!--{if ($product['end_time'] < $now) || ($product['max_number']-$product['sale_number']<=0)}-->
+                <a class="disabled">购买</a>
+                <!--{else}-->
+                <a href="javascript:void(0);" id="product_buy" pid="{$product['id']}">购买</a>
+                <!--{/if}-->
+                <!--{/if}-->
+                <!--{if $product['end_time'] != '' && $product['max_number'] == ''}-->
+                <!--{if $product['end_time'] < $now}-->
+                <a class="disabled">购买</a>
+                <!--{else}-->
+                <a href="javascript:void(0);" id="product_buy" pid="{$product['id']}">购买</a>
+                <!--{/if}-->
+                <!--{/if}-->
+                <!--{if $product['end_time'] == '' && $product['max_number'] != ''}-->
+                <!--{if ($product['max_number']-$product['sale_number'] <= 0)}-->
+                <a class="disabled">购买</a>
+               	<!--{else}-->
+                <a href="javascript:void(0);" id="product_buy" pid="{$product['id']}">购买</a>
+                <!--{/if}-->
+                <!--{/if}-->
+                <!--{if $product['end_time'] == '' && $product['max_number'] == ''}-->
+                <a href="javascript:void(0);" id="product_buy" pid="{$product['id']}">购买</a>
+                <!--{/if}-->
+                </div>
+            </div>
+            <div class="buyt">
+                <dl class="item">
+                    <dt>运费</dt>
+                    <!--{if $product['express_price'] != ''}-->
+                    <dd>￥{$product['express_price']}</dd>
+                 	<!--{else}-->
+                    <dd>￥0.00</dd>
+                 	<!--{/if}-->  
+                </dl>
+                <dl class="item">
+                    <dt>库存</dt>
+                    <!--{if $product['max_number'] != ''}-->
+                    <!--{if $product['sale_number'] != ''}-->
+                    <dd id="max_num" num="{$product['max_number']-$product['sale_number']}"><!--{if ($product['max_number']-$product['sale_number']) == 0}-->商品已卖光<!--{else}-->{$product['max_number']-$product['sale_number']}<!--{/if}--></dd>
+                    <!--{/if}-->
+                    <!--{else}-->
+                    <dd id="max_num" num="不限">不限</dd>
+                    <!--{/if}-->
+                </dl>
+                <dl class="item">
+                	<!--{if $product['end_time'] != ''}-->
+                	<!--{if $product['end_time'] > $now}-->
+                    <dt id="lasttime" curtime="{$now}000" diff="{$diff_time}000">剩余时间</dt>
+                    <!--{if $left_day>0}-->
+                    <dd id="difftime">{$left_day}天{$left_hour}时{$left_minute}分{$left_time}秒</dd>
+                    <!--{else}-->
+                    <dd id="difftime">0天{$left_hour}时{$left_minute}分{$left_time}秒</dd>
+                    <!--{/if}-->
+                    <!--{else}-->
+                    <dt>剩余时间</dt>
+                    <dd>已结束</dd>
+                    <!--{/if}-->
+                    <!--{/if}-->
+                </dl>
+            </div>
+            <div class="abseller">
+            	<h3><span>关于卖家</span></h3>
+                <dl class="item"><input type="hidden" id="shopping_merchants_id" value="{$user['id']}" />
+                <!--{if $user['headerurl'] != ''}-->
+                	<dt><img src="{$user['headerurl']}" alt="" /></dt>
+                <!--{else}-->
+                	<dt><img src="/static/images/50.png" alt="" /></dt>
+                <!--{/if}-->
+                    <dd>
+                    <!--{if $user['type'] == 1}-->
+                    	<p>{$user['email']}<!--{if $user['nickname'] != ''}-->（{$user['nickname']}）<!--{/if}--></p>
+                    <!--{else}-->
+                    	<p>{$user['mobile']}<!--{if $user['nickname'] != ''}-->（{$user['nickname']}）<!--{/if}--></p>
+                    <!--{/if}-->
+                    <!--{if $user['website'] != ''}-->
+                        <p><a href="{$user['website']}" target="_blank">{$user['website']}</a></p>
+                    <!--{/if}-->
+                    </dd>
+                </dl>
+                <div class="text">
+                {$user['description']}
+                </div>
+                <!--{if $user['qq'] != ''}-->
+                <dl class="item2">
+                	<dt>联系卖家：</dt>
+                    <dd><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={$user['qq']}=&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:{$user['qq']}:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></dd>
+                </dl>
+                <!--{/if}-->
+            </div>
+            <div class="mrseller">
+            	<!--{if $user['type'] == 1}-->
+            	<h3><span>{$user['email']}<!--{if $user['nickname'] != ''}-->（{$user['nickname']}）<!--{/if}-->的其他商品</span></h3>
+            	<!--{else}-->
+            	<h3><span>{$user['mobile']}<!--{if $user['nickname'] != ''}-->（{$user['nickname']}）<!--{/if}-->的其他商品</span></h3>
+            	<!--{/if}-->
+                <ul class="item">
+                <!--{if(!empty($other))}-->
+                 <!--{loop $other $index $one}-->
+                	<li>
+                    	<a href="/account/productdetail.php?id={$one['id']}"><img src="/{$one['image']}" alt="{$one['pname']}" /></a>
+                        <p class="fore1"><a href="/account/productdetail.php?id={$one['id']}">{$one['title']}</a></p>
+                        <p class="fore2">￥{$one['price']}</p>
+                    </li>
+                 <!--{/loop}-->
+                <!--{/if}-->  
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="blank40"></div>
+<script>
+setTimeout('getproductlasttime()',1000);
+</script>
+<script type="text/javascript">
+featuredcontentslider.init({
+	id: "slider",  
+	contentsource: ["inline", ""],  
+	toc: "markup",  
+	nextprev: ["prev", "next"],  
+	revealtype: "click",
+	enablefade: [true, 0.1], 
+	autorotate: [false, 3000], 
+	onChange: function(previndex, curindex){ 
+	}
+})
+</script>
+
+<!--{include footer}-->

@@ -1,0 +1,90 @@
+body{
+	width:100%;
+	height:100%;
+	background: #f3f3f3; 
+	font-family: "微软雅黑";
+	color: #333;
+	font-size: 14px; 
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, figure, form, fieldset, legend, input, textarea, p, blockquote, th, td,em{
+margin: 0;padding: 0;list-style: none;-webkit-tap-highlight-color: transparent;font-style: normal;}
+img{-webkit-user-select:none;-webkit-touch-callout:none; display: block;}
+a{color:#444}
+
+.toppost{position: relative;}
+.toppost .time{position: absolute;color: #fff;top: 12px;font-size: 14px;left: 23px; font-weight: bold;}
+.toppost .top2{position: absolute;top: 17px; width: 10px;left: 17%;}
+.toppost .top3{position: absolute;top: 18px;width: 16px;right: 17.3%;}
+.toppost .top4{position: absolute;width: 16px;top: 18px;right: 11.5%;font-size: 12px;color: #fff;font-family: "arial";}
+.toppost .top5{ position: absolute; top: 17px;width: 27px;right: 3%;}
+.yidong{ margin-bottom: 50px;}
+.yidong.newddxq{ margin: 0; padding-bottom: 10px;}
+.scddan{width: 100%; background: #fff; margin-bottom: 10px;}
+.yidong .twenbm{ background: #fff; overflow: hidden;border-radius: 5px;}
+.yidong .scdgdqx{overflow: hidden; padding: 15px 0 10px; margin: 0 3%;}
+.yidong .scdgdqx h3{float: left;}
+.yidong .scdgdqx h3 img.ixcon{width: 11%; float: left; margin-top: 2px;}
+.yidong .scdgdqx h3 img.buyjt{ width: 6%;float: left; margin-left: 9px;  margin-top: 3px;}
+.yidong .scdgdqx h3 span{float: left; padding-left: 10px;}
+.yidong .scdgdqx p{float: right;}
+.yidong .scdgdqx p.lanse{color: #3D81FF ;}
+.yidong .scdgdqx p.redse{color: #f1130e;}
+.yidong .sfucxf{overflow: hidden; border-top:1px solid #c7c7c7; margin: 15px 5% 0; padding-top: 15px;}
+.yidong .sfucxf .shifu{float: left;}
+.yidong .sfucxf .cxinzf{ color: #fff; -webkit-background: linear-gradient(90deg, #F00D0D 0%, #FF4B17 100%);
+    background: linear-gradient(90deg, #F00D0D 0%, #FF4B17 100%); float: right; font-size: 14px; margin-top: -3px; padding: 2px 5px; width: 72px;}
+.yidong .sfucxf .cxinzf.ckxqing{ margin-right: 10px; background: #fff;border:1px solid #999; color: #444; padding: 1px 4px;}
+
+.twenbm .yidongimg{float: left; width: 113px;}
+.twenbm .yidongimg img{width: 85%;margin: 5px 10px;}
+.twenbm .yidongtxtx{float: left; width: 48%; font-family: "arial";}
+.twenbm .yidongtxtx h4{font-size: 13.4px; padding-top: 5px;line-height: 17px;color: #0a1a27;}
+.twenbm .yidongtxtx p.zgydog{color: #999; font-size: 12px; margin-top: 5px;line-height: 15px;}
+.twenbm .yidongtxtx .gyiz{ margin-top: 3px;}
+.twenbm .yidongtxtx .gyiz a{color: #eb602c;display: inline-block; background: #fcf1ec; border-radius: 5px; padding: 0 4px; margin-right: 6px; font-size: 10px; letter-spacing: 0;}
+.twenbm .yidongtxtx p a{color: #3D81FF; font-size: 12px; border:1px solid #3D81FF; display: inline-block; padding: 2px 3px;}
+.twenbm .moneybuy{float: right;margin-top: 5px;margin-right: 14px;}
+.twenbm .moneybuy p{font-size: 14px;font-family: "arial";}
+.twenbm .moneybuy p.chengy1{color: #999; text-align: right;  font-size: 14px;}
+.yidong .poeihui{margin-left: 60px;margin-top: 18px; margin-bottom: 25px;font-size: 13.4px;}
+.yidong .poeihui span{color: #0a1a27;}
+.yidong .poeihui em{color: #999;  margin-left: 15px;}
+.yidong .poeihui i{ margin-left: 52px;color: #0a1a27;font-size: 12px;float: right;margin-right: 14px;margin-top: 2px;font-family: "arial";}
+.yidong .tkuan{overflow: hidden; }
+.yidong .tkuan a{border:1px solid #cdcdcd; display: inline-block;padding:8px 26px; font-size: 13px; border-radius: 50px; color: #666; margin-top: 14px; float: right; margin-right: 14px;}
+.yidong .yunfeix {overflow: hidden; margin: 0 14px;line-height: 20px; color: #3e4244; font-size: 12px;}
+.yidong .yunfeix .yfxan1{ float: left;}
+.yidong .yunfeix .yfxan2{float: right;font-family: "arial";}
+.yidong .yunfeix.sfukxm{ font-size: 13.4px; color: #666;}
+.yidong .yunfeix .yfxan2.redred{color: #f34b0c; font-size: 15px;font-family: "arial";}
+.yidong .yunfeix .yfxan2.redred em{font-size: 12px;}
+
+.ddanmeg{ background: #fff; margin-bottom: 10px;}
+.ddanmeg h4{ margin-left: 3%;padding: 14px 0 16.7px; font-size: 15px;overflow: hidden;}
+.ddanmeg h4 em{float: left; width: 2px; background: #fe4701; height: 13px; margin-top: 4px; font-family: "微软雅黑";}
+.ddanmeg h4 a{padding-left: 3.34px;float: left; }
+.ddanmeg div.dgdan{ margin:0 14px 0 18.6px; padding-bottom: 14px; color: #666; font-size: 12px;font-family: "arial";}
+.ddanmeg div.dgdan span{ text-align: right; float: right;color: #f34b0c; margin-top: -1px;}
+.ddanmeg div.dgdan em{display: inline-block; width:90px;}
+.ddanmeg div.buttonbottom{position: absolute;}
+.ddanmeg div.buttonbottom button{position: absolute; width: 49%;height: 47px;top:0; background: rgba(0,0,0,0);}
+.ddanmeg div.buttonbottom button.imgimg1{left: 0; }
+.ddanmeg div.buttonbottom button.imgimg2{ right: 0;}
+
+
+
+
+
+
+
+.add_dizhi{background:#FFF;overflow: hidden; margin-bottom: 10px; margin-top:1px; }
+.list-address{overflow: hidden;padding-bottom: 10px;}
+ .add_dizhi ul li{ float: left;}
+ .add_dizhi ul li.address_cont1{ width: 15%;}
+ .add_dizhi ul li.address_cont1 img{ width: 64%;margin: 30px 19% 0;}
+ .add_dizhi ul li.address_cont2{ width: 80%; padding-top: 18px; font-size:13.4px;}
+ .add_dizhi ul li.address_cont2 .num{padding-left: 10px; color: #999;font-family: "arial"; }
+ .add_dizhi ul li.address_cont2 p{ padding-bottom: 8px; font-size: 13.4px;}
+.add_dizhi ul li.address_cont2 p.hbeis{line-height: 16px;}
+ .add_dizhi ul li.address_cont3{ width: 5%; margin-left: 3%;}
+ .add_dizhi ul li.address_cont3 img{ width: 60%; margin: 45px 20% 0;}
